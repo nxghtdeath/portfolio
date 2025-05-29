@@ -1,7 +1,9 @@
-.grades-table td {
-    background-color: #f5f5f5;
-    padding: 10px;
-    border: 1px solid #aaa;
-    text-align: center;
-    font-weight: bold;
+footer a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+footer a:hover {
+    color: #0056b3;
+    text-decoration: underline;
 }
