@@ -566,3 +566,15 @@ fly-wm [14:12:12] E: IceProcessMessagesIOError, state=0: client '1f3d0deab000174
 fly-wm [14:12:12] E: ICE Connection closed due to IceProcessMessagesIOError!
 fly-wm [14:12:17] I: sm server: execute 'rm /home/administrator/.config/session/kate_1f3d0deab000174850273600000026080046_1748502737_392035'
 Unable to connect to CUPS server
+fly-wm [14:16:12] E: ConfigureRequest from fullscreen/maximized win 'Qwen — Mozilla Firefox' - send fictive ConfigureNotify reply
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
