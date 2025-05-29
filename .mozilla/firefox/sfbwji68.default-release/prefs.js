@@ -11,7 +11,7 @@
 
 user_pref("accessibility.typeaheadfind.flashBar", 0);
 user_pref("app.normandy.migrationsApplied", 12);
-user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1748501293);
+user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1748502932);
 user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1748500804);
 user_pref("app.update.lastUpdateTime.region-update-timer", 1748500804);
 user_pref("app.update.lastUpdateTime.services-settings-poll-changes", 1748500804);
@@ -32,15 +32,15 @@ user_pref("browser.pageActions.persistedActions", "{\"ids\":[\"bookmark\"],\"ids
 user_pref("browser.pagethumbnails.storage_version", 3);
 user_pref("browser.proton.toolbar.version", 3);
 user_pref("browser.region.update.updated", 1748500805);
-user_pref("browser.safebrowsing.provider.google4.lastupdatetime", "1748500779868");
-user_pref("browser.safebrowsing.provider.google4.nextupdatetime", "1748502552868");
+user_pref("browser.safebrowsing.provider.google4.lastupdatetime", "1748502556577");
+user_pref("browser.safebrowsing.provider.google4.nextupdatetime", "1748504341577");
 user_pref("browser.safebrowsing.provider.mozilla.lastupdatetime", "1748500781305");
 user_pref("browser.safebrowsing.provider.mozilla.nextupdatetime", "1748522381305");
 user_pref("browser.search.region", "RU");
 user_pref("browser.sessionstore.upgradeBackup.latestBuildID", "20240704121409");
 user_pref("browser.startup.couldRestoreSession.count", 2);
 user_pref("browser.startup.lastColdStartupCheck", 1748500775);
-user_pref("browser.topsites.contile.lastFetch", 1748501075);
+user_pref("browser.topsites.contile.lastFetch", 1748502879);
 user_pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-fixed-list\":[],\"unified-extensions-area\":[],\"nav-bar\":[\"back-button\",\"forward-button\",\"stop-reload-button\",\"customizableui-special-spring1\",\"urlbar-container\",\"customizableui-special-spring2\",\"save-to-pocket-button\",\"downloads-button\",\"fxa-toolbar-menu-button\",\"unified-extensions-button\"],\"toolbar-menubar\":[\"menubar-items\"],\"TabsToolbar\":[\"firefox-view-button\",\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\"],\"PersonalToolbar\":[\"import-button\",\"personal-bookmarks\"]},\"seen\":[\"save-to-pocket-button\",\"developer-button\"],\"dirtyAreaCache\":[\"nav-bar\",\"PersonalToolbar\",\"toolbar-menubar\",\"TabsToolbar\"],\"currentVersion\":20,\"newElementCount\":2}");
 user_pref("browser.urlbar.placeholderName", "Google");
 user_pref("browser.urlbar.quicksuggest.migrationVersion", 2);

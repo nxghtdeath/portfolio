@@ -26,12 +26,18 @@ Monitor=Virtual1
 
 
 [IconPosition::fly-help.desktop]
-X=5
+X=88
 Y=305
 Monitor=Virtual1
 
 
 [IconPosition::ФамилияИО-ИСт-221]
+X=88
+Y=205
+Monitor=Virtual1
+
+
+[IconPosition::prince]
 X=5
-Y=405
+Y=305
 Monitor=Virtual1

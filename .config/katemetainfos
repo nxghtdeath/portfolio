@@ -70,6 +70,18 @@ Mode Set By User=false
 Time=2025,5,7,8,39,54.932
 URL=file:///etc/apache2/sites-available/фамилия.имя.conf
 
+[file:///home/administrator/index.txt]
+Bookmarks=
+Checksum=51a8bbc2300f2e7c24c8970faec29a4dd87b0d78
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2025,5,29,6,56,26.102
+URL=file:///home/administrator/index.txt
+
 [file:///home/administrator/Загрузки/prince/prince/!README.txt]
 Bookmarks=
 Checksum=664b12ea493f6e6399e807ad57a574280fe193b0

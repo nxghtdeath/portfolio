@@ -402,3 +402,167 @@ fly-wm [13:46:21] I: sm server: execute 'rm /home/administrator/.config/session/
 fly-wm [13:46:26] E: ConfigureRequest from fullscreen/maximized win 'Qwen — Mozilla Firefox' - send fictive ConfigureNotify reply
 fly-wm [13:46:48] E: ConfigureRequest from fullscreen/maximized win 'Qwen — Mozilla Firefox' - send fictive ConfigureNotify reply
 Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+fly-wm [13:54:28] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [13:54:28] I: randr: XRRScreenChangeNotifyEvent: new 1 1920 977, stamp=8229, time=1748501668
+fly-wm [13:54:28] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [13:54:28] I: xinerama rect[0] Virtual1: 0 0 640 480
+fly-wm [13:54:28] I: randr: old dpy rect 0 0 1920 977, old primary 0 0 1920 977, new dpy rect 0 0 640 480, new primary 0 0 640 480, bound 0 0 640 480, rect num 1 (was 1),primary changed=1. time=1748501668
+fly-wm [13:54:28] I: randr: NEW dpy rect 0 0 640 480, NEW primary rect 0 0 640 480, time=1748501668
+fly-wm [13:54:28] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [13:54:28] I: no set dpi in SCREEN_DPIS for primary 'Virtual1'
+libflycore GetRRPrimaryDPI(): Virtual1 no size in mm (0x0), bad EDID/driver/etc ?
+fly-wm [13:54:28] E: Can't get primary output dpi
+fly-wm [13:54:28] I: dpi from Xlib: 96,000000 96,185271, screen 1920x977pix 508x258mm
+fly-wm [13:54:28] I: old dpi=96,000000, new dpi=96,000000, dont update whole desktop
+fly-wm [13:54:28] I: primary old=Virtual1, new=Virtual1, move icons to its mons, to be ordered=1
+fly-wm [13:54:28] I: Title heigth = 29, search images by /usr/share/fly-wm/images/button_min_white_12.png
+fly-wm [13:54:29] I: save icon coords now at the end of all changes,iconToBeOrdered=0
+fly-wm [13:54:29] I: ConfigureNotify: for root window 1920 977 - process as randr event type 89
+fly-wm [13:54:29] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [13:54:29] I: randr: ConfigureNotify event time=1748501669
+fly-wm [13:54:29] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [13:54:29] I: xinerama rect[0] Virtual1: 0 0 640 480
+fly-wm [13:54:29] I: randr: old dpy rect 0 0 640 480, old primary 0 0 640 480, new dpy rect 0 0 640 480, new primary 0 0 640 480, bound 0 0 640 480, rect num 1 (was 1),primary changed=0. time=1748501669
+fly-wm [13:54:29] I: The same screens configuration - update nothing on desktop
+fly-wm [13:54:29] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [13:54:29] I: randr: XRRScreenChangeNotifyEvent: new 1 640 480, stamp=8229, time=1748501669
+fly-wm [13:54:29] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [13:54:29] I: xinerama rect[0] Virtual1: 0 0 640 480
+fly-wm [13:54:29] I: randr: old dpy rect 0 0 640 480, old primary 0 0 640 480, new dpy rect 0 0 640 480, new primary 0 0 640 480, bound 0 0 640 480, rect num 1 (was 1),primary changed=0. time=1748501669
+fly-wm [13:54:29] I: The same screens configuration - update nothing on desktop
+fly-wm [13:54:29] I: ConfigureNotify: for root window 640 480 - process as randr event type 89
+fly-wm [13:54:29] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [13:54:29] I: randr: ConfigureNotify event time=1748501669
+fly-wm [13:54:29] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [13:54:29] I: xinerama rect[0] Virtual1: 0 0 640 480
+fly-wm [13:54:29] I: randr: old dpy rect 0 0 640 480, old primary 0 0 640 480, new dpy rect 0 0 640 480, new primary 0 0 640 480, bound 0 0 640 480, rect num 1 (was 1),primary changed=0. time=1748501669
+fly-wm [13:54:29] I: The same screens configuration - update nothing on desktop
+fly-wm [13:54:29] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [13:54:29] I: randr: XRRScreenChangeNotifyEvent: new 1 640 480, stamp=996699, time=1748501669
+fly-wm [13:54:29] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [13:54:29] I: xinerama rect[0] Virtual1: 0 0 640 480
+fly-wm [13:54:29] I: randr: old dpy rect 0 0 640 480, old primary 0 0 640 480, new dpy rect 0 0 640 480, new primary 0 0 640 480, bound 0 0 640 480, rect num 1 (was 1),primary changed=0. time=1748501669
+fly-wm [13:54:29] I: The same screens configuration - update nothing on desktop
+fly-wm [13:54:29] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [13:54:29] I: randr: RRNotify subtype=0 rr1=1
+fly-wm [13:54:29] I: randr: XRRCrtcChangeNotifyEvent: win=550 new rotation=1 640 480 time=1748501669 mode=644, crtc=62
+fly-wm [13:54:29] I: ConfigureNotify: for root window 640 480 - process as randr event type 89
+fly-wm [13:54:29] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [13:54:29] I: randr: ConfigureNotify event time=1748501669
+fly-wm [13:54:29] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [13:54:29] I: xinerama rect[0] Virtual1: 0 0 640 480
+fly-wm [13:54:29] I: randr: old dpy rect 0 0 640 480, old primary 0 0 640 480, new dpy rect 0 0 640 480, new primary 0 0 640 480, bound 0 0 640 480, rect num 1 (was 1),primary changed=0. time=1748501669
+fly-wm [13:54:29] I: The same screens configuration - update nothing on desktop
+kscreen.kded: 	Failed to find a matching mode - this means that our config is corrupted or a different device with the same serial number has been connected (very unlikely). Falling back to preferred modes.
+fly-wm [13:54:36] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:54:36] I: randr: XRRScreenChangeNotifyEvent: new 1 640 480, stamp=996699, time=1748501676
+fly-wm [13:54:36] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:54:36] I: xinerama rect[0] Virtual1: 0 0 1920 977
+fly-wm [13:54:36] I: randr: old dpy rect 0 0 640 480, old primary 0 0 640 480, new dpy rect 0 0 1920 977, new primary 0 0 1920 977, bound 0 0 1920 977, rect num 1 (was 1),primary changed=1. time=1748501676
+fly-wm [13:54:36] I: randr: NEW dpy rect 0 0 1920 977, NEW primary rect 0 0 1920 977, time=1748501676
+fly-wm [13:54:36] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:54:36] I: no set dpi in SCREEN_DPIS for primary 'Virtual1'
+libflycore GetRRPrimaryDPI(): Virtual1 no size in mm (0x0), bad EDID/driver/etc ?
+fly-wm [13:54:36] E: Can't get primary output dpi
+fly-wm [13:54:36] I: dpi from Xlib: 96,189349 96,000000, screen 640x480pix 169x127mm
+fly-wm [13:54:36] I: old dpi=96,000000, new dpi=96,189349, dont update whole desktop
+fly-wm [13:54:36] I: primary old=Virtual1, new=Virtual1, move icons to its mons, to be ordered=1
+fly-wm [13:54:36] I: Title heigth = 29, search images by /usr/share/fly-wm/images/button_min_white_12.png
+fly-wm [13:54:36] I: visible 6 - deleted 0 <> 207 miximum visible on this screen, newDesktopIconSize=48
+fly-wm [13:54:36] I: save icon coords now at the end of all changes,iconToBeOrdered=0
+fly-wm [13:54:36] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:54:36] I: randr: XRRScreenChangeNotifyEvent: new 1 1920 977, stamp=996699, time=1748501676
+fly-wm [13:54:36] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:54:36] I: xinerama rect[0] Virtual1: 0 0 1920 977
+fly-wm [13:54:36] I: randr: old dpy rect 0 0 1920 977, old primary 0 0 1920 977, new dpy rect 0 0 1920 977, new primary 0 0 1920 977, bound 0 0 1920 977, rect num 1 (was 1),primary changed=0. time=1748501676
+fly-wm [13:54:36] I: The same screens configuration - update nothing on desktop
+fly-wm [13:54:36] I: ConfigureNotify: for root window 1920 977 - process as randr event type 89
+fly-wm [13:54:36] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:54:36] I: randr: ConfigureNotify event time=1748501676
+fly-wm [13:54:36] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:54:36] I: xinerama rect[0] Virtual1: 0 0 1920 977
+fly-wm [13:54:36] I: randr: old dpy rect 0 0 1920 977, old primary 0 0 1920 977, new dpy rect 0 0 1920 977, new primary 0 0 1920 977, bound 0 0 1920 977, rect num 1 (was 1),primary changed=0. time=1748501676
+fly-wm [13:54:36] I: The same screens configuration - update nothing on desktop
+fly-wm [13:54:36] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:54:36] I: randr: XRRScreenChangeNotifyEvent: new 1 1920 977, stamp=1004747, time=1748501676
+fly-wm [13:54:36] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:54:36] I: xinerama rect[0] Virtual1: 0 0 1920 977
+fly-wm [13:54:36] I: randr: old dpy rect 0 0 1920 977, old primary 0 0 1920 977, new dpy rect 0 0 1920 977, new primary 0 0 1920 977, bound 0 0 1920 977, rect num 1 (was 1),primary changed=0. time=1748501676
+fly-wm [13:54:36] I: The same screens configuration - update nothing on desktop
+fly-wm [13:54:36] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:54:36] I: randr: RRNotify subtype=0 rr1=1
+fly-wm [13:54:36] I: randr: XRRCrtcChangeNotifyEvent: win=550 new rotation=1 1920 977 time=1748501676 mode=78, crtc=62
+fly-wm [13:54:36] I: ConfigureNotify: for root window 1920 977 - process as randr event type 89
+fly-wm [13:54:36] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:54:36] I: randr: ConfigureNotify event time=1748501676
+fly-wm [13:54:36] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:54:36] I: xinerama rect[0] Virtual1: 0 0 1920 977
+fly-wm [13:54:36] I: randr: old dpy rect 0 0 1920 977, old primary 0 0 1920 977, new dpy rect 0 0 1920 977, new primary 0 0 1920 977, bound 0 0 1920 977, rect num 1 (was 1),primary changed=0. time=1748501676
+fly-wm [13:54:36] I: The same screens configuration - update nothing on desktop
+kscreen.kded: 	Failed to find a matching mode - this means that our config is corrupted or a different device with the same serial number has been connected (very unlikely). Falling back to preferred modes.
+fly-wm [13:54:52] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 1080, 508mm 286mm
+fly-wm [13:54:52] I: randr: XRRScreenChangeNotifyEvent: new 1 1920 977, stamp=1004747, time=1748501692
+fly-wm [13:54:52] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 1080, 508mm 286mm
+fly-wm [13:54:52] I: xinerama rect[0] Virtual1: 0 0 1920 1080
+fly-wm [13:54:52] I: randr: old dpy rect 0 0 1920 977, old primary 0 0 1920 977, new dpy rect 0 0 1920 1080, new primary 0 0 1920 1080, bound 0 0 1920 1080, rect num 1 (was 1),primary changed=1. time=1748501692
+fly-wm [13:54:52] I: randr: NEW dpy rect 0 0 1920 1080, NEW primary rect 0 0 1920 1080, time=1748501692
+fly-wm [13:54:52] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 1080, 508mm 286mm
+fly-wm [13:54:52] I: no set dpi in SCREEN_DPIS for primary 'Virtual1'
+libflycore GetRRPrimaryDPI(): Virtual1 no size in mm (0x0), bad EDID/driver/etc ?
+fly-wm [13:54:52] E: Can't get primary output dpi
+fly-wm [13:54:52] I: dpi from Xlib: 96,000000 96,185271, screen 1920x977pix 508x258mm
+fly-wm [13:54:52] I: old dpi=96,189349, new dpi=96,000000, dont update whole desktop
+fly-wm [13:54:52] I: primary old=Virtual1, new=Virtual1, move icons to its mons, to be ordered=1
+fly-wm [13:54:52] I: Title heigth = 29, search images by /usr/share/fly-wm/images/button_min_white_12.png
+fly-wm [13:54:52] I: visible 6 - deleted 0 <> 230 miximum visible on this screen, newDesktopIconSize=48
+fly-wm [13:54:52] I: save icon coords now at the end of all changes,iconToBeOrdered=0
+fly-wm [13:54:52] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 1080, 508mm 286mm
+fly-wm [13:54:52] I: randr: XRRScreenChangeNotifyEvent: new 1 1920 1080, stamp=1004747, time=1748501692
+fly-wm [13:54:52] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 1080, 508mm 286mm
+fly-wm [13:54:52] I: xinerama rect[0] Virtual1: 0 0 1920 1080
+fly-wm [13:54:52] I: randr: old dpy rect 0 0 1920 1080, old primary 0 0 1920 1080, new dpy rect 0 0 1920 1080, new primary 0 0 1920 1080, bound 0 0 1920 1080, rect num 1 (was 1),primary changed=0. time=1748501692
+fly-wm [13:54:52] I: The same screens configuration - update nothing on desktop
+fly-wm [13:54:52] I: ConfigureNotify: for root window 1920 1080 - process as randr event type 89
+fly-wm [13:54:52] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 1080, 508mm 286mm
+fly-wm [13:54:52] I: randr: ConfigureNotify event time=1748501692
+fly-wm [13:54:52] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 1080, 508mm 286mm
+fly-wm [13:54:52] I: xinerama rect[0] Virtual1: 0 0 1920 1080
+fly-wm [13:54:52] I: randr: old dpy rect 0 0 1920 1080, old primary 0 0 1920 1080, new dpy rect 0 0 1920 1080, new primary 0 0 1920 1080, bound 0 0 1920 1080, rect num 1 (was 1),primary changed=0. time=1748501692
+fly-wm [13:54:52] I: The same screens configuration - update nothing on desktop
+fly-wm [13:54:52] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 1080, 508mm 286mm
+fly-wm [13:54:52] I: randr: XRRScreenChangeNotifyEvent: new 1 1920 1080, stamp=1020313, time=1748501692
+fly-wm [13:54:52] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 1080, 508mm 286mm
+fly-wm [13:54:52] I: xinerama rect[0] Virtual1: 0 0 1920 1080
+fly-wm [13:54:52] I: randr: old dpy rect 0 0 1920 1080, old primary 0 0 1920 1080, new dpy rect 0 0 1920 1080, new primary 0 0 1920 1080, bound 0 0 1920 1080, rect num 1 (was 1),primary changed=0. time=1748501692
+fly-wm [13:54:52] I: The same screens configuration - update nothing on desktop
+fly-wm [13:54:52] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 1080, 508mm 286mm
+fly-wm [13:54:52] I: randr: RRNotify subtype=0 rr1=1
+fly-wm [13:54:52] I: randr: XRRCrtcChangeNotifyEvent: win=550 new rotation=1 1920 1080 time=1748501692 mode=645, crtc=62
+fly-wm [13:54:52] I: ConfigureNotify: for root window 1920 1080 - process as randr event type 89
+fly-wm [13:54:52] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 1080, 508mm 286mm
+fly-wm [13:54:52] I: randr: ConfigureNotify event time=1748501692
+fly-wm [13:54:52] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 1080, 508mm 286mm
+fly-wm [13:54:52] I: xinerama rect[0] Virtual1: 0 0 1920 1080
+fly-wm [13:54:52] I: randr: old dpy rect 0 0 1920 1080, old primary 0 0 1920 1080, new dpy rect 0 0 1920 1080, new primary 0 0 1920 1080, bound 0 0 1920 1080, rect num 1 (was 1),primary changed=0. time=1748501692
+fly-wm [13:54:52] I: The same screens configuration - update nothing on desktop
+kscreen.kded: 	Failed to find a matching mode - this means that our config is corrupted or a different device with the same serial number has been connected (very unlikely). Falling back to preferred modes.
+fly-wm [13:55:33] E: ConfigureRequest from fullscreen/maximized win 'Qwen — Mozilla Firefox' - send fictive ConfigureNotify reply
+6223643835107330 "/home/administrator/index.txt" renaming "index.html" to "index.txt"
+fly-wm [13:55:59] I: sm server: execute 'rm /home/administrator/.config/session/kate_1f3d0deab000174850175800000026080038_1748501759_364465'
+6223643835107330 "/home/administrator/index.html" renaming "index.txt" to "index.html"
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Неизвестный параметр «hide».
+fly-wm [14:12:12] E: ICE I/O error catched!
+fly-wm [14:12:12] E: IceProcessMessagesIOError, state=0: client '1f3d0deab000174850273200000026080043' '(null)'
+fly-wm [14:12:12] E: ICE Connection closed due to IceProcessMessagesIOError!
+fly-wm [14:12:17] I: sm server: execute 'rm /home/administrator/.config/session/kate_1f3d0deab000174850273600000026080046_1748502737_392035'
+Unable to connect to CUPS server

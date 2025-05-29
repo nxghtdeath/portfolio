@@ -6,7 +6,7 @@ Highlighting Set By User=false
 Indentation Mode=normal
 Mode=Normal
 Mode Set By User=false
-URL=file:///etc/apache2/sites-available/fame.conf
+URL=file:///home/administrator/index.txt
 
 [Kate Plugins]
 cmaketoolsplugin=false
@@ -41,8 +41,8 @@ tabswitcherplugin=true
 textfilterplugin=true
 
 [MainWindow0]
-1920x977 screen: XPosition=40
-1920x977 screen: YPosition=33
+1920x1080 screen: XPosition=1050
+1920x1080 screen: YPosition=296
 Active ViewSpace=0
 Kate-MDI-H-Splitter=0,594,0
 Kate-MDI-Sidebar-0-Bar-0-TvList=kate_private_plugin_katefiletreeplugin,kateproject,kateprojectgit,lspclient_symbol_outline
@@ -60,7 +60,7 @@ Kate-MDI-Sidebar-2-Splitter=594
 Kate-MDI-Sidebar-3-Bar-0-TvList=output,diagnostics,kate_plugin_katesearch,kateprojectinfo
 Kate-MDI-Sidebar-3-LastSize=200
 Kate-MDI-Sidebar-3-SectSizes=0
-Kate-MDI-Sidebar-3-Splitter=260
+Kate-MDI-Sidebar-3-Splitter=185
 Kate-MDI-Sidebar-Style=2
 Kate-MDI-Sidebar-Visible=true
 Kate-MDI-ToolView-diagnostics-Position=3
@@ -93,8 +93,8 @@ ToolBarsMovable=Disabled
 Virtual1=Virtual1
 
 [MainWindow0 Settings]
-1920x977 screen: XPosition=40
-1920x977 screen: YPosition=33
+1920x1080 screen: XPosition=1050
+1920x1080 screen: YPosition=296
 State=AAAA/wAAAAD9AAAAAAAAAoAAAAGUAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABoAGEAbQBiAHUAcgBnAGUAcgBCAGEAcgEAAAJY/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Virtual1=Virtual1
@@ -106,17 +106,17 @@ Orientation=1
 Sizes=594
 
 [MainWindow0-ViewSpace 0]
-Active View=file:///etc/apache2/sites-available/fame.conf
+Active View=file:///home/administrator/index.txt
 Count=1
-Documents=file:///etc/apache2/sites-available/fame.conf
-View 0=file:///etc/apache2/sites-available/fame.conf
+Documents=file:///home/administrator/index.txt
+View 0=file:///home/administrator/index.txt
 
-[MainWindow0-ViewSpace 0 file:///etc/apache2/sites-available/fame.conf]
-CursorColumn=0
-CursorLine=0
+[MainWindow0-ViewSpace 0 file:///home/administrator/index.txt]
+CursorColumn=7
+CursorLine=15
 Dynamic Word Wrap=true
 JumpList=
-TextFolding={"checksum":"0fc3bbaa29d009c15a9ac9b9457aefadb02af65c","ranges":[]}
+TextFolding={"checksum":"51a8bbc2300f2e7c24c8970faec29a4dd87b0d78","ranges":[]}
 ViMarks=
 
 [Open Documents]
@@ -152,23 +152,23 @@ SearchDiskFiless=
 UseRegExp=false
 
 [Recent Files]
-File1[$e]=/etc/X11/fly-dm/fly-modern/settings.ini
-File10[$e]=/etc/apache2/sites-available/fame.conf
-File2[$e]=/etc/apache2/sites-available/default-ssl.conf
-File3[$e]=/etc/apache2/sites-available/fame.conf.bak
-File4[$e]=/etc/apache2/sites-available/fame.html
-File5[$e]=/etc/apache2/sites-available/000-default.conf
-File6[$e]=/etc/apache2/sites-available/фамилия.имя.conf
-File7[$e]=/etc/apache2/apache2.conf
-File8[$e]=/run/user/1000/fly-fm-vfs/archives/389aef5b9b5e38050a33f39cedc25ca5/!README.txt
-File9[$e]=$HOME/Загрузки/prince/prince/!README.txt
-Name1[$e]=settings.ini
-Name10[$e]=fame.conf
-Name2[$e]=default-ssl.conf
-Name3[$e]=fame.conf.bak
-Name4[$e]=fame.html
-Name5[$e]=000-default.conf
-Name6[$e]=фамилия.имя.conf
-Name7[$e]=apache2.conf
+File1[$e]=/etc/apache2/sites-available/default-ssl.conf
+File10[$e]=$HOME/index.txt
+File2[$e]=/etc/apache2/sites-available/fame.conf.bak
+File3[$e]=/etc/apache2/sites-available/fame.html
+File4[$e]=/etc/apache2/sites-available/000-default.conf
+File5[$e]=/etc/apache2/sites-available/фамилия.имя.conf
+File6[$e]=/etc/apache2/apache2.conf
+File7[$e]=/run/user/1000/fly-fm-vfs/archives/389aef5b9b5e38050a33f39cedc25ca5/!README.txt
+File8[$e]=$HOME/Загрузки/prince/prince/!README.txt
+File9[$e]=/etc/apache2/sites-available/fame.conf
+Name1[$e]=default-ssl.conf
+Name10[$e]=index.txt
+Name2[$e]=fame.conf.bak
+Name3[$e]=fame.html
+Name4[$e]=000-default.conf
+Name5[$e]=фамилия.имя.conf
+Name6[$e]=apache2.conf
+Name7[$e]=!README.txt
 Name8[$e]=!README.txt
-Name9[$e]=!README.txt
+Name9[$e]=fame.conf
