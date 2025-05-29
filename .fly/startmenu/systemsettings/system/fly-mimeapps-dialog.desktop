@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Applications for MIME-types
+Name[ru]=Приложения для типов файлов
+Type=Application
+Comment=Mime-type - Application associate application (fly-mimeapps)
+Comment[ru]=Программа сопоставления типов файлов и приложений (fly-mimeapps)
+Exec=fly-mimeapps -d
+Icon=preferences-desktop-filetype-association
+Categories=Settings
+OnlyShowIn=Fly
+X-SuSE-YaST-Group=System
+X-Fly-OriginFile=/usr/share/applications/fly-mimeapps-dialog.desktop

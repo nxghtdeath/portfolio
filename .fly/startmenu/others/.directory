@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Others
+Name[ru]=Прочие
+Type=Directory
+Icon=applications-other
+#SortOrder=fly-*;sep.desktop;
+X-FLY-IconContext=Categories

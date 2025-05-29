@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Fly Autostart
+Name[ru]=Автозапуск
+Type=Application
+Exec=fly-admin-autostart %U
+Icon=fly-admin-autostart
+Categories=Settings
+X-SuSE-YaST-Group=System
+X-SuSE-YaST-RootOnly=false
+X-Fly-OriginFile=/usr/share/applications/fly-admin-autostart.desktop

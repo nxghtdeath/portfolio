@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Start Menu
+Name[ru]=Меню Пуск
+Type=Directory
+Icon=flymenuedit
+;SortOrder=applications;office;network;graphics;multimedia;education;games;mobile;development;accessories;systemapps;systemsettings;autostart;others;fly-control-center.desktop;fly-admin-center.desktop;astra-systemsettings.desktop;*;fly-fm.desktop;fly-find.desktop;fly-help.desktop;sep1.desktop;recents;fly-run.desktop;sep.desktop;changeuser.desktop;postpone.desktop;exit.desktop;
+SortOrder=office;network;graphics;multimedia;education;games;mobile;development;accessories;systemapps;systemsettings;others;*;sep.desktop;recents;fly-admin-center.desktop;astra-systemsettings.desktop;fly-fm.desktop;fly-search-panel.desktop;sep1.desktop;exit.desktop;
+X-FLY-IconContext=Applications

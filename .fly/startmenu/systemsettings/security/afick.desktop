@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=another file integrity checker
+Name[ru]=Контроль целостности файлов
+Type=Application
+Comment=a quick and portable tripwire's clone
+Comment[ru]=Контроль целостности файлов
+Exec=su-to-root -X -c /usr/bin/afick-tk
+Icon=afick
+Terminal=false
+Categories=Settings;Security
+Comment[fr]=un clone rapide et portable de tripwire
+Name[fr]=afick
+X-Fly-OriginFile=/usr/share/applications/afick.desktop

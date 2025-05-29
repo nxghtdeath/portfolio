@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Touchpad
+Name[ru]=Сенсорная панель
+GenericName=Touchpad
+Type=Application
+Comment=Touchpad settings
+Comment[ru]=Настройки сенсорной панели
+Exec=fly-admin-touchpad
+Icon=input-touchpad
+Categories=Settings;DesktopSettings
+OnlyShowIn=fly;fly-tablet;fly-mobile
+X-Fly-OriginFile=/usr/share/applications/fly-admin-touchpad.desktop

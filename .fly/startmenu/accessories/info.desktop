@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=TeXInfo
+Type=Application
+Comment=The viewer for TexInfo documents
+Exec=info
+Icon=dialog-information
+Terminal=true
+Categories=Utility;Documentation;ConsoleOnly
+Keywords=TeXInfo;Documentation
+X-Desktop-File-Install-Version=0.26
+X-Fly-OriginFile=/usr/share/applications/info.desktop

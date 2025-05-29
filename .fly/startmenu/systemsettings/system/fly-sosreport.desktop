@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=System report center
+Name[ru]=Центр системных отчетов
+Type=Application
+Comment=Application for collecting system reports
+Comment[ru]=Приложение для сбора отчетов о системе
+Exec=fly-sosreport
+Icon=fly-sosreport
+Categories=System
+OnlyShowIn=Fly
+Encoding=UTF-8
+X-SuSE-YaST-Group=System;
+X-Fly-OriginFile=/usr/share/applications/fly-sosreport.desktop

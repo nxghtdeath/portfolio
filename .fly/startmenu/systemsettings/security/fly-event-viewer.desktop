@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=System events journal
+Name[ru]=Журнал системных событий
+Type=Application
+Comment=syslog-ng-mod-astra log viewer
+Comment[ru]=Просмотр логов syslog-ng-mod-astra
+Exec=fly-event-viewer
+Icon=fly-event-viewer
+Categories=Qt;Settings;Security
+X-Fly-AdminOnly=true
+X-SuSE-YaST-Group=Security
+X-Fly-OriginFile=/usr/share/applications/fly-event-viewer.desktop

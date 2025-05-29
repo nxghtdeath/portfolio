@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Session Save
+Name[ru]=Сессию сохранить
+Type=Application
+NoDisplay=false
+Comment=Save current Fly session
+Comment[ru]=Cохранить текущую сессию Fly
+Exec=fly-wmfunc FLYWM_SAVE_SESSION
+Icon=document-import
+Categories=System
+OnlyShowIn=Fly
+X-FLY-IconContext=Actions

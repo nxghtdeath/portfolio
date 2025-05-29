@@ -1,0 +1,719 @@
+Xsession: X session started for administrator at Ср 21 мая 2025 13:31:32 +07
+fly-dm prepare, setup shell, check home and previous session 2025-05-21 13:31:32.316
+fly detect default session 2025-05-21 13:31:32.332
+fly check kiosk 2025-05-21 13:31:32.482
+fly merge resources 2025-05-21 13:31:32.489
+fly misc setup 2025-05-21 13:31:32.491
+10+0 записей получено
+10+0 записей отправлено
+52428800 байтов (52 MB, 50 MiB) скопировано, 0,0520015 s, 1,0 GB/s
+fly misc setup finished 2025-05-21 13:31:32.573
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/administrator/.Xauthority
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting PAM_TTY=/dev/tty7
+dbus-update-activation-environment: setting FLY_CLIENT_LOG=.xsession-errors
+dbus-update-activation-environment: setting ICEAUTHORITY=/run/user/1000/.ICEauthority
+dbus-update-activation-environment: setting XDM_MANAGED=method=classic
+dbus-update-activation-environment: setting DESKTOP_SESSION=fly
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting PWD=/home/administrator
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=fly
+dbus-update-activation-environment: setting LOGNAME=administrator
+dbus-update-activation-environment: setting QT_QPA_PLATFORMTHEME=fly
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting XAUTHORITY=/home/administrator/.Xauthority
+dbus-update-activation-environment: setting WINDOWPATH=7
+dbus-update-activation-environment: setting HOME=/home/administrator
+dbus-update-activation-environment: setting LANG=ru_RU.UTF-8
+dbus-update-activation-environment: setting XDG_CURRENT_DESKTOP=fly
+dbus-update-activation-environment: setting FLY_VM_NAME=oracle
+dbus-update-activation-environment: setting QT_QUICK_CONTROLS_STYLE=org.kde.desktop
+dbus-update-activation-environment: setting XDG_SESSION_CLASS=user
+dbus-update-activation-environment: setting USER=administrator
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting SHLVL=0
+dbus-update-activation-environment: setting QT_SCALE_FACTOR_ROUNDING_POLICY=Round
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
+dbus-update-activation-environment: setting DM_CONTROL=/var/run/xdmctl
+dbus-update-activation-environment: setting QT_DPI_ADJUSTMENT_POLICY=AdjustDpi
+dbus-update-activation-environment: setting PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+dbus-update-activation-environment: setting QT_ENABLE_HIGHDPI_SCALING=1
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting GDM_SUPPORTED_PAM_EXTENSIONS=org.gnome.DisplayManager.UserVerifier.ChoiceList
+dbus-update-activation-environment: setting _=/usr/bin/dbus-update-activation-environment
+fly some cleanup 2025-05-21 13:31:32.640
+06:31:33.001291 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:31:33.001294 main     Log opened 2025-05-21T06:31:33.001288000Z
+06:31:33.001347 main     OS Product: Linux
+06:31:33.001352 main     OS Release: 6.1.90-1-generic
+06:31:33.001355 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:31:33.001358 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:31:33.001358 main     Process ID: 2720
+06:31:33.001358 main     Package type: LINUX_64BITS_GENERIC
+06:31:33.001363 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:31:33.001374 main      Service: Shared Clipboard
+06:31:33.004939 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:31:33.004973 main     Log opened 2025-05-21T06:31:33.004937000Z
+06:31:33.005065 main     OS Product: Linux
+06:31:33.005071 main     OS Release: 6.1.90-1-generic
+06:31:33.005074 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:31:33.005077 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:31:33.005077 main     Process ID: 2724
+06:31:33.005077 main     Package type: LINUX_64BITS_GENERIC
+06:31:33.005081 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:31:33.005084 main      Service: VirtualBox host version check
+06:31:33.008173 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:31:33.008175 main     Log opened 2025-05-21T06:31:33.008171000Z
+06:31:33.008189 main     OS Product: Linux
+06:31:33.008193 main     OS Release: 6.1.90-1-generic
+06:31:33.008196 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:31:33.008198 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:31:33.008199 main     Process ID: 2731
+06:31:33.008199 main     Package type: LINUX_64BITS_GENERIC
+06:31:33.008203 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:31:33.008206 main      Service: Seamless Mode Support
+06:31:33.012471 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:31:33.012473 main     Log opened 2025-05-21T06:31:33.012469000Z
+06:31:33.012487 main     OS Product: Linux
+06:31:33.012491 main     OS Release: 6.1.90-1-generic
+06:31:33.012494 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:31:33.012496 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:31:33.012497 main     Process ID: 2739
+06:31:33.012497 main     Package type: LINUX_64BITS_GENERIC
+06:31:33.012501 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:31:33.012504 main      Service: Drag'n'Drop
+06:31:33.016450 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:31:33.016452 main     Log opened 2025-05-21T06:31:33.016448000Z
+06:31:33.016530 main     OS Product: Linux
+06:31:33.016536 main     OS Release: 6.1.90-1-generic
+06:31:33.016539 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:31:33.016541 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:31:33.016542 main     Process ID: 2747
+06:31:33.016542 main     Package type: LINUX_64BITS_GENERIC
+06:31:33.016546 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:31:33.016584 main      Service: VMSVGA display assistant
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  62  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  63  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  64  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  65  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  66  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  67  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  68  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  69  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  62  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: Connected output 70 to CRTC 62
+kscreen.xcb.helper: Detected XRandR 1.6
+kscreen.xcb.helper: Event Base:  89
+kscreen.xcb.helper: Event Error:  147
+kscreen.kded: PowerDevil SuspendSession action not available!
+kscreen.xrandr: XRandR::setConfig
+kscreen.xrandr: Requested screen size is QSize(1920, 977)
+kscreen.xrandr: Needed CRTCs:  1
+kscreen.xrandr: Actions to perform:
+ 	Priorities: false
+kscreen.xrandr: 	Change Screen Size: false
+kscreen.xrandr: 	Disable outputs: false
+kscreen.xrandr: 	Change outputs: false
+kscreen.xrandr: 	Enable outputs: false
+kscreen.xrandr: XRandR::setConfig done!
+fly-wm [13:31:33] I: start fly-wm ver=2.44.6+ci33
+fly-wm [13:31:33] I: parent PID=2290
+fly-wm [13:31:33] I: parent path 
+fly-wm [13:31:33] I: call parsec_astramode() result: mode=0,  isPARSECEnabled=0
+fly-wm [13:31:33] I: fly-wm's messages locale 'ru_RU.UTF-8' in use, system locale 'ru_RU.UTF-8'
+fly-wm [13:31:33] I: flySessName=fly, sess config suffix=, sessType=2, astraMode=0
+fly-wm [13:31:33] I: User 'administrator' in astra-admin=1, console enabled=1
+fly-wm [13:31:33] I: start_panel=fly-start-menu,search_panel=fly-start-menu,shutdown_dialog=fly-shutdown-dialog
+fly-wm [13:31:33] I: Update host name start
+fly-wm [13:31:33] I: hostname=astra-29108 canonical=astra-29108
+fly-wm [13:31:33] I: Update host name finish: astra-29108, astra-29108
+fly-wm [13:31:33] I: Virtual machine oracle session
+fly-wm [13:31:33] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:31:33] I: xinerama rect[0] Virtual1: 0 0 1920 977
+fly-wm [13:31:33] I: Fly desktop x=0 y=0 width=1920 height=977 from xinerama extension
+fly-wm [13:31:33] E: No XSync support compiled!
+fly-wm [13:31:33] I: dont need update any fly-wm's user's config from /usr/share/fly-wm/...
+fly-wm [13:31:33] I: no rc files to update from /usr/share/fly-wm/theme.update or all of them were updated before
+fly-wm [13:31:33] E: 26: 'CompositeManagerVSync' is unknown variable
+fly-wm [13:31:33] E: 107: 'LockerBellSound' is unknown variable
+fly-wm [13:31:33] I: fly-fm settings path=/home/administrator/.config/rusbitech/fly-fm.conf
+fly-wm [13:31:33] I: showhiddenfiles=false => showHiddenFiles=0
+fly-wm [13:31:33] I: showThumbnails=true => showThumbnails=1
+fly-wm [13:31:33] I: shownThumbnailGroups=image
+fly-wm [13:31:33] I: apply from master theme: ScreenSaver='internal fly-modern-locker'
+fly-wm [13:31:33] I: apply from master theme: LockerOnTopList=''
+fly-wm [13:31:33] I: Taskbar's minimize-restore all mini button func redefined with 'FLYWM_TOGGLE_MINIMIZE_ALL_INSCR'
+fly-wm [13:31:33] I: play cmds: '/usr/bin/play -q %s', 'fly-play-sound.sh empty vol=%d /usr/bin/play -q %s'
+fly-wm [13:31:33] I: LowPerf=auto lowPerf=0
+fly-wm [13:31:33] I: Fly desktop x=0 y=0 width=1920 height=977 after config reading
+fly-wm [13:31:33] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:31:33] I: dpi from xft: 96,000000
+fly-wm [13:31:33] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:31:33] I: no set dpi in SCREEN_DPIS for primary 'Virtual1'
+fly-wm [13:31:33] I: Final dpi from display,randr,xft: 96,000000 96,000000
+fly-wm [13:31:33] I: Can't create symlink to shared flystartmenu dir, copy in use
+fly-wm [13:31:33] I: Item /home/administrator/.fly/startmenu/systemapps/debian-uxterm.desktop is NOT suitable or NOT displayable
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/geoclue-demo-agent.desktop retCode=-3
+fly-wm [13:31:33] I: remove item Geoclue Demo agent /etc/xdg/autostart/geoclue-demo-agent.desktop
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/astra-event-watcher.desktop retCode=-3
+fly-wm [13:31:33] I: remove item Служба отслеживания событий и отправки уведомлений /etc/xdg/autostart/astra-event-watcher.desktop
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/fly-kcm-mouse-apply.desktop retCode=0
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/pkcs11-register.desktop retCode=-3
+fly-wm [13:31:33] I: remove item Install OpenSC PKCS#11 module /etc/xdg/autostart/pkcs11-register.desktop
+fly-wm [13:31:33] E: Not for fly system autostart item: /etc/xdg/autostart/gnome-keyring-secrets.desktop ignored
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/nm-applet.desktop retCode=-3
+fly-wm [13:31:33] I: remove item Сеть /etc/xdg/autostart/nm-applet.desktop
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/fly-shutdown-scheduler-service-autostart.desktop retCode=0
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/fly-cups-watch.desktop retCode=0
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/spice-vdagent.desktop retCode=-3
+fly-wm [13:31:33] I: remove item Spice vdagent /etc/xdg/autostart/spice-vdagent.desktop
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/fly-notify-osd-service.desktop retCode=0
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/fly-notifications.desktop retCode=0
+fly-wm [13:31:33] E: Autostart item: /etc/xdg/autostart/baloo_file.desktop, cant load X-KDE-autostart-condition config baloofilerc
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/baloo_file.desktop retCode=-3
+fly-wm [13:31:33] I: remove item Служба мониторинга файлов для Baloo /etc/xdg/autostart/baloo_file.desktop
+fly-wm [13:31:33] E: Not for fly system autostart item: /etc/xdg/autostart/fly-orientation-autostart.desktop ignored
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/powerdevil.desktop retCode=-3
+fly-wm [13:31:33] I: remove item Управление питанием /etc/xdg/autostart/powerdevil.desktop
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/kscreen.desktop retCode=0
+fly-wm [13:31:33] E: Hidden system autostart item: /etc/xdg/autostart/hplip-systray.desktop ignored
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/xdg-user-dirs.desktop retCode=-3
+fly-wm [13:31:33] I: remove item Настроить стандартные каталоги пользователя /etc/xdg/autostart/xdg-user-dirs.desktop
+fly-wm [13:31:33] E: Not for fly system autostart item: /etc/xdg/autostart/gnome-keyring-pkcs11.desktop ignored
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/print-applet.desktop retCode=0
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/fly-reflex-service.desktop retCode=0
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/vboxclient.desktop retCode=0
+fly-wm [13:31:33] E: Not for fly system autostart item: /etc/xdg/autostart/gnome-keyring-ssh.desktop ignored
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/polkit-kde-authentication-agent-1.desktop retCode=-3
+fly-wm [13:31:33] I: remove item Агент аутентификации PolicyKit /etc/xdg/autostart/polkit-kde-authentication-agent-1.desktop
+fly-wm [13:31:33] E: Not for fly system autostart item: /etc/xdg/autostart/fly-power-keyboard.desktop ignored
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/fly-sound-applet_autostart.desktop retCode=-3
+fly-wm [13:31:33] I: remove item Звуковые устройства /etc/xdg/autostart/fly-sound-applet_autostart.desktop
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/fly-start-menu.desktop retCode=0
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/at-spi-dbus-bus.desktop retCode=-3
+fly-wm [13:31:33] I: remove item AT-SPI D-Bus Bus /etc/xdg/autostart/at-spi-dbus-bus.desktop
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/fly-touchpadd.desktop retCode=0
+fly-wm [13:31:33] I: Added to autostart: /etc/xdg/autostart/pulseaudio.desktop retCode=0
+fly-wm [13:31:33] E: Autostart item /home/administrator/.config/autostart/fly-vkbd.desktop ignored due to code=-2
+fly-wm [13:31:33] I: remove item Виртуальная клавиатура /home/administrator/.config/autostart/fly-vkbd.desktop
+fly-wm [13:31:33] I: Added to autostart: /home/administrator/.config/autostart/fly-xkbmap.desktop retCode=0
+fly-wm [13:31:33] I: Menu icon isize = 16, search images by /usr/share/fly-wm/images/next_white_16.png
+fly-wm [13:31:33] I: Title heigth = 29, search images by /usr/share/fly-wm/images/button_min_white_12.png
+fly-wm [13:31:33] I: Radio button size = 16, search images by /usr/share/fly-wm/images/name_black_16.png
+fly-wm [13:31:33] I: Check X server tcp port, if closed then sm server will be local
+fly-wm [13:31:33] I: X server port 6000 is closed ()
+fly-wm [13:31:33] I: SM: Session clientId=1f3d0deab000174780909300000026210000, the_server=0x594e93e963f0
+fly-wm [13:31:33] I: SM: restoreSession=0, loginMode=default
+fly-wm [13:31:33] I: SM: session own client 0x594e93da7c70 '1f3d0deab000174780909300000026210000' session file=/home/administrator/.fly/1f3d0deab000174780909300000026210000.ini prev file=(null)
+fly-wm [13:31:33] I: SM: Session instantiated
+fly-wm [13:31:33] I: Session management started
+fly-wm [13:31:33] I: Can't create symlink to shared flydesktop dir, copy in use
+fly-wm [13:31:33] I: ScreenSaver='internal fly-modern-locker'
+fly-wm [13:31:33] I: XInput support true, process xinput events = false (unstable if true), process xinput hotplugs true
+fly-wm [13:31:33] I: Gdk/WindowScalingFactor=1
+fly-wm [13:31:33] I: Gdk/UnscaledDPI=96*1024/1=98304
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/fly-notifications.desktop' run 'fly-notifications', phase 0, min=0,max=1, after=none
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/baloo_file.desktop' run '/usr/lib/x86_64-linux-gnu/libexec/baloo_file', phase 0, min=0,max=1, after=none
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/powerdevil.desktop' run '/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdevil', phase 0, min=0,max=1, after=none
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/polkit-kde-authentication-agent-1.desktop' run '/usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1', phase 0, min=0,max=1, after=none
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/geoclue-demo-agent.desktop' run '/usr/libexec/geoclue-2.0/demos/agent', phase 1, min=0,max=1, after=none
+<item oor:path="/org.openoffice.Office.Common/Misc"><prop oor:name="SymbolStyle" oor:op="fuse"><value>breeze</value></prop></item>
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/astra-event-watcher.desktop' run 'astra-event-watcher', phase 1, min=0,max=1, after=none
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/fly-kcm-mouse-apply.desktop' run 'fly-kcm-mouse-apply', phase 1, min=0,max=1, after=none
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/pkcs11-register.desktop' run '/usr/bin/pkcs11-register', phase 1, min=0,max=1, after=none
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/fly-shutdown-scheduler-service-autostart.desktop' run 'fly-shutdown-scheduler-service', phase 1, min=0,max=1, after=none
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/fly-cups-watch.desktop' run '/usr/bin/fly-cups-watch', phase 1, min=0,max=1, after=none
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/fly-notify-osd-service.desktop' run 'fly-notify-osd-service', phase 1, min=0,max=1, after=none
+QProcess::start: Process is already running
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/kscreen.desktop' run 'kscreend', phase 1, min=0,max=1, after=none
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/xdg-user-dirs.desktop' run 'xdg-user-dirs-update', phase 1, min=0,max=1, after=none
+Added OpenSC smartcard framework (0.23) to /home/administrator/.pki/nssdb/pkcs11.txt
+registered service 'ru.rusbitech.BusWatcher' on session bus.
+connecting signal '' on interface 'org.cups.cupsd.Notifier'...
+connected=1
+"Disconnected" signal connected= true
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/print-applet.desktop' run 'system-config-printer-applet', phase 1, min=0,max=1, after=none
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/fly-reflex-service.desktop' run '/usr/bin/fly-reflex-service', phase 1, min=0,max=1, after=none
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/fly-sound-applet_autostart.desktop' run 'fly-sound-applet', phase 1, min=0,max=1, after=none
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/fly-start-menu.desktop' run 'fly-start-menu --hidden', phase 1, min=0,max=1, after=none
+Unable to connect to CUPS server
+fly-wm [13:31:33] I: autostart '/etc/xdg/autostart/at-spi-dbus-bus.desktop' run '/usr/libexec/at-spi-bus-launcher --launch-immediately', phase 1, min=0,max=1, after=none
+fly-wm [13:31:34] I: autostart '/etc/xdg/autostart/fly-touchpadd.desktop' run 'fly-touchpadd', phase 1, min=0,max=1, after=none
+fly-wm [13:31:34] I: autostart '/etc/xdg/autostart/pulseaudio.desktop' run 'start-pulseaudio-x11', phase 1, min=0,max=1, after=none
+fly-wm [13:31:34] I: autostart '/home/administrator/.config/autostart/fly-xkbmap.desktop' run 'fly-xkbmap --autostart', phase 1, min=0,max=1, after=none
+fly-wm [13:31:34] I: autostart '/etc/xdg/autostart/vboxclient.desktop' run '/usr/bin/VBoxClient-all', phase 1, min=0,max=1, after=panel
+06:31:34.198618 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:31:34.198620 main     Log opened 2025-05-21T06:31:34.198614000Z
+06:31:34.198642 main     OS Product: Linux
+06:31:34.198646 main     OS Release: 6.1.90-1-generic
+06:31:34.198648 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:31:34.198651 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:31:34.198651 main     Process ID: 2873
+06:31:34.198652 main     Package type: LINUX_64BITS_GENERIC
+06:31:34.198657 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:31:34.198659 main      Service: Shared Clipboard
+org.kde.powerdevil: org.kde.powerdevil.chargethresholdhelper.getthreshold failed "Charge thresholds are not supported by the kernel for this hardware"
+06:31:34.205503 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:31:34.205504 main     Log opened 2025-05-21T06:31:34.205499000Z
+06:31:34.205521 main     OS Product: Linux
+06:31:34.205524 main     OS Release: 6.1.90-1-generic
+06:31:34.205527 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:31:34.205530 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:31:34.205530 main     Process ID: 2893
+06:31:34.205530 main     Package type: LINUX_64BITS_GENERIC
+06:31:34.205535 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:31:34.205538 main      Service: VirtualBox host version check
+06:31:34.212532 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:31:34.212534 main     Log opened 2025-05-21T06:31:34.212529000Z
+06:31:34.212549 main     OS Product: Linux
+06:31:34.212553 main     OS Release: 6.1.90-1-generic
+06:31:34.212555 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:31:34.212558 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:31:34.212558 main     Process ID: 2897
+06:31:34.212559 main     Package type: LINUX_64BITS_GENERIC
+06:31:34.212563 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:31:34.212566 main      Service: Seamless Mode Support
+kscreen.kded: PowerDevil SuspendSession action not available!
+06:31:34.294207 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:31:34.294209 main     Log opened 2025-05-21T06:31:34.294204000Z
+06:31:34.294231 main     OS Product: Linux
+06:31:34.294235 main     OS Release: 6.1.90-1-generic
+06:31:34.294238 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:31:34.294240 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:31:34.294241 main     Process ID: 2902
+06:31:34.294241 main     Package type: LINUX_64BITS_GENERIC
+06:31:34.294246 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:31:34.294249 main      Service: Drag'n'Drop
+[ 21.05.2025 13:31:34.310 session_init WARN ] This compositor has been renamed to "picom", the "compton" binary will not be installed in the future.
+fly-wm [13:31:34] I: logind: standby=1 hybridsleep=1 hibernate=1 shutdown=1 reboot=1
+fly-wm [13:31:34] I: AllowShutdown=All, isShutdownEnabled=1
+fly-wm [13:31:34] I: AllowSdForceNow=Root, isShutdownForceEnabled=1 for administrator
+fly-wm [13:31:34] I: LoginMode=DefaultLocal, remote enabled=1
+fly-wm [13:31:34] I: UserList=true, show user list enabled=1
+06:31:34.395068 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:31:34.395071 main     Log opened 2025-05-21T06:31:34.395065000Z
+06:31:34.395088 main     OS Product: Linux
+06:31:34.395092 main     OS Release: 6.1.90-1-generic
+06:31:34.395095 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:31:34.395098 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:31:34.395098 main     Process ID: 2919
+06:31:34.395098 main     Package type: LINUX_64BITS_GENERIC
+06:31:34.395103 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:31:34.395106 main      Service: VMSVGA display assistant
+fly-wm [13:31:34] I: autostart '/etc/xdg/autostart/spice-vdagent.desktop' run '/usr/bin/spice-vdagent', phase 2, min=2,max=5, after=none
+fly-wm [13:31:34] I: autostart '/etc/xdg/autostart/nm-applet.desktop' run 'nm-applet', phase 5, min=2,max=5, after=none
+fly-wm [13:31:34] I: pulse module-mute-on-lock-screen exists in config
+fly-wm [13:31:34] E: org.kde.Solid.PowerManagement call hasDualGpu: org.freedesktop.DBus.Error.ServiceUnknown raised:
+ The name org.kde.Solid.PowerManagement was not provided by any .service filesfly-wm [13:31:34] E: net.hadess.SwitcherooControl call HasDualGpu: org.freedesktop.DBus.Error.ServiceUnknown raised:
+ The name net.hadess.SwitcherooControl was not provided by any .service filesfly-wm [13:31:34] I: hasDualGpu = 0
+org.kde.powerdevil: org.kde.powerdevil.backlighthelper.syspath failed
+kcm_touchpad: Using X11 backend
+kcm_touchpad: Using X11 backend
+dbus-daemon[2908]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=1000 pid=2846 comm="fly-touchpadd")
+Sending the event to the KNotifications
+dbus-daemon[2908]: Successfully activated service 'org.a11y.atspi.Registry'
+SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+ru.astralinux.shutdown.scheduler.service.Storage: Init presets from QSettings
+fly-xkbmap: lang=ru_RU.UTF-8, locale=ru
+New PolkitAgentListener  0x621afde84600
+Adding new listener  PolkitQt1::Agent::Listener(0x621afdebab60) for  0x621afde84600
+Listener online
+Authentication agent result: true
+org.kde.powerdevil: Handle button events action could not check for screen configuration
+org.kde.powerdevil: The profile  "AC" tried to activate "DimDisplay" a non-existent action. This is usually due to an installation problem, a configuration problem, or because the action is not supported
+org.kde.powerdevil: The profile  "AC" tried to activate "BrightnessControl" a non-existent action. This is usually due to an installation problem, a configuration problem, or because the action is not supported
+
+(nm-applet:2943): Gtk-WARNING **: 13:31:35.424: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.
+
+(nm-applet:2943): Gdk-WARNING **: 13:31:35.455: Cannot transform xsetting gtk-cursor-theme-size of type gchararray to type gint
+
+
+(nm-applet:2943): Gdk-WARNING **: 13:31:35.455: Cannot transform xsetting gtk-cursor-theme-size of type gchararray to type gint
+
+org.kde.powerdevil: org.kde.powerdevil.chargethresholdhelper.getthreshold failed "Charge thresholds are not supported by the kernel for this hardware"
+QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QtSingleApplication(0x7ffc2759ddb0), parent's thread is QThread(0x633ab2633c40), current thread is QThread(0x633ab27ca040)
+QObject::installEventFilter(): Cannot filter events for objects in a different thread.
+Failed to register via dbus. Another instance is running
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+[Parent 3389, Main Thread] WARNING: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.: 'glib warning', file /builds/AstraOS/buildsystem/tbs_build/firefox/firefox-128.0+build2/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:3389): Gtk-WARNING **: 13:37:26.079: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.
+[Parent 3389, Main Thread] WARNING: Cannot transform xsetting gtk-cursor-theme-size of type gchararray to type gint
+: 'glib warning', file /builds/AstraOS/buildsystem/tbs_build/firefox/firefox-128.0+build2/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:3389): Gdk-WARNING **: 13:37:26.094: Cannot transform xsetting gtk-cursor-theme-size of type gchararray to type gint
+
+[Parent 3389, Main Thread] WARNING: Cannot transform xsetting gtk-cursor-theme-size of type gchararray to type gint
+: 'glib warning', file /builds/AstraOS/buildsystem/tbs_build/firefox/firefox-128.0+build2/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:3389): Gdk-WARNING **: 13:37:26.094: Cannot transform xsetting gtk-cursor-theme-size of type gchararray to type gint
+
+[Parent 3389, Main Thread] WARNING: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.: 'glib warning', file /builds/AstraOS/buildsystem/tbs_build/firefox/firefox-128.0+build2/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:3389): Gtk-WARNING **: 13:37:26.205: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.
+[Parent 3389, Main Thread] WARNING: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.: 'glib warning', file /builds/AstraOS/buildsystem/tbs_build/firefox/firefox-128.0+build2/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:3389): Gtk-WARNING **: 13:37:26.247: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.
+[Parent 3389, Main Thread] WARNING: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.: 'glib warning', file /builds/AstraOS/buildsystem/tbs_build/firefox/firefox-128.0+build2/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:3389): Gtk-WARNING **: 13:37:26.269: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.
+fly-wm [13:37:27] E: not implemented yet: if _WM_CLASS property changed then apply class properties from apprc. For example, Soffice->libreoffice-writer
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=3.48018) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+libEGL warning: DRI3: Screen seems not DRI3 capable
+libEGL warning: DRI2: failed to authenticate
+libEGL warning: DRI3: Screen seems not DRI3 capable
+MESA: error: ZINK: failed to choose pdev
+libEGL warning: egl: failed to create dri2 screen
+Qt Quick Layouts: Detected recursive rearrange. Aborting after two iterations.
+Qt Quick Layouts: Detected recursive rearrange. Aborting after two iterations.
+Qt Quick Layouts: Detected recursive rearrange. Aborting after two iterations.
+kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "search term" msgid_plural: "" msgctxt: ""
+kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "search term" msgid_plural: "" msgctxt: ""
+kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "search term" msgid_plural: "" msgctxt: ""
+Qt Quick Layouts: Detected recursive rearrange. Aborting after two iterations.
+qrc:/ui/KickoffSearchListView.qml:171: TypeError: Value is null and could not be converted to an object
+fly-wm [13:38:18] I: sm server: execute 'rm /home/administrator/.config/session/fly-term_1f3d0deab000174780949800000026210022_1747809498_841844'
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+fly-wm [14:03:20] I: Item /home/administrator/.fly/startmenu/systemapps/debian-uxterm.desktop is NOT suitable or NOT displayable
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+Unable to connect to CUPS server
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+fly-wm [14:03:32] I: Item /home/administrator/.fly/startmenu/systemapps/debian-uxterm.desktop is NOT suitable or NOT displayable
+QProcess::start: Process is already running
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+qrc:/ui/KickoffItem.qml:142:9: Unable to assign [undefined] to bool
+fly-wm [14:03:52] I: Item /home/administrator/.fly/startmenu/systemapps/debian-uxterm.desktop is NOT suitable or NOT displayable
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+fly-wm [14:10:00] I: Item /home/administrator/.fly/startmenu/systemapps/debian-uxterm.desktop is NOT suitable or NOT displayable
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+6185023489181698 "/home/administrator/\xD0\x97\xD0\xB0\xD0\xB3\xD1\x80\xD1\x83\xD0\xB7\xD0\xBA\xD0\xB8/prince.zip" renaming "DOS_prince.zip" to "prince.zip"
+Unable to connect to CUPS server
+6185143748265986 "/home/administrator/\xD0\x97\xD0\xB0\xD0\xB3\xD1\x80\xD1\x83\xD0\xB7\xD0\xBA\xD0\xB8/prince.zip" renaming "DOS_prince(1).zip" to "prince.zip"
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+fly-wm [14:28:07] I: sm server: execute 'rm /home/administrator/.config/session/kate_1f3d0deab000174781248600000026210025_1747812487_483353'
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+fly-wm [14:32:44] E: Unknown_Code_140 (0x1203432): RenderBadPicture (invalid Picture parameter)
+fly-wm [14:32:58] E: Unknown_Code_140 (0x120355a): RenderBadPicture (invalid Picture parameter)
+fly-wm [14:33:18] I: sm server: execute 'rm /home/administrator/.config/session/kate_1f3d0deab000174781279700000026210026_1747812798_218960'
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+fly-wm [14:36:02] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [14:36:02] I: randr: XRRScreenChangeNotifyEvent: new 1 1920 977, stamp=7534, time=1747812962
+fly-wm [14:36:02] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [14:36:02] I: xinerama rect[0] Virtual1: 0 0 640 480
+fly-wm [14:36:02] I: randr: old dpy rect 0 0 1920 977, old primary 0 0 1920 977, new dpy rect 0 0 640 480, new primary 0 0 640 480, bound 0 0 640 480, rect num 1 (was 1),primary changed=1. time=1747812962
+fly-wm [14:36:02] I: randr: NEW dpy rect 0 0 640 480, NEW primary rect 0 0 640 480, time=1747812962
+fly-wm [14:36:02] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [14:36:02] I: no set dpi in SCREEN_DPIS for primary 'Virtual1'
+libflycore GetRRPrimaryDPI(): Virtual1 no size in mm (0x0), bad EDID/driver/etc ?
+fly-wm [14:36:02] E: Can't get primary output dpi
+fly-wm [14:36:02] I: dpi from Xlib: 96,000000 96,185271, screen 1920x977pix 508x258mm
+fly-wm [14:36:02] I: old dpi=96,000000, new dpi=96,000000, dont update whole desktop
+fly-wm [14:36:02] I: primary old=Virtual1, new=Virtual1, move icons to its mons, to be ordered=1
+fly-wm [14:36:02] I: Title heigth = 29, search images by /usr/share/fly-wm/images/button_min_white_12.png
+fly-wm [14:36:02] E: Unknown_Code_140 (0x1203a1b): RenderBadPicture (invalid Picture parameter)
+fly-wm [14:36:03] I: save icon coords now at the end of all changes,iconToBeOrdered=0
+fly-wm [14:36:03] I: ConfigureNotify: for root window 1920 977 - process as randr event type 89
+fly-wm [14:36:03] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [14:36:03] I: randr: ConfigureNotify event time=1747812963
+fly-wm [14:36:03] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [14:36:03] I: xinerama rect[0] Virtual1: 0 0 640 480
+fly-wm [14:36:03] I: randr: old dpy rect 0 0 640 480, old primary 0 0 640 480, new dpy rect 0 0 640 480, new primary 0 0 640 480, bound 0 0 640 480, rect num 1 (was 1),primary changed=0. time=1747812963
+fly-wm [14:36:03] I: The same screens configuration - update nothing on desktop
+fly-wm [14:36:03] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [14:36:03] I: randr: XRRScreenChangeNotifyEvent: new 1 640 480, stamp=7534, time=1747812963
+fly-wm [14:36:03] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [14:36:03] I: xinerama rect[0] Virtual1: 0 0 640 480
+fly-wm [14:36:03] I: randr: old dpy rect 0 0 640 480, old primary 0 0 640 480, new dpy rect 0 0 640 480, new primary 0 0 640 480, bound 0 0 640 480, rect num 1 (was 1),primary changed=0. time=1747812963
+fly-wm [14:36:03] I: The same screens configuration - update nothing on desktop
+fly-wm [14:36:03] I: ConfigureNotify: for root window 640 480 - process as randr event type 89
+fly-wm [14:36:03] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [14:36:03] I: randr: ConfigureNotify event time=1747812963
+fly-wm [14:36:03] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [14:36:03] I: xinerama rect[0] Virtual1: 0 0 640 480
+fly-wm [14:36:03] I: randr: old dpy rect 0 0 640 480, old primary 0 0 640 480, new dpy rect 0 0 640 480, new primary 0 0 640 480, bound 0 0 640 480, rect num 1 (was 1),primary changed=0. time=1747812963
+fly-wm [14:36:03] I: The same screens configuration - update nothing on desktop
+fly-wm [14:36:03] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [14:36:03] I: randr: XRRScreenChangeNotifyEvent: new 1 640 480, stamp=4228811, time=1747812963
+fly-wm [14:36:03] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [14:36:03] I: xinerama rect[0] Virtual1: 0 0 640 480
+fly-wm [14:36:03] I: randr: old dpy rect 0 0 640 480, old primary 0 0 640 480, new dpy rect 0 0 640 480, new primary 0 0 640 480, bound 0 0 640 480, rect num 1 (was 1),primary changed=0. time=1747812963
+fly-wm [14:36:03] I: The same screens configuration - update nothing on desktop
+fly-wm [14:36:03] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [14:36:03] I: randr: RRNotify subtype=0 rr1=1
+fly-wm [14:36:03] I: randr: XRRCrtcChangeNotifyEvent: win=550 new rotation=1 640 480 time=1747812963 mode=710, crtc=62
+fly-wm [14:36:03] I: ConfigureNotify: for root window 640 480 - process as randr event type 89
+fly-wm [14:36:03] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [14:36:03] I: randr: ConfigureNotify event time=1747812963
+fly-wm [14:36:03] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [14:36:03] I: xinerama rect[0] Virtual1: 0 0 640 480
+fly-wm [14:36:03] I: randr: old dpy rect 0 0 640 480, old primary 0 0 640 480, new dpy rect 0 0 640 480, new primary 0 0 640 480, bound 0 0 640 480, rect num 1 (was 1),primary changed=0. time=1747812963
+fly-wm [14:36:03] I: The same screens configuration - update nothing on desktop
+kscreen.kded: 	Failed to find a matching mode - this means that our config is corrupted or a different device with the same serial number has been connected (very unlikely). Falling back to preferred modes.
+fly-wm [14:36:09] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [14:36:09] I: randr: XRRScreenChangeNotifyEvent: new 1 640 480, stamp=4228811, time=1747812969
+fly-wm [14:36:09] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [14:36:09] I: xinerama rect[0] Virtual1: 0 0 1920 977
+fly-wm [14:36:09] I: randr: old dpy rect 0 0 640 480, old primary 0 0 640 480, new dpy rect 0 0 1920 977, new primary 0 0 1920 977, bound 0 0 1920 977, rect num 1 (was 1),primary changed=1. time=1747812969
+fly-wm [14:36:09] I: randr: NEW dpy rect 0 0 1920 977, NEW primary rect 0 0 1920 977, time=1747812969
+fly-wm [14:36:09] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [14:36:09] I: no set dpi in SCREEN_DPIS for primary 'Virtual1'
+libflycore GetRRPrimaryDPI(): Virtual1 no size in mm (0x0), bad EDID/driver/etc ?
+fly-wm [14:36:09] E: Can't get primary output dpi
+fly-wm [14:36:09] I: dpi from Xlib: 96,189349 96,000000, screen 640x480pix 169x127mm
+fly-wm [14:36:09] I: old dpi=96,000000, new dpi=96,189349, dont update whole desktop
+fly-wm [14:36:09] I: primary old=Virtual1, new=Virtual1, move icons to its mons, to be ordered=1
+fly-wm [14:36:09] I: Title heigth = 29, search images by /usr/share/fly-wm/images/button_min_white_12.png
+fly-wm [14:36:09] I: visible 5 - deleted 0 <> 207 miximum visible on this screen, newDesktopIconSize=48
+fly-wm [14:36:09] I: save icon coords now at the end of all changes,iconToBeOrdered=0
+fly-wm [14:36:09] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [14:36:09] I: randr: XRRScreenChangeNotifyEvent: new 1 1920 977, stamp=4228811, time=1747812969
+fly-wm [14:36:09] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [14:36:09] I: xinerama rect[0] Virtual1: 0 0 1920 977
+fly-wm [14:36:09] I: randr: old dpy rect 0 0 1920 977, old primary 0 0 1920 977, new dpy rect 0 0 1920 977, new primary 0 0 1920 977, bound 0 0 1920 977, rect num 1 (was 1),primary changed=0. time=1747812969
+fly-wm [14:36:09] I: The same screens configuration - update nothing on desktop
+fly-wm [14:36:09] I: ConfigureNotify: for root window 1920 977 - process as randr event type 89
+fly-wm [14:36:09] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [14:36:09] I: randr: ConfigureNotify event time=1747812969
+fly-wm [14:36:09] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [14:36:09] I: xinerama rect[0] Virtual1: 0 0 1920 977
+fly-wm [14:36:09] I: randr: old dpy rect 0 0 1920 977, old primary 0 0 1920 977, new dpy rect 0 0 1920 977, new primary 0 0 1920 977, bound 0 0 1920 977, rect num 1 (was 1),primary changed=0. time=1747812969
+fly-wm [14:36:09] I: The same screens configuration - update nothing on desktop
+fly-wm [14:36:09] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [14:36:09] I: randr: XRRScreenChangeNotifyEvent: new 1 1920 977, stamp=4235371, time=1747812969
+fly-wm [14:36:09] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [14:36:09] I: xinerama rect[0] Virtual1: 0 0 1920 977
+fly-wm [14:36:09] I: randr: old dpy rect 0 0 1920 977, old primary 0 0 1920 977, new dpy rect 0 0 1920 977, new primary 0 0 1920 977, bound 0 0 1920 977, rect num 1 (was 1),primary changed=0. time=1747812969
+fly-wm [14:36:09] I: The same screens configuration - update nothing on desktop
+fly-wm [14:36:09] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [14:36:09] I: randr: RRNotify subtype=0 rr1=1
+fly-wm [14:36:09] I: randr: XRRCrtcChangeNotifyEvent: win=550 new rotation=1 1920 977 time=1747812969 mode=78, crtc=62
+fly-wm [14:36:09] I: ConfigureNotify: for root window 1920 977 - process as randr event type 89
+fly-wm [14:36:09] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [14:36:09] I: randr: ConfigureNotify event time=1747812969
+fly-wm [14:36:09] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [14:36:09] I: xinerama rect[0] Virtual1: 0 0 1920 977
+fly-wm [14:36:09] I: randr: old dpy rect 0 0 1920 977, old primary 0 0 1920 977, new dpy rect 0 0 1920 977, new primary 0 0 1920 977, bound 0 0 1920 977, rect num 1 (was 1),primary changed=0. time=1747812969
+fly-wm [14:36:09] I: The same screens configuration - update nothing on desktop
+kscreen.kded: 	Failed to find a matching mode - this means that our config is corrupted or a different device with the same serial number has been connected (very unlikely). Falling back to preferred modes.
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+[ 21.05.2025 15:50:00.889 win_set_flags ERROR ] Flags set on a destroyed window 0x012028f6 (Minesweeper - Менеджер файлов)
+[ 21.05.2025 15:50:02.924 win_set_flags ERROR ] Flags set on a destroyed window 0x01202434 (Minesweeper - Менеджер файлов)
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+fly-wm [15:55:31] E: ConfigureRequest from fullscreen/maximized win 'Домашняя - Менеджер файлов' - send fictive ConfigureNotify reply
+fly-wm [15:55:37] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [15:55:37] I: randr: XRRScreenChangeNotifyEvent: new 1 1920 977, stamp=4235371, time=1747817737
+fly-wm [15:55:37] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [15:55:37] I: xinerama rect[0] Virtual1: 0 0 640 480
+fly-wm [15:55:37] I: randr: old dpy rect 0 0 1920 977, old primary 0 0 1920 977, new dpy rect 0 0 640 480, new primary 0 0 640 480, bound 0 0 640 480, rect num 1 (was 1),primary changed=1. time=1747817737
+fly-wm [15:55:37] I: randr: NEW dpy rect 0 0 640 480, NEW primary rect 0 0 640 480, time=1747817737
+fly-wm [15:55:37] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [15:55:37] I: no set dpi in SCREEN_DPIS for primary 'Virtual1'
+libflycore GetRRPrimaryDPI(): Virtual1 no size in mm (0x0), bad EDID/driver/etc ?
+fly-wm [15:55:37] E: Can't get primary output dpi
+fly-wm [15:55:37] I: dpi from Xlib: 96,000000 96,185271, screen 1920x977pix 508x258mm
+fly-wm [15:55:37] I: old dpi=96,189349, new dpi=96,000000, dont update whole desktop
+fly-wm [15:55:37] I: primary old=Virtual1, new=Virtual1, move icons to its mons, to be ordered=1
+fly-wm [15:55:37] I: Title heigth = 29, search images by /usr/share/fly-wm/images/button_min_white_12.png
+fly-wm [15:55:37] I: save icon coords now at the end of all changes,iconToBeOrdered=0
+fly-wm [15:55:37] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [15:55:37] I: randr: XRRScreenChangeNotifyEvent: new 1 640 480, stamp=4235371, time=1747817737
+fly-wm [15:55:37] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [15:55:37] I: xinerama rect[0] Virtual1: 0 0 640 480
+fly-wm [15:55:37] I: randr: old dpy rect 0 0 640 480, old primary 0 0 640 480, new dpy rect 0 0 640 480, new primary 0 0 640 480, bound 0 0 640 480, rect num 1 (was 1),primary changed=0. time=1747817737
+fly-wm [15:55:37] I: The same screens configuration - update nothing on desktop
+fly-wm [15:55:37] I: ConfigureNotify: for root window 640 480 - process as randr event type 89
+fly-wm [15:55:37] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [15:55:37] I: randr: ConfigureNotify event time=1747817737
+fly-wm [15:55:37] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [15:55:37] I: xinerama rect[0] Virtual1: 0 0 640 480
+fly-wm [15:55:37] I: randr: old dpy rect 0 0 640 480, old primary 0 0 640 480, new dpy rect 0 0 640 480, new primary 0 0 640 480, bound 0 0 640 480, rect num 1 (was 1),primary changed=0. time=1747817737
+fly-wm [15:55:37] I: The same screens configuration - update nothing on desktop
+fly-wm [15:55:37] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [15:55:37] I: randr: XRRScreenChangeNotifyEvent: new 1 640 480, stamp=9003631, time=1747817737
+fly-wm [15:55:37] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [15:55:37] I: xinerama rect[0] Virtual1: 0 0 640 480
+fly-wm [15:55:37] I: randr: old dpy rect 0 0 640 480, old primary 0 0 640 480, new dpy rect 0 0 640 480, new primary 0 0 640 480, bound 0 0 640 480, rect num 1 (was 1),primary changed=0. time=1747817737
+fly-wm [15:55:37] I: The same screens configuration - update nothing on desktop
+fly-wm [15:55:37] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [15:55:37] I: randr: RRNotify subtype=0 rr1=1
+fly-wm [15:55:37] I: randr: XRRCrtcChangeNotifyEvent: win=550 new rotation=1 640 480 time=1747817737 mode=710, crtc=62
+fly-wm [15:55:37] I: ConfigureNotify: for root window 640 480 - process as randr event type 89
+fly-wm [15:55:37] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [15:55:37] I: randr: ConfigureNotify event time=1747817737
+fly-wm [15:55:37] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 640 480, 169mm 127mm
+fly-wm [15:55:37] I: xinerama rect[0] Virtual1: 0 0 640 480
+fly-wm [15:55:37] I: randr: old dpy rect 0 0 640 480, old primary 0 0 640 480, new dpy rect 0 0 640 480, new primary 0 0 640 480, bound 0 0 640 480, rect num 1 (was 1),primary changed=0. time=1747817737
+fly-wm [15:55:37] I: The same screens configuration - update nothing on desktop
+kscreen.kded: 	Failed to find a matching mode - this means that our config is corrupted or a different device with the same serial number has been connected (very unlikely). Falling back to preferred modes.
+fly-wm [15:55:39] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [15:55:39] I: randr: XRRScreenChangeNotifyEvent: new 1 640 480, stamp=9003631, time=1747817739
+fly-wm [15:55:39] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [15:55:39] I: xinerama rect[0] Virtual1: 0 0 1920 977
+fly-wm [15:55:39] I: randr: old dpy rect 0 0 640 480, old primary 0 0 640 480, new dpy rect 0 0 1920 977, new primary 0 0 1920 977, bound 0 0 1920 977, rect num 1 (was 1),primary changed=1. time=1747817739
+fly-wm [15:55:39] I: randr: NEW dpy rect 0 0 1920 977, NEW primary rect 0 0 1920 977, time=1747817739
+fly-wm [15:55:39] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [15:55:39] I: no set dpi in SCREEN_DPIS for primary 'Virtual1'
+libflycore GetRRPrimaryDPI(): Virtual1 no size in mm (0x0), bad EDID/driver/etc ?
+fly-wm [15:55:39] E: Can't get primary output dpi
+fly-wm [15:55:39] I: dpi from Xlib: 96,189349 96,000000, screen 640x480pix 169x127mm
+fly-wm [15:55:39] I: old dpi=96,000000, new dpi=96,189349, dont update whole desktop
+fly-wm [15:55:39] I: primary old=Virtual1, new=Virtual1, move icons to its mons, to be ordered=1
+fly-wm [15:55:39] I: Title heigth = 29, search images by /usr/share/fly-wm/images/button_min_white_12.png
+fly-wm [15:55:39] I: visible 6 - deleted 0 <> 207 miximum visible on this screen, newDesktopIconSize=48
+fly-wm [15:55:39] I: save icon coords now at the end of all changes,iconToBeOrdered=0
+fly-wm [15:55:39] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [15:55:39] I: randr: XRRScreenChangeNotifyEvent: new 1 1920 977, stamp=9003631, time=1747817739
+fly-wm [15:55:39] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [15:55:39] I: xinerama rect[0] Virtual1: 0 0 1920 977
+fly-wm [15:55:39] I: randr: old dpy rect 0 0 1920 977, old primary 0 0 1920 977, new dpy rect 0 0 1920 977, new primary 0 0 1920 977, bound 0 0 1920 977, rect num 1 (was 1),primary changed=0. time=1747817739
+fly-wm [15:55:39] I: The same screens configuration - update nothing on desktop
+fly-wm [15:55:39] I: ConfigureNotify: for root window 1920 977 - process as randr event type 89
+fly-wm [15:55:39] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [15:55:39] I: randr: ConfigureNotify event time=1747817739
+fly-wm [15:55:39] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [15:55:39] I: xinerama rect[0] Virtual1: 0 0 1920 977
+fly-wm [15:55:39] I: randr: old dpy rect 0 0 1920 977, old primary 0 0 1920 977, new dpy rect 0 0 1920 977, new primary 0 0 1920 977, bound 0 0 1920 977, rect num 1 (was 1),primary changed=0. time=1747817739
+fly-wm [15:55:39] I: The same screens configuration - update nothing on desktop
+fly-wm [15:55:39] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [15:55:39] I: randr: XRRScreenChangeNotifyEvent: new 1 1920 977, stamp=9005320, time=1747817739
+fly-wm [15:55:39] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [15:55:39] I: xinerama rect[0] Virtual1: 0 0 1920 977
+fly-wm [15:55:39] I: randr: old dpy rect 0 0 1920 977, old primary 0 0 1920 977, new dpy rect 0 0 1920 977, new primary 0 0 1920 977, bound 0 0 1920 977, rect num 1 (was 1),primary changed=0. time=1747817739
+fly-wm [15:55:39] I: The same screens configuration - update nothing on desktop
+fly-wm [15:55:39] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [15:55:39] I: randr: RRNotify subtype=0 rr1=1
+fly-wm [15:55:39] I: randr: XRRCrtcChangeNotifyEvent: win=550 new rotation=1 1920 977 time=1747817739 mode=78, crtc=62
+fly-wm [15:55:39] I: ConfigureNotify: for root window 1920 977 - process as randr event type 89
+fly-wm [15:55:39] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [15:55:39] I: randr: ConfigureNotify event time=1747817739
+fly-wm [15:55:39] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [15:55:39] I: xinerama rect[0] Virtual1: 0 0 1920 977
+fly-wm [15:55:39] I: randr: old dpy rect 0 0 1920 977, old primary 0 0 1920 977, new dpy rect 0 0 1920 977, new primary 0 0 1920 977, bound 0 0 1920 977, rect num 1 (was 1),primary changed=0. time=1747817739
+fly-wm [15:55:39] I: The same screens configuration - update nothing on desktop
+kscreen.kded: 	Failed to find a matching mode - this means that our config is corrupted or a different device with the same serial number has been connected (very unlikely). Falling back to preferred modes.
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+Unable to connect to CUPS server
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

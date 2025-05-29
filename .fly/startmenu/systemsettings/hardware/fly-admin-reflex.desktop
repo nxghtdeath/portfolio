@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Hotplug device actions
+Name[ru]=Обработка «горячего» подключения
+Type=Application
+Comment=Hotplug events reaction setup
+Comment[ru]=Программа настройки реакций при подключении устройств
+Exec=fly-admin-reflex
+Icon=device-notifier
+Categories=Settings
+OnlyShowIn=fly;fly-tablet
+X-SuSE-YaST-Group=Hardware
+X-SuSE-YaST-RootOnly=false
+X-Fly-OriginFile=/usr/share/applications/fly-admin-reflex.desktop

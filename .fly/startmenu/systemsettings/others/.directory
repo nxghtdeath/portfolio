@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Directory
+Name=Misc
+Name[ru]=Прочее
+X-SuSE-YaST-Group=Misc
+Icon=applications-utilities
+X-FLY-IconContext=Categories

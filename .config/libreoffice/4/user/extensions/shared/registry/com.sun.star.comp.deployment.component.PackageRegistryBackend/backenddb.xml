@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<comp:component-backend-db xmlns:comp="http://openoffice.org/extensionmanager/component-registry/2010"><comp:component url="vnd.sun.star.expand:$UNO_SHARED_PACKAGES_CACHE/uno_packages/lu73075yswb.tmp_/libreoffice_astralinux_extension.oxt/libreoffice_astralinux_extension.py"><comp:java-type-library>false</comp:java-type-library><comp:implementation-names><comp:name>org.openoffice.comp.pyuno.exp.libreoffice_astralinux_extension</comp:name></comp:implementation-names></comp:component></comp:component-backend-db>

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Start searching...
+Name[ru]=Начните поиск...
+Type=Application
+Comment=Enter text to search for programs, documents, files
+Comment[ru]=Введите текст для поиска программ, документов, файлов
+Exec=fly-start-menu --width %d --height %d -p %d --search-only
+Icon=edit-find
+Categories=Application
+OnlyShowIn=Fly
+X-FLY-IconContext=Actions
+X-Fly-OriginFile=/usr/share/applications/fly-start-menu.desktop

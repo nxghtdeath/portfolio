@@ -1,0 +1,404 @@
+Xsession: X session started for administrator at Чт 29 мая 2025 13:39:20 +07
+fly-dm prepare, setup shell, check home and previous session 2025-05-29 13:39:20.010
+fly detect default session 2025-05-29 13:39:20.025
+fly check kiosk 2025-05-29 13:39:20.165
+fly merge resources 2025-05-29 13:39:20.172
+fly misc setup 2025-05-29 13:39:20.173
+10+0 записей получено
+10+0 записей отправлено
+52428800 байтов (52 MB, 50 MiB) скопировано, 0,0500114 s, 1,0 GB/s
+fly misc setup finished 2025-05-29 13:39:20.252
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/administrator/.Xauthority
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting PAM_TTY=/dev/tty7
+dbus-update-activation-environment: setting FLY_CLIENT_LOG=.xsession-errors
+dbus-update-activation-environment: setting ICEAUTHORITY=/run/user/1000/.ICEauthority
+dbus-update-activation-environment: setting XDM_MANAGED=method=classic
+dbus-update-activation-environment: setting DESKTOP_SESSION=fly
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting PWD=/home/administrator
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=fly
+dbus-update-activation-environment: setting LOGNAME=administrator
+dbus-update-activation-environment: setting QT_QPA_PLATFORMTHEME=fly
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting XAUTHORITY=/home/administrator/.Xauthority
+dbus-update-activation-environment: setting WINDOWPATH=7
+dbus-update-activation-environment: setting HOME=/home/administrator
+dbus-update-activation-environment: setting LANG=ru_RU.UTF-8
+dbus-update-activation-environment: setting XDG_CURRENT_DESKTOP=fly
+dbus-update-activation-environment: setting FLY_VM_NAME=oracle
+dbus-update-activation-environment: setting QT_QUICK_CONTROLS_STYLE=org.kde.desktop
+dbus-update-activation-environment: setting XDG_SESSION_CLASS=user
+dbus-update-activation-environment: setting USER=administrator
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting SHLVL=0
+dbus-update-activation-environment: setting QT_SCALE_FACTOR_ROUNDING_POLICY=Round
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
+dbus-update-activation-environment: setting DM_CONTROL=/var/run/xdmctl
+dbus-update-activation-environment: setting QT_DPI_ADJUSTMENT_POLICY=AdjustDpi
+dbus-update-activation-environment: setting PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+dbus-update-activation-environment: setting QT_ENABLE_HIGHDPI_SCALING=1
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting GDM_SUPPORTED_PAM_EXTENSIONS=org.gnome.DisplayManager.UserVerifier.ChoiceList
+dbus-update-activation-environment: setting _=/usr/bin/dbus-update-activation-environment
+fly some cleanup 2025-05-29 13:39:20.298
+06:39:20.437328 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:39:20.437330 main     Log opened 2025-05-29T06:39:20.437326000Z
+06:39:20.437349 main     OS Product: Linux
+06:39:20.437352 main     OS Release: 6.1.90-1-generic
+06:39:20.437355 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:39:20.437358 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:39:20.437358 main     Process ID: 2707
+06:39:20.437358 main     Package type: LINUX_64BITS_GENERIC
+06:39:20.437362 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:39:20.437370 main      Service: Shared Clipboard
+06:39:20.440312 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:39:20.440313 main     Log opened 2025-05-29T06:39:20.440309000Z
+06:39:20.440327 main     OS Product: Linux
+06:39:20.440331 main     OS Release: 6.1.90-1-generic
+06:39:20.440334 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:39:20.440336 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:39:20.440337 main     Process ID: 2711
+06:39:20.440337 main     Package type: LINUX_64BITS_GENERIC
+06:39:20.440341 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:39:20.440344 main      Service: VirtualBox host version check
+06:39:20.443632 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:39:20.443633 main     Log opened 2025-05-29T06:39:20.443629000Z
+06:39:20.443650 main     OS Product: Linux
+06:39:20.443653 main     OS Release: 6.1.90-1-generic
+06:39:20.443656 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:39:20.443658 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:39:20.443659 main     Process ID: 2719
+06:39:20.443659 main     Package type: LINUX_64BITS_GENERIC
+06:39:20.443663 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:39:20.443666 main      Service: Seamless Mode Support
+06:39:20.447687 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:39:20.447689 main     Log opened 2025-05-29T06:39:20.447684000Z
+06:39:20.447705 main     OS Product: Linux
+06:39:20.447709 main     OS Release: 6.1.90-1-generic
+06:39:20.447711 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:39:20.447714 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:39:20.447714 main     Process ID: 2725
+06:39:20.447715 main     Package type: LINUX_64BITS_GENERIC
+06:39:20.447719 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:39:20.447722 main      Service: Drag'n'Drop
+06:39:20.452434 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:39:20.452437 main     Log opened 2025-05-29T06:39:20.452432000Z
+06:39:20.452454 main     OS Product: Linux
+06:39:20.452458 main     OS Release: 6.1.90-1-generic
+06:39:20.452460 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:39:20.452463 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:39:20.452463 main     Process ID: 2735
+06:39:20.452464 main     Package type: LINUX_64BITS_GENERIC
+06:39:20.452468 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:39:20.452509 main      Service: VMSVGA display assistant
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  62  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  63  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  64  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  65  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  66  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  67  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  68  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  69  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: XRandRGamma::update() for m_crtc =  62  :
+ 	m_brightness =  0.996109 
+ 	gamma =  0.994363 : 0.994363 : 0.994363
+kscreen.xrandr: Connected output 70 to CRTC 62
+kscreen.xcb.helper: Detected XRandR 1.6
+kscreen.xcb.helper: Event Base:  89
+kscreen.xcb.helper: Event Error:  147
+kscreen.kded: PowerDevil SuspendSession action not available!
+kscreen.xrandr: XRandR::setConfig
+kscreen.xrandr: Requested screen size is QSize(1920, 977)
+kscreen.xrandr: Needed CRTCs:  1
+kscreen.xrandr: Actions to perform:
+ 	Priorities: false
+kscreen.xrandr: 	Change Screen Size: false
+kscreen.xrandr: 	Disable outputs: false
+kscreen.xrandr: 	Change outputs: false
+kscreen.xrandr: 	Enable outputs: false
+kscreen.xrandr: XRandR::setConfig done!
+fly-wm [13:39:20] I: start fly-wm ver=2.44.6+ci33
+fly-wm [13:39:20] I: parent PID=2278
+fly-wm [13:39:20] I: parent path 
+fly-wm [13:39:20] I: call parsec_astramode() result: mode=0,  isPARSECEnabled=0
+fly-wm [13:39:20] I: fly-wm's messages locale 'ru_RU.UTF-8' in use, system locale 'ru_RU.UTF-8'
+fly-wm [13:39:20] I: flySessName=fly, sess config suffix=, sessType=2, astraMode=0
+fly-wm [13:39:20] I: User 'administrator' in astra-admin=1, console enabled=1
+fly-wm [13:39:20] I: start_panel=fly-start-menu,search_panel=fly-start-menu,shutdown_dialog=fly-shutdown-dialog
+fly-wm [13:39:20] I: Update host name start
+fly-wm [13:39:20] I: hostname=astra-29108 canonical=astra-29108
+fly-wm [13:39:20] I: Update host name finish: astra-29108, astra-29108
+fly-wm [13:39:20] I: Virtual machine oracle session
+fly-wm [13:39:20] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:39:20] I: xinerama rect[0] Virtual1: 0 0 1920 977
+fly-wm [13:39:20] I: Fly desktop x=0 y=0 width=1920 height=977 from xinerama extension
+fly-wm [13:39:20] E: No XSync support compiled!
+fly-wm [13:39:20] I: dont need update any fly-wm's user's config from /usr/share/fly-wm/...
+fly-wm [13:39:20] I: no rc files to update from /usr/share/fly-wm/theme.update or all of them were updated before
+fly-wm [13:39:20] E: 26: 'CompositeManagerVSync' is unknown variable
+fly-wm [13:39:20] E: 107: 'LockerBellSound' is unknown variable
+fly-wm [13:39:20] I: fly-fm settings path=/home/administrator/.config/rusbitech/fly-fm.conf
+fly-wm [13:39:20] I: showhiddenfiles=false => showHiddenFiles=0
+fly-wm [13:39:20] I: showThumbnails=true => showThumbnails=1
+fly-wm [13:39:20] I: shownThumbnailGroups=image
+fly-wm [13:39:20] I: apply from master theme: ScreenSaver='internal fly-modern-locker'
+fly-wm [13:39:20] I: apply from master theme: LockerOnTopList=''
+fly-wm [13:39:20] I: Taskbar's minimize-restore all mini button func redefined with 'FLYWM_TOGGLE_MINIMIZE_ALL_INSCR'
+fly-wm [13:39:20] I: play cmds: '/usr/bin/play -q %s', 'fly-play-sound.sh empty vol=%d /usr/bin/play -q %s'
+fly-wm [13:39:20] I: LowPerf=auto lowPerf=0
+fly-wm [13:39:20] I: Fly desktop x=0 y=0 width=1920 height=977 after config reading
+fly-wm [13:39:20] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:39:20] I: dpi from xft: 96,000000
+fly-wm [13:39:20] I: monitor[0] Virtual1, primary=1, auto?=1, nout=1, 0 0 1920 977, 508mm 258mm
+fly-wm [13:39:20] I: no set dpi in SCREEN_DPIS for primary 'Virtual1'
+fly-wm [13:39:20] I: Final dpi from display,randr,xft: 96,000000 96,000000
+fly-wm [13:39:20] I: Can't create symlink to shared flystartmenu dir, copy in use
+fly-wm [13:39:20] I: Item /home/administrator/.fly/startmenu/systemapps/debian-uxterm.desktop is NOT suitable or NOT displayable
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/geoclue-demo-agent.desktop retCode=-3
+fly-wm [13:39:20] I: remove item Geoclue Demo agent /etc/xdg/autostart/geoclue-demo-agent.desktop
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/astra-event-watcher.desktop retCode=-3
+fly-wm [13:39:20] I: remove item Служба отслеживания событий и отправки уведомлений /etc/xdg/autostart/astra-event-watcher.desktop
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/fly-kcm-mouse-apply.desktop retCode=0
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/pkcs11-register.desktop retCode=-3
+fly-wm [13:39:20] I: remove item Install OpenSC PKCS#11 module /etc/xdg/autostart/pkcs11-register.desktop
+fly-wm [13:39:20] E: Not for fly system autostart item: /etc/xdg/autostart/gnome-keyring-secrets.desktop ignored
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/nm-applet.desktop retCode=-3
+fly-wm [13:39:20] I: remove item Сеть /etc/xdg/autostart/nm-applet.desktop
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/fly-shutdown-scheduler-service-autostart.desktop retCode=0
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/fly-cups-watch.desktop retCode=0
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/spice-vdagent.desktop retCode=-3
+fly-wm [13:39:20] I: remove item Spice vdagent /etc/xdg/autostart/spice-vdagent.desktop
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/fly-notify-osd-service.desktop retCode=0
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/fly-notifications.desktop retCode=0
+fly-wm [13:39:20] E: Autostart item: /etc/xdg/autostart/baloo_file.desktop, cant load X-KDE-autostart-condition config baloofilerc
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/baloo_file.desktop retCode=-3
+fly-wm [13:39:20] I: remove item Служба мониторинга файлов для Baloo /etc/xdg/autostart/baloo_file.desktop
+fly-wm [13:39:20] E: Not for fly system autostart item: /etc/xdg/autostart/fly-orientation-autostart.desktop ignored
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/powerdevil.desktop retCode=-3
+fly-wm [13:39:20] I: remove item Управление питанием /etc/xdg/autostart/powerdevil.desktop
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/kscreen.desktop retCode=0
+fly-wm [13:39:20] E: Hidden system autostart item: /etc/xdg/autostart/hplip-systray.desktop ignored
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/xdg-user-dirs.desktop retCode=-3
+fly-wm [13:39:20] I: remove item Настроить стандартные каталоги пользователя /etc/xdg/autostart/xdg-user-dirs.desktop
+fly-wm [13:39:20] E: Not for fly system autostart item: /etc/xdg/autostart/gnome-keyring-pkcs11.desktop ignored
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/print-applet.desktop retCode=0
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/fly-reflex-service.desktop retCode=0
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/vboxclient.desktop retCode=0
+fly-wm [13:39:20] E: Not for fly system autostart item: /etc/xdg/autostart/gnome-keyring-ssh.desktop ignored
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/polkit-kde-authentication-agent-1.desktop retCode=-3
+fly-wm [13:39:20] I: remove item Агент аутентификации PolicyKit /etc/xdg/autostart/polkit-kde-authentication-agent-1.desktop
+fly-wm [13:39:20] E: Not for fly system autostart item: /etc/xdg/autostart/fly-power-keyboard.desktop ignored
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/fly-sound-applet_autostart.desktop retCode=-3
+fly-wm [13:39:20] I: remove item Звуковые устройства /etc/xdg/autostart/fly-sound-applet_autostart.desktop
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/fly-start-menu.desktop retCode=0
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/at-spi-dbus-bus.desktop retCode=-3
+fly-wm [13:39:20] I: remove item AT-SPI D-Bus Bus /etc/xdg/autostart/at-spi-dbus-bus.desktop
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/fly-touchpadd.desktop retCode=0
+fly-wm [13:39:20] I: Added to autostart: /etc/xdg/autostart/pulseaudio.desktop retCode=0
+fly-wm [13:39:20] E: Autostart item /home/administrator/.config/autostart/fly-vkbd.desktop ignored due to code=-2
+fly-wm [13:39:20] I: remove item Виртуальная клавиатура /home/administrator/.config/autostart/fly-vkbd.desktop
+fly-wm [13:39:20] I: Added to autostart: /home/administrator/.config/autostart/fly-xkbmap.desktop retCode=0
+fly-wm [13:39:20] I: Menu icon isize = 16, search images by /usr/share/fly-wm/images/next_white_16.png
+fly-wm [13:39:20] I: Title heigth = 29, search images by /usr/share/fly-wm/images/button_min_white_12.png
+fly-wm [13:39:20] I: Radio button size = 16, search images by /usr/share/fly-wm/images/name_black_16.png
+fly-wm [13:39:21] I: Check X server tcp port, if closed then sm server will be local
+fly-wm [13:39:21] I: X server port 6000 is closed ()
+fly-wm [13:39:21] I: SM: Session clientId=1f3d0deab000174850076100000026080000, the_server=0x5cf8b62a16a0
+fly-wm [13:39:21] I: SM: restoreSession=0, loginMode=default
+fly-wm [13:39:21] I: SM: session own client 0x5cf8b62c5bd0 '1f3d0deab000174850076100000026080000' session file=/home/administrator/.fly/1f3d0deab000174850076100000026080000.ini prev file=(null)
+fly-wm [13:39:21] I: SM: Session instantiated
+fly-wm [13:39:21] I: Session management started
+fly-wm [13:39:21] I: Can't create symlink to shared flydesktop dir, copy in use
+fly-wm [13:39:21] I: ScreenSaver='internal fly-modern-locker'
+fly-wm [13:39:21] I: XInput support true, process xinput events = false (unstable if true), process xinput hotplugs true
+fly-wm [13:39:21] I: Gdk/WindowScalingFactor=1
+fly-wm [13:39:21] I: Gdk/UnscaledDPI=96*1024/1=98304
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/fly-notifications.desktop' run 'fly-notifications', phase 0, min=0,max=1, after=none
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/baloo_file.desktop' run '/usr/lib/x86_64-linux-gnu/libexec/baloo_file', phase 0, min=0,max=1, after=none
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/powerdevil.desktop' run '/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdevil', phase 0, min=0,max=1, after=none
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/polkit-kde-authentication-agent-1.desktop' run '/usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1', phase 0, min=0,max=1, after=none
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/geoclue-demo-agent.desktop' run '/usr/libexec/geoclue-2.0/demos/agent', phase 1, min=0,max=1, after=none
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/astra-event-watcher.desktop' run 'astra-event-watcher', phase 1, min=0,max=1, after=none
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/fly-kcm-mouse-apply.desktop' run 'fly-kcm-mouse-apply', phase 1, min=0,max=1, after=none
+<item oor:path="/org.openoffice.Office.Common/Misc"><prop oor:name="SymbolStyle" oor:op="fuse"><value>breeze</value></prop></item>
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/pkcs11-register.desktop' run '/usr/bin/pkcs11-register', phase 1, min=0,max=1, after=none
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/fly-shutdown-scheduler-service-autostart.desktop' run 'fly-shutdown-scheduler-service', phase 1, min=0,max=1, after=none
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/fly-cups-watch.desktop' run '/usr/bin/fly-cups-watch', phase 1, min=0,max=1, after=none
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/fly-notify-osd-service.desktop' run 'fly-notify-osd-service', phase 1, min=0,max=1, after=none
+QProcess::start: Process is already running
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/kscreen.desktop' run 'kscreend', phase 1, min=0,max=1, after=none
+registered service 'ru.rusbitech.BusWatcher' on session bus.
+connecting signal '' on interface 'org.cups.cupsd.Notifier'...
+connected=1
+"Disconnected" signal connected= true
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/xdg-user-dirs.desktop' run 'xdg-user-dirs-update', phase 1, min=0,max=1, after=none
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/print-applet.desktop' run 'system-config-printer-applet', phase 1, min=0,max=1, after=none
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/fly-reflex-service.desktop' run '/usr/bin/fly-reflex-service', phase 1, min=0,max=1, after=none
+Unable to connect to CUPS server
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/fly-sound-applet_autostart.desktop' run 'fly-sound-applet', phase 1, min=0,max=1, after=none
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/fly-start-menu.desktop' run 'fly-start-menu --hidden', phase 1, min=0,max=1, after=none
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/at-spi-dbus-bus.desktop' run '/usr/libexec/at-spi-bus-launcher --launch-immediately', phase 1, min=0,max=1, after=none
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/fly-touchpadd.desktop' run 'fly-touchpadd', phase 1, min=0,max=1, after=none
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/pulseaudio.desktop' run 'start-pulseaudio-x11', phase 1, min=0,max=1, after=none
+fly-wm [13:39:21] I: autostart '/home/administrator/.config/autostart/fly-xkbmap.desktop' run 'fly-xkbmap --autostart', phase 1, min=0,max=1, after=none
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/vboxclient.desktop' run '/usr/bin/VBoxClient-all', phase 1, min=0,max=1, after=panel
+[ 29.05.2025 13:39:21.642 session_init WARN ] This compositor has been renamed to "picom", the "compton" binary will not be installed in the future.
+06:39:21.647972 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:39:21.647974 main     Log opened 2025-05-29T06:39:21.647967000Z
+06:39:21.648003 main     OS Product: Linux
+06:39:21.648007 main     OS Release: 6.1.90-1-generic
+06:39:21.648010 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:39:21.648013 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:39:21.648013 main     Process ID: 2848
+06:39:21.648013 main     Package type: LINUX_64BITS_GENERIC
+06:39:21.648019 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:39:21.648022 main      Service: Shared Clipboard
+dbus-daemon[2843]: Activating service name='org.a11y.atspi.Registry' requested by ':1.1' (uid=1000 pid=2796 comm="kscreend")
+06:39:21.736840 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:39:21.736842 main     Log opened 2025-05-29T06:39:21.736836000Z
+06:39:21.736864 main     OS Product: Linux
+06:39:21.736868 main     OS Release: 6.1.90-1-generic
+06:39:21.736870 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:39:21.736873 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:39:21.736873 main     Process ID: 2870
+06:39:21.736874 main     Package type: LINUX_64BITS_GENERIC
+06:39:21.736878 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:39:21.736881 main      Service: VirtualBox host version check
+06:39:21.799699 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:39:21.799702 main     Log opened 2025-05-29T06:39:21.799695000Z
+06:39:21.799730 main     OS Product: Linux
+06:39:21.799735 main     OS Release: 6.1.90-1-generic
+06:39:21.799737 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:39:21.799740 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:39:21.799740 main     Process ID: 2883
+06:39:21.799741 main     Package type: LINUX_64BITS_GENERIC
+06:39:21.799745 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:39:21.799749 main      Service: Seamless Mode Support
+dbus-daemon[2843]: Successfully activated service 'org.a11y.atspi.Registry'
+SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+Sending the event to the KNotifications
+fly-wm [13:39:21] I: logind: standby=1 hybridsleep=1 hibernate=1 shutdown=1 reboot=1
+fly-wm [13:39:21] I: AllowShutdown=All, isShutdownEnabled=1
+fly-wm [13:39:21] I: AllowSdForceNow=Root, isShutdownForceEnabled=1 for administrator
+fly-wm [13:39:21] I: LoginMode=DefaultLocal, remote enabled=1
+fly-wm [13:39:21] I: UserList=true, show user list enabled=1
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/spice-vdagent.desktop' run '/usr/bin/spice-vdagent', phase 2, min=2,max=5, after=none
+fly-wm [13:39:21] I: autostart '/etc/xdg/autostart/nm-applet.desktop' run 'nm-applet', phase 5, min=2,max=5, after=none
+org.kde.powerdevil: org.kde.powerdevil.chargethresholdhelper.getthreshold failed "Charge thresholds are not supported by the kernel for this hardware"
+06:39:21.938065 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:39:21.938067 main     Log opened 2025-05-29T06:39:21.938061000Z
+06:39:21.938086 main     OS Product: Linux
+06:39:21.938090 main     OS Release: 6.1.90-1-generic
+06:39:21.938093 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:39:21.938096 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:39:21.938096 main     Process ID: 2911
+06:39:21.938096 main     Package type: LINUX_64BITS_GENERIC
+06:39:21.938101 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:39:21.938103 main      Service: Drag'n'Drop
+fly-wm [13:39:21] I: pulse module-mute-on-lock-screen exists in config
+fly-wm [13:39:21] E: org.kde.Solid.PowerManagement call hasDualGpu: org.freedesktop.DBus.Error.ServiceUnknown raised:
+ The name org.kde.Solid.PowerManagement was not provided by any .service filesfly-wm [13:39:21] E: net.hadess.SwitcherooControl call HasDualGpu: org.freedesktop.DBus.Error.ServiceUnknown raised:
+ The name net.hadess.SwitcherooControl was not provided by any .service filesfly-wm [13:39:21] I: hasDualGpu = 0
+06:39:22.004571 main     VBoxClient 7.0.14 r161095 (verbosity: 0) linux.amd64 (Jan 15 2024 15:01:59) release log
+06:39:22.004573 main     Log opened 2025-05-29T06:39:22.004567000Z
+06:39:22.004599 main     OS Product: Linux
+06:39:22.004603 main     OS Release: 6.1.90-1-generic
+06:39:22.004606 main     OS Version: #astra2+ci15 SMP PREEMPT_DYNAMIC Tue Jul 23 09:49:19 MSK 2024
+06:39:22.004608 main     Executable: /opt/VBoxGuestAdditions-7.0.14/bin/VBoxClient
+06:39:22.004609 main     Process ID: 2924
+06:39:22.004609 main     Package type: LINUX_64BITS_GENERIC
+06:39:22.004614 main      VBoxClient 7.0.14 r161095 started. Verbose level = 0. Wayland environment detected: no
+06:39:22.004617 main      Service: VMSVGA display assistant
+kcm_touchpad: Using X11 backend
+org.kde.powerdevil: org.kde.powerdevil.backlighthelper.syspath failed
+kcm_touchpad: Using X11 backend
+Приложение уже запущено, посмотрите приложение в системном трее.
+fly-xkbmap: lang=ru_RU.UTF-8, locale=ru
+kscreen.kded: PowerDevil SuspendSession action not available!
+New PolkitAgentListener  0x60097492a000
+Adding new listener  PolkitQt1::Agent::Listener(0x600974960390) for  0x60097492a000
+Listener online
+Authentication agent result: true
+ru.astralinux.shutdown.scheduler.service.Storage: Init presets from QSettings
+org.kde.powerdevil: Handle button events action could not check for screen configuration
+org.kde.powerdevil: The profile  "AC" tried to activate "DimDisplay" a non-existent action. This is usually due to an installation problem, a configuration problem, or because the action is not supported
+org.kde.powerdevil: The profile  "AC" tried to activate "BrightnessControl" a non-existent action. This is usually due to an installation problem, a configuration problem, or because the action is not supported
+
+(nm-applet:2919): Gtk-WARNING **: 13:39:23.182: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.
+
+(nm-applet:2919): Gdk-WARNING **: 13:39:23.228: Cannot transform xsetting gtk-cursor-theme-size of type gchararray to type gint
+
+
+(nm-applet:2919): Gdk-WARNING **: 13:39:23.228: Cannot transform xsetting gtk-cursor-theme-size of type gchararray to type gint
+
+org.kde.powerdevil: org.kde.powerdevil.chargethresholdhelper.getthreshold failed "Charge thresholds are not supported by the kernel for this hardware"
+QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QtSingleApplication(0x7ffee628d4b0), parent's thread is QThread(0x651b8309cc40), current thread is QThread(0x651b8322cca0)
+QObject::installEventFilter(): Cannot filter events for objects in a different thread.
+Failed to register via dbus. Another instance is running
+6202409516795906 "/home/administrator/\xD0\x97\xD0\xB0\xD0\xB3\xD1\x80\xD1\x83\xD0\xB7\xD0\xBA\xD0\xB8/Minesweeper" renaming "Minesweeper-Windows-XP" to "Minesweeper"
+[Parent 3160, Main Thread] WARNING: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.: 'glib warning', file /builds/AstraOS/buildsystem/tbs_build/firefox/firefox-128.0+build2/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:3160): Gtk-WARNING **: 13:39:33.592: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.
+[Parent 3160, Main Thread] WARNING: Cannot transform xsetting gtk-cursor-theme-size of type gchararray to type gint
+: 'glib warning', file /builds/AstraOS/buildsystem/tbs_build/firefox/firefox-128.0+build2/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:3160): Gdk-WARNING **: 13:39:33.610: Cannot transform xsetting gtk-cursor-theme-size of type gchararray to type gint
+
+[Parent 3160, Main Thread] WARNING: Cannot transform xsetting gtk-cursor-theme-size of type gchararray to type gint
+: 'glib warning', file /builds/AstraOS/buildsystem/tbs_build/firefox/firefox-128.0+build2/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:3160): Gdk-WARNING **: 13:39:33.610: Cannot transform xsetting gtk-cursor-theme-size of type gchararray to type gint
+
+[Parent 3160, Main Thread] WARNING: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.: 'glib warning', file /builds/AstraOS/buildsystem/tbs_build/firefox/firefox-128.0+build2/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:3160): Gtk-WARNING **: 13:39:33.727: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.
+[Parent 3160, Main Thread] WARNING: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.: 'glib warning', file /builds/AstraOS/buildsystem/tbs_build/firefox/firefox-128.0+build2/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:3160): Gtk-WARNING **: 13:39:33.773: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.
+[Parent 3160, Main Thread] WARNING: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.: 'glib warning', file /builds/AstraOS/buildsystem/tbs_build/firefox/firefox-128.0+build2/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:3160): Gtk-WARNING **: 13:39:33.796: Theme parsing error: gtk.css:4030:13: Not using units is deprecated. Assuming 'px'.
+libEGL warning: DRI3: Screen seems not DRI3 capable
+libEGL warning: DRI2: failed to authenticate
+libEGL warning: DRI3: Screen seems not DRI3 capable
+MESA: error: ZINK: failed to choose pdev
+libEGL warning: egl: failed to create dri2 screen
+Unable to connect to CUPS server
+Qt Quick Layouts: Detected recursive rearrange. Aborting after two iterations.
+Qt Quick Layouts: Detected recursive rearrange. Aborting after two iterations.
+Qt Quick Layouts: Detected recursive rearrange. Aborting after two iterations.
+kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "search term" msgid_plural: "" msgctxt: ""
+kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "search term" msgid_plural: "" msgctxt: ""
+kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "search term" msgid_plural: "" msgctxt: ""
+Qt Quick Layouts: Detected recursive rearrange. Aborting after two iterations.
+qrc:/ui/KickoffSearchListView.qml:171: TypeError: Value is null and could not be converted to an object
+fly-wm [13:42:35] I: sm server: execute 'rm /home/administrator/.config/session/fly-term_1f3d0deab000174850095500000026080026_1748500955_631203'
+Unable to connect to CUPS server
+fly-wm [13:46:21] I: sm server: execute 'rm /home/administrator/.config/session/kate_1f3d0deab000174850118100000026080031_1748501181_939025'
+fly-wm [13:46:26] E: ConfigureRequest from fullscreen/maximized win 'Qwen — Mozilla Firefox' - send fictive ConfigureNotify reply
+fly-wm [13:46:48] E: ConfigureRequest from fullscreen/maximized win 'Qwen — Mozilla Firefox' - send fictive ConfigureNotify reply
+Unable to connect to CUPS server

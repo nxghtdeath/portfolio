@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=CUPS Job Viewer
+Name[ru]=Очередь печати
+Type=Application
+Comment=Monitor Printing System
+Comment[ru]=Мониторинг системы печати
+Exec=fly-jobviewer
+Icon=printer
+Categories=Qt;System
+X-Fly-OriginFile=/usr/share/applications/fly-jobviewer.desktop

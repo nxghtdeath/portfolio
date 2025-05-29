@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Trash
+Name[ru]=Корзина
+Type=Directory
+Icon=user-trash
+X-FLY-IconContext=Places

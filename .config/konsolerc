@@ -1,0 +1,22 @@
+[General]
+ConfigVersion=1
+
+[MainWindow]
+1920x977 screen: Height=524
+1920x977 screen: Width=911
+1920x977 screen: XPosition=1003
+1920x977 screen: YPosition=197
+640x480 screen: Height=395
+640x480 screen: Width=630
+640x480 screen: XPosition=6
+640x480 screen: YPosition=81
+958x968 screen: Height=524
+958x968 screen: Width=911
+958x968 screen: XPosition=6
+958x968 screen: YPosition=33
+State=AAAA/wAAAAD9AAAAAQAAAAAAAAAAAAAAAPwCAAAAAvsAAAAcAFMAUwBIAE0AYQBuAGEAZwBlAHIARABvAGMAawAAAAAA/////wAAAREA////+wAAACIAUQB1AGkAYwBrAEMAbwBtAG0AYQBuAGQAcwBEAG8AYwBrAAAAAAD/////AAABcgD///8AAAOPAAAB3gAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABwAcwBlAHMAcwBpAG8AbgBUAG8AbwBsAGIAYQByAQAAATn/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Virtual1=Virtual1
+
+[UiSettings]
+ColorScheme=

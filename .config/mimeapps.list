@@ -1,0 +1,5 @@
+[Added Associations]
+application/x-trash=firefox.desktop;
+
+[Default Applications]
+application/x-trash=firefox.desktop

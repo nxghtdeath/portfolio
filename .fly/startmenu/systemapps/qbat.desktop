@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=QBat
+Name[ru]=Монитор батарей QBat
+GenericName=Qt Battery Monitor
+Type=Application
+Comment=QBat is batery monitor program
+Comment[ru]=Программа QBat для мониторинга батарей
+Exec=qbat
+Icon=qbat
+Categories=System
+OnlyShowIn=fly;fly-tablet
+X-Fly-OriginFile=/usr/share/applications/qbat.desktop

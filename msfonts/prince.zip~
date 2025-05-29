@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html xmlns="//www.w3.org/1999/xhtml">
+
+<!-- об игре -->
+<head>
+	<meta charset="utf-8" />
+	<!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<title>
+    Скачать Prince of Persia (DOS) 
+    1990 
+      </title>
+  <meta name="keywords" content="Prince of Persia " />
+  <meta name="description" content="Prince of Persia - это игра, созданная разработчиком Broderbund Software вышедшая в 1990 году на платформу DOS. Игра имеет жанр Аркады (От 3-ого лица, Платформеры / Загадки и головоломки)" /> 
+
+  
+<link rel="canonical" href="https://dosgames.ru/games/dos/prince-of-persia/" />
+
+<meta property="og:title" content="Prince of Persia (DOS, Arcade, 1990)" />
+<meta property="og:description" content="&ldquo;Принц Персии&rdquo; это двухмерный платформер, в котором игроку предстоит бегать и прыгать по подземелью&nbsp; сражаясь при этом на мечах.&nbsp; Отличительная..." />
+<meta property="og:image" content="https://dosgames.ru/public/images/game/90/poster/t-poster.jpg" />
+<meta property="og:site_name" content="DosGames" />
+<meta property="og:url" content="https://dosgames.ru/games/dos/prince-of-persia/" />
+<meta property="og:type" content="game" />
+
+<meta name="title" content="Prince of Persia (DOS, Arcade, 1990)" />
+<meta name="image" content="https://dosgames.ru/public/images/game/90/poster/poster.jpg" />
+
+
+<link rel="alternate" type="application/rss+xml" title="Dosgames news" href="https://dosgames.ru/news/rss/" />
+
+<style>
+/* табы в карточке играх */
+  #tabs { 
+      padding: 0px; 
+      background: none; 
+      border: 0px; 
+  } 
+  
+  #tabs a {color:#fff}
+  
+  #tabs .ui-tabs-nav { 
+      padding-left: 0px; 
+      background: transparent; 
+      border: 0; 
+  
+  } 
+  #tabs .ui-tabs-panel { 
+      background: #fff; 
+      border: 0px;
+      -moz-border-radius: 0px; 
+      -webkit-border-radius: 0px; 
+      border-radius: 0px;
+  }	
+  
+  #tabs .ui-state-default {margin-right: 3px;
+  	background: #316cbb; 
+  	color: #fff; 
+  	border: 0px;  
+  	-moz-border-radius: 0px; 
+      -webkit-border-radius: 0px; 
+      border-radius: 0px;}
+  #tabs .ui-state-hover {background: #4684d7}
+  #tabs .ui-state-active {background: #fff}
+  #tabs .ui-state-active a{color: #000}
+</style>
+
+
+<link rel="stylesheet" href="/public/css/message_window.css"  />
+
+
+<link rel="icon" href="/public/images/favicon.svg" type="image/x-icon">
+
+	<link rel="stylesheet" href="/public/css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/public/css/main-menu.css" media="all">
+	<link rel="stylesheet" href="/public/css/lightbox.css"  />
+<!--	<link rel="stylesheet" href="/public/css/ikSelect.css" media="all">
+	<link rel="stylesheet" href="/public/css/ikSelectOSX.css" media="all"> -->
+	<link rel="stylesheet" href="/public/css/jquery.fancybox.css" type="text/css" media="screen" />
+	<script src="/public/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<!--	<script src="/public/js/jquery.jcarousel.min.js"></script> -->
+	<script src="/public/js/lightbox-2.6.min.js"></script>
+<!--	<script src="/public/js/jquery.ikSelect.min.js"></script> -->
+	<script src="/public/js/jquery.fancybox.pack.js" type="text/javascript" ></script>
+	<script src="/public/js/main.js" type="text/javascript"></script>
+  <script src="/public/js/autosize.min.js" type="text/javascript"></script>
+  <script src="/public/js/comments.js" type="text/javascript"></script>
+  <script src="/public/scripts/jquery.timeago/jquery.timeago.js" type="text/javascript"></script>
+  <script src="/public/scripts/jquery.timeago/jquery.timeago.ru.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/public/css/rating.css" />
+  <script src="/public/js/rating.js" type="text/javascript"></script>
+	
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">	
+	<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	
+
+<script type="text/javascript" src="/public/scripts/client/auth.js?1442060270"></script>
+<script type="text/javascript" src="/public/scripts/lightbox.js?1442060278"></script>
+<script type="text/javascript" src="/public/scripts/client/game_view.js?1442060270"></script>
+
+
+<!-- head -->
+
+<!-- сюда вставлять head -->
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+
+
+
+
+<!-- комментарии вконтакте -->
+<script type="text/javascript" src="//userapi.com/js/api/openapi.js?45"></script>
+<script type="text/javascript">
+  VK.init({apiId: 2702535, onlyWidgets: true});
+</script>
+
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+
+<script src="/public/js/jquery.form.min.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#tabs").tabs();
+    $("#tabs").show();    
+  }); 
+
+  var want_download_sending = false;
+  function want_download(game_id) {  
+    if (!want_download_sending) {
+      want_download_sending = true;
+    	$.post('/games/want_download/', {
+    		game_id: game_id
+      }, function(data) {
+        want_download_sending = false;
+        eval(data);
+    	});	
+    }
+  }
+  
+</script>
+
+<style>
+  .gc-image .on_moderation {
+    background-color: #000000;
+    bottom: 9px;
+    color: #FFFFFF;
+    height: 40px;
+    left: 6px;
+    padding-top: 10px;
+    position: absolute;
+    text-align: center;
+    width: 170px;
+  }
+
+</style>
+
+
+</head>
+<body>
+
+
+<!-- код проверки раздела для отображения баннера -->
+  
+<!-- / код проверки раздела для отображения баннера -->
+
+
+ 
+<!--a rel="nofollow" class="top-link" href="javascript: void(0);" onclick="window.open('//wgpartner.com/?a=521&c=2044&s1='); return false;"></a-->
+
+  <div class="top-container">    
+    <div class="top-wrapper">
+      <a id="top-logo" title="Dosgames - Старые игры" href="/">
+        <img src="/public/images/logo-dosgames.png" style="padding-top: 3px; width: 144px" alt="Dosgames - Старые игры" title="Dosgames - Старые игры"/>
+      </a>
+      <div class="top-search">
+        <div id="search-autocomplete"></div>
+  			<form action="/search/simplesearch/" method="GET" id=main-search-form>
+  				<input id="main-search" type="text" name="input" value="" placeholder="Название игры" />
+  				<input type="submit" value="" />
+  			</form>
+  	  </div>
+      <noindex>    	
+      		            <div class="top-login-links">
+              <a rel="nofollow" href="/windows/?name=login_form" id="login-link" class="popup fancybox.ajax">Вход</a>
+              <a rel="nofollow" href="/registration/">Регистрация</a>
+            </div>
+      		     
+    	</noindex>
+    </div>
+  </div> 
+  
+
+<div style="background: #4c4c4c; padding-top: 50px"> 
+<div style="width: 960px; margin: auto;">	   
+<div style="background:#4c4c4c; padding: 9px 0 9px 288px; color: #c0c0c0; font-size: 12px">
+
+  	<i class="fas fa-edit"></i> <a rel="nofollow" href="/windows/?name=edit_game" class="popup fancybox.ajax" style="color: #c0c0c0; display: inline-block; margin-right: 35px"  onclick="yaCounter10949122.reachGoal('redgameno'); return true;">Редактирвать игру</a>
+            
+ <i class="far fa-plus-square"></i> <a rel="nofollow" href="/windows/?name=add_article" class="popup fancybox.ajax" style="color: #c0c0c0; display: inline-block; margin-right: 35px" onclick="yaCounter10949122.reachGoal('redarticle'); return true;">Добавить обзор</a>
+
+       
+
+<i class="fas fa-heart" style="color: red"></i> <a rel="nofollow" href="/windows/?name=donate" class="popup fancybox.ajax" style="font-size: 12px; color: #c0c0c0; display: inline-block; margin-right: 20px; text-decoration: none;" onclick="yaCounter10949122.reachGoal('donat'); return true;">Поддержите нас</a>
+
+</div>
+</div>
+</div> 
+
+  
+<div style="height:35px"></div>
+
+
+
+
+	  
+	  
+<!--<div class="adb" style="display: none;">
+	
+у вас включен адюлок
+	
+</div> -->
+
+
+
+
+	  
+  
+  
+  
+  
+  
+   <script type="text/javascript">
+  function show_window(id, settings) {
+    settings = settings || {};
+    id = '#' + id;
+    if ($(id).attr('class') == 'information_window') {
+      $(id + '[data-processed != "yes"]').each(function() {
+        buttons = $(id).data('buttons').split(',');
+        $(id).html($(id).html() + "<div class=buttons></div>");
+        $('#message_window_buttons input[data-button]').each(function() {
+          if ($.inArray($(this).data('button'), buttons) != -1) 
+            $(this).clone(true).appendTo(id + ' .buttons');
+        });
+        $(id + ' .caption').html($(id + ' .caption').html() + '<div class="close" data-button="close">X</div>');
+        $(id + ' div[data-button], ' + id + ' input[data-button]').attr('onclick', 'window.' + $(id).data('result-function') + '({button: $(this).attr("data-button")})');
+        $(id).attr('data-processed', 'yes');
+      });
+      $.fancybox({
+        maxWidth: 500,
+        wrapCSS: "information_window_shadow",
+        helpers : {
+          overlay: {
+    			  locked: false,
+            css : {
+              'background' : 'none'
+            }
+    			}
+        },
+        tpl: {
+  				closeBtn: ''
+  			},
+        'href' : id
+    	});  
+    }  
+  } 
+</script>
+
+<div id="message_window_buttons" style="display: none;">
+  <input type="button" class="button-orange v2" data-button="load_screens" value="Загрузить скриншоты"/>
+  <input type="button" class="button-orange v2" data-button="login" value="Войти"/>
+  <input type="button" class="button-orange v2" data-button="ok" value="ОК"/>
+  <input type="button" class="button-orange v2" data-button="cancel" value="Отмена"/>    
+</div>
+<div id="wrapper">
+
+<header id="header">
+  
+<ul class="main-menu">
+
+<li><a href="/game/" title="Старые игры">Скачать игры</a>
+
+<div id="menu-oldgames">
+
+<div class="block">
+<a rel="nofollow" href="/game/dos/top/" class="menudos"></a>
+
+<p class="plat-oldgames"><span class="color-dos">DOS</span> Лучшие игры</p>
+	
+<ol>
+<li><a rel="nofollow" href="/games/dos/another-world/">Another World</a>
+<li><a rel="nofollow" href="/games/dos/elite/">Elite</a>
+<li><a rel="nofollow" href="/games/dos/doom-ii-hell-on-earth/">Doom 2</a>
+<li><a rel="nofollow" href="/games/dos/flashback-the-quest-for-identity/">Flashback</a>
+<li><a rel="nofollow" href="/games/dos/alone-in-the-dark/">Alone in the Dark</a>
+</ol>
+
+<div class="block1">
+<ol>
+<li><a href="/articles/dosbox-instruktsija-kak-zapustit-igru/">Эмулятор DOSBox</a>
+<li><a href="/game/dos/">Все игры DOS</a> (5400)
+</ol>
+</div>
+
+</div>
+
+<!-------------------------------------- /-->
+
+<div class="block">
+<a rel="nofollow" href="/game/sega/top/" class="menusegagen"></a>
+
+<p class="plat-oldgames"><span class="color-segagen">SEGA</span> Лучшие игры</p>
+	
+<ol>
+<li><a rel="nofollow" href="/games/sega/cool-spot/">Cool Spot</a>
+<li><a rel="nofollow" href="/games/sega/earthworm-jim-2/">Earthworm Jim 2</a>
+<li><a rel="nofollow" href="/games/sega/golden-axe/">Golden Axe</a>
+<li><a rel="nofollow" href="/games/sega/the-lion-king/">Lion King</a>
+<li><a rel="nofollow" href="/games/sega/mortal-kombat-3/">Mortal Kombat-3</a>
+</ol>
+
+<div class="block1">
+<ol>
+<li><a href="/articles/sega-genesis-mega-drive-kak-zapustit-igry/">Эмуляторы SEGA</a>
+<li><a href="/game/sega/">Все игры SEGA</a> (948)
+</ol>
+</div>
+
+</div>
+
+<!-------------------------------------- /-->
+
+<div class="block">
+<a rel="nofollow" href="/game/nes/top/" class="menunes"></a>
+
+<p class="plat-oldgames"><span class="color-nes">NES</span> Лучшие игры</p>
+	
+<ol>
+<li><a rel="nofollow" href="/games/nes/battle-city/">Battle City</a>
+<li><a rel="nofollow" href="/games/nes/battletoads/">Battletoads</a>
+<li><a rel="nofollow" href="/games/nes/bomberman/">Bomberman</a>
+<li><a rel="nofollow" href="/games/nes/darkwing-duck/">Darkwing Duck</a>
+<li><a rel="nofollow" href="/games/nes/robocop-3/">RoboCop 3</a>
+</ol>
+
+<div class="block1">
+<ol>
+<li><a href="/articles/dendy-nes-kak-zapustit-igry/">Эмуляторы NES</a>
+<li><a href="/game/nes/">Все игры NES</a> (1212)
+</ol>
+</div>
+
+</div>
+
+<!-------------------------------------- / -->
+
+<div class="block">
+<a rel="nofollow" href="/game/snes/top/" class="menusnes"></a>
+
+<p class="plat-oldgames"><span class="color-snes">SNES</span> Лучшие игры</p>
+	
+<ol>
+<li><a rel="nofollow" href="/games/snes/alien-vs-predator/">Alien Vs. Predator</a>
+<li><a rel="nofollow" href="/games/snes/the-addams-family/">Addams Family</a>
+<li><a rel="nofollow" href="/games/snes/art-of-fighting-2/">Art of Fighting 2</a>
+<li><a rel="nofollow" href="/games/snes/batman-forever/">Batman Forever</a>
+<li><a rel="nofollow" href="/games/snes/battletoads-double-dragon-the-ultimate-team/">Battletoads & Double Dragon</a>
+</ol>
+
+<div class="block1">
+<ol>
+<li><a href="/articles/snes-super-nintendo-kak-zapustit-igry/">Эмуляторы SNES</a>
+<li><a href="/game/snes/">Все игры SNES</a> (1101)
+</ol>
+</div>
+
+</div>
+
+</div>
+</li>
+<li><a href="/cheat/last/" title="Чит коды">Чит коды</a></li>
+<li><a href="/article/category/obzoryi/" title="Ретро-обзоры">Ретро обзоры</a>
+
+<div id="menu-stati">
+
+<div style="float: left; width: 165px; height: 150px; margin: 10px 0 0 15px">
+
+<p style="line-height: 17px; color:#888888">Стань автором. Напиши ретро-обзор на свою любимую игру.</p>	
+
+  	<a rel="nofollow"  href="/windows/?name=login_form" class="button-orange popup fancybox.ajax" style="padding: 3px 10px"> Написать в блог </a>
+      
+</div>	
+
+<!-- меню -->
+
+<div style="float: left; width: 165px; height: 150px; margin: 10px 0 0 20px">
+<a rel="nofollow" href="/articles/prey/"><img style="margin:0px; padding: 0px; border: 3px solid #fff" src="/public/images/articles/368/image.jpg" alt="Prey 2006" width="165" height="120" /></a>
+<br style="clear:both">
+<a rel="nofollow" style="color: black; line-height: 18px" href="/articles/prey/">Prey 2006</a>
+</div>
+
+
+<div style="float: left; width: 165px; height: 150px; margin: 10px 0 0 20px">
+<a rel="nofollow" href="/articles/chip-n-dale-rescue-rangers/"><img style="margin:0px; padding: 0px; border: 3px solid #fff" src="/public/images/articles/304/image.gif" alt="Chip 'N Dale: Rescue Rangers" width="165" height="120" /></a>
+<br style="clear:both">
+<a rel="nofollow" style="color: black; line-height: 18px" href="/articles/chip-n-dale-rescue-rangers/">Chip 'N Dale: Rescue Rangers</a>
+</div>
+
+
+<div style="float: left; width: 165px; height: 150px; margin: 10px 0 0 20px">
+<a rel="nofollow" href="/articles/heroquest/"><img style="margin:0px; padding: 0px; border: 3px solid #fff" src="/public/images/articles/191/image.jpg" alt="HeroQuest" width="165" height="120" /></a>
+<br style="clear:both">
+<a rel="nofollow" style="color: black; line-height: 18px" href="/articles/heroquest/">HeroQuest</a>
+</div>
+
+
+<div style="float: left; width: 165px; height: 150px; margin: 10px 0 0 20px">
+<a rel="nofollow" href="/articles/dune-2/"><img style="margin:0px; padding: 0px; border: 3px solid #fff" src="/public/images/articles/13/image.gif" alt="Dune 2" width="165" height="120" /></a>
+<br style="clear:both">
+<a rel="nofollow" style="color: black; line-height: 18px" href="/articles/dune-2/">Dune 2</a>
+</div>
+
+
+<div style="float: left; width: 20px; height: 150px; margin: 60px 0px 0 15px; padding-left: 10px">
+<a rel="nofollow" href="/article/category/obzoryi/" style="display: block; padding: 25px 7px; background: #eaeaea; border: 1px solid #c0c0c0; color: #4a4949; text-decoration: none; font-size: 11px; font-family: arial">&gt;</a>
+</div>
+</div>
+
+</li>
+<li><a href="/article/category/emulyatoryi/" title="Эмуляторы">Эмуляторы</a></li>
+<li><a href="/article/category/onlayn-igryi/" title="Онлайн игры">Онлайн игры</a></li>
+<li><a href="/article/category/blogi/" title="Онлайн игры">Блоги</a>
+
+<div id="menu-stati">
+
+<div style="float: left; width: 165px; height: 150px; margin: 10px 0 0 15px">
+
+<p style="line-height: 17px; color:#888888">Стань автором. Напиши свою статью на игровую или околоигровую тематику.</p>	
+
+  	<a rel="nofollow"  href="/windows/?name=login_form" class="button-orange popup fancybox.ajax" style="padding: 3px 10px"> Написать в блог </a>
+      
+</div>	
+
+<!-- меню -->
+
+<div style="float: left; width: 165px; height: 150px; margin: 10px 0 0 20px">
+<a rel="nofollow" href="/articles/kak-polzovatsja-artmoney/"><img style="margin:0px; padding: 0px; border: 3px solid #fff" src="/public/images/articles/164/image.gif" alt="Как пользоваться Artmoney" width="165" height="120" /></a>
+<br style="clear:both">
+<a rel="nofollow" style="color: black; line-height: 18px" href="/articles/kak-polzovatsja-artmoney/">Как пользоваться Artmoney</a>
+</div>
+
+
+<div style="float: left; width: 165px; height: 150px; margin: 10px 0 0 20px">
+<a rel="nofollow" href="/articles/igrat-v-piratov-samye-interesnye-strategii-onlajn/"><img style="margin:0px; padding: 0px; border: 3px solid #fff" src="/public/images/articles/519/image.jpg" alt="Играть в пиратов: самые интересные стратегии онлайн" width="165" height="120" /></a>
+<br style="clear:both">
+<a rel="nofollow" style="color: black; line-height: 18px" href="/articles/igrat-v-piratov-samye-interesnye-strategii-onlajn/">Играть в пиратов: самые интересные стратегии онлайн</a>
+</div>
+
+
+<div style="float: left; width: 165px; height: 150px; margin: 10px 0 0 20px">
+<a rel="nofollow" href="/articles/madzhong-klassicheskij/"><img style="margin:0px; padding: 0px; border: 3px solid #fff" src="/public/images/articles/548/image.jpg" alt="Маджонг Классический - Пять причин сыграть" width="165" height="120" /></a>
+<br style="clear:both">
+<a rel="nofollow" style="color: black; line-height: 18px" href="/articles/madzhong-klassicheskij/">Маджонг Классический - Пять причин сыграть</a>
+</div>
+
+
+<div style="float: left; width: 165px; height: 150px; margin: 10px 0 0 20px">
+<a rel="nofollow" href="/articles/spisok-samyh-uspeshnyh-igr-v-steam-po-itogam-2020/"><img style="margin:0px; padding: 0px; border: 3px solid #fff" src="/public/images/articles/780/image.jpg" alt="Список самых успешных игр в Steam по итогам 2020" width="165" height="120" /></a>
+<br style="clear:both">
+<a rel="nofollow" style="color: black; line-height: 18px" href="/articles/spisok-samyh-uspeshnyh-igr-v-steam-po-itogam-2020/">Список самых успешных игр в Steam по итогам 2020</a>
+</div>
+
+
+<div style="float: left; width: 20px; height: 150px; margin: 60px 0px 0 15px; padding-left: 10px">
+<a rel="nofollow" href="/article/category/blogi/" style="display: block; padding: 25px 7px; background: #eaeaea; border: 1px solid #c0c0c0; color: #4a4949; text-decoration: none; font-size: 11px; font-family: arial">&gt;</a>
+</div>
+</div>
+
+
+</li>
+
+<li><a rel="nofollow" href="https://forum.dosgames.ru/" title="Форум">Форум</a></li>
+</ul>
+
+
+							
+<div class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/"><span itemprop="name">DOSGAMES</span></a>
+<meta itemprop="position" content="1" /></span>
+
+<span class="b-marker"></span>
+	
+<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/game/"><span itemprop="name">Каталог игр</span></a>
+<meta itemprop="position" content="2" /></span>
+		
+<span class="b-marker"></span>
+		
+	<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a rel="nofollow" itemprop="item" href="/games/prince-of-persia/"><span itemprop="name">Prince of Persia</span></a>
+	<meta itemprop="position" content="3" />
+	</span>
+		
+<!--span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a rel="nofollow" itemprop="item" href="/game/dos/"><span itemprop="name">DOS</span></a-->
+			
+
+</div>
+		
+<!-- не показывать баннер в разделе -->
+<div class="h-bnr" style="height: 90px; padding: 5px 0 10px 0;">
+	
+<!-- Yandex.RTB R-A-245127-3 -->
+<div id="yandex_rtb_R-A-245127-3" style="height: 90px;"></div>
+<script type="text/javascript">
+    (function(w, d, n, s, t) {
+        w[n] = w[n] || [];
+        w[n].push(function() {
+            Ya.Context.AdvManager.render({
+                blockId: "R-A-245127-3",
+                renderTo: "yandex_rtb_R-A-245127-3",
+                async: true
+            });
+        });
+        t = d.getElementsByTagName("script")[0];
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.src = "//an.yandex.ru/system/context.js";
+        s.async = true;
+        t.parentNode.insertBefore(s, t);
+    })(this, this.document, "yandexContextAsyncCallbacks");
+</script>
+
+</div>
+
+
+
+<!-- / не показывать баннер в разделе -->
+
+
+	</header><!-- #header-->
+
+	<section id="middle">
+
+		<div id="container">
+			<div id="content">
+				<div class="content-inner">
+
+					
+<div class="hc-title-games">
+<h1><!--a rel="nofollow" style="font-size: 32px; text-decoration: none" href="/games/prince-of-persia/"-->Prince of Persia<!--(DOS)--><!--/a--></h1>
+
+<p style="padding:0; margin: 10px 0 10px 0">
+	
+<span style="display: inline-block; background: #000; padding: 4px; color: #fff">DOS</span> 
+	
+ <span style="display: inline-block; padding: 0 5px 0 10px">др. платформы</span>
+<a style="text-decoration: none; border: 1px solid #c0c0c0; padding: 2px; color: #000" href="/games/nes/prince-of-persia/" >NES</a>
+ <a style="text-decoration: none; border: 1px solid #c0c0c0; padding: 2px; color: #000" href="/games/sega/prince-of-persia/" >SEGA</a>
+ <a style="text-decoration: none; border: 1px solid #c0c0c0; padding: 2px; color: #000" href="/games/snes/prince-of-persia/" >SNES</a>
+ 
+</p>
+
+</div>
+
+<div class="hc-title-line">
+<div style="width: 450px;float: left;">	
+
+<div id="vk_count" style="display: inline-block; background: url(/public/images/comment.png) no-repeat left center; padding-left: 18px; margin: 3px 0 0 0px; font-size: 11px"></div>
+<script type="text/javascript">
+VK.Api.call('widgets.getComments', 
+{widget_api_id: "2702535", url: document.URL}, 
+function(obj) {
+document.getElementById('vk_count').innerHTML = 'всего:' + obj.response.count;
+});
+</script>
+
+</div>
+<div style="margin-left: 450px; text-align: right; font-size: 11px">
+<a rel="nofollow" href="/windows/?name=contact_form&theme=2" class="popup fancybox.ajax" style="color: #000; text-decoration:none; border-bottom: 1px dashed #000">Нашли ошибку?</a></div>
+    
+</div>
+
+					
+<div class="gblock">
+
+<div class="game-card">
+
+<div class="gc-image" style="position: relative">
+        <a rel="nofollow" title="Постер: Prince of Persia" data-lightbox="poster" href="/public/images/game/90/poster/poster.jpg">
+    <img class="poster_img" src="/public/images/game/90/poster/t-poster.jpg" alt="Постер Prince of Persia" title="Постер Prince of Persia" /></a>        
+  <!-- Загрузка постера пользователями -->
+      <div class='on_moderation' style="display: none">На проверке модератором<br>
+    <a rel="nofollow" style="text-decoration: none; border-bottom: 1px dashed; cursor: pointer; color: #e509a9; font-weight: bold;" href="/user/edit_content/90/1/">Редактировать</a></div>
+  <!-- /Загрузка постера пользователями -->  
+</div>
+
+<div class="gc-info">
+<table class="gc-table">
+<tr>
+<th>Платформа:</th>
+<td>DOS</td>
+</tr>
+									
+<tr>
+<th>Язык:</th>
+<td>
+		
+		<img src="/public/images/language/1.gif" border="0" alt="" />
+		
+	  English	
+	</td>
+</tr>
+
+
+<tr>
+<th>Год:</th>
+<td><a rel="nofollow" href="/game/year/1990/">1990</a></td>
+</tr>
+
+
+
+<tr>
+<th>Жанр:</th>
+<td>
+  <a rel="nofollow"  href="/game/genre/arcade/">
+  Аркады</a>
+(<a rel="nofollow"  href="/game/vid/3rd_person/">От 3-ого лица</a>, <a rel="nofollow"  href="/game/vid/platform/">Платформеры</a> 
+ / <a rel="nofollow"  href="/game/non_sport/puzzle-solving/">Загадки и головоломки</a>)
+
+</td>
+</tr>
+
+<tr>
+<th>Разработчик:</th>
+<td><!--<a rel="nofollow"  href="/game/developer/broderbund_software/">-->Broderbund Software<!--/a-->
+</td>
+</tr>
+
+<tr>
+<th>Издатель:</th>
+<td class="featuresG1"><!--a  href="/game/publisher/broderbund_software/" -->Broderbund Software<!--/a--></td>
+</tr>
+
+
+</table>
+			
+
+</div><!-- .gc-info -->
+
+<div class="gc-add">
+
+<span style="font-size: 16px; margin-left: 10px; margin-top: 7px; display:block">Ваша оценка:</span>
+<!-- рейтинг -->
+<input type="hidden" id="rating_val" value="4.47671" />
+<input type="hidden" id="game_id" value="90" />
+								
+<div class="gc-rating">
+<div class="gc-rating-stars">
+ 
+ <div id="raiting_star" style="margin: 9px 0 0 3px">
+	<div id="raiting">
+	<div id="raiting_blank"></div>
+	<div id="raiting_hover"></div>
+	<div id="raiting_votes"></div>
+	</div>
+	
+</div>
+</div>
+<div class="gc-rating-value" id="rating_p">4.47</div>
+<div class="gc-rating-votes"><span id="rating_people">193</span>голосов</div>
+
+</div>
+<!-- / рейтинг -->
+
+</div>
+
+							
+							<!-- .gs-add -->
+						</div><!-- .game-card -->          
+					</div><!-- .gblock -->
+					
+<div style="padding: 0 20px 20px 20px">
+<div style="display:block; margin-top: 10px; font-size: 13px; font-family: arial">
+     <span style="display: inline-block; text-decoration: none; border: 1px solid #c0c0c0; padding: 3px 5px; margin-right: 7px; color: #000;">
+     <i class="fas fa-info-circle"></i> Об игре   </span>
+     <span style="display: inline-block; text-decoration: none; border: 1px solid #c0c0c0; padding: 3px 5px; margin-right: 7px; color: #000;">
+     <i class="fas fa-key"></i> Чит-коды   </span>
+     <span style="display: inline-block; text-decoration: none; border: 1px solid #c0c0c0; padding: 3px 5px; margin-right: 7px; color: #000;">
+     <i class="fas fa-pencil-alt"></i> Статьи   </span>
+     <a style="display: inline-block; text-decoration: none; border: 1px solid #c0c0c0; padding: 3px 5px; margin-right: 7px; color: #000;" href="/games/dos/prince-of-persia/screenshots/" >
+     <i class="fas fa-image"></i> Скриншоты (6)   </a>
+     <a style="display: inline-block; text-decoration: none; border: 1px solid #c0c0c0; padding: 3px 5px; margin-right: 7px; color: #000;" href="/games/dos/prince-of-persia/#download" >
+     <i class="fas fa-save"></i> Скачать игру   </a>
+  
+  <div style="float: right; margin-top: 3px">
+    <a class="show_edit_content_menu" style="color: #fff; background: green; padding: 3px 5px; text-decoration: none;" href="#"> <i class="fas fa-plus-circle"></i> Добавить инфо</a>
+  	<ul class="edit_content_menu" style="display:none; background: black; z-index: -5">
+        	  <li class="login_str">
+          <a rel="nofollow" href="/registration/">зарегистрируйтесь</a><br><span>или </span><a rel="nofollow" href="/windows/?name=login_form" class="popup fancybox.ajax">войдите в систему</a>
+      </li>
+            <li><a rel="nofollow" href="/windows/?name=login_form" class="popup fancybox.ajax">Скриншоты</a></li> 
+           
+      <li><a rel="nofollow" href="/windows/?name=login_form" class="popup fancybox.ajax">Описание</a></li>
+      <li><a rel="nofollow" href="/windows/?name=login_form" class="popup fancybox.ajax">Чит-коды</a></li>
+      <!--<li><a rel="nofollow" href="/windows/?name=login_form" class="popup fancybox.ajax">статьи</a></li>
+      <li><a rel="nofollow" href="/windows/?name=login_form" class="popup fancybox.ajax">новости</a></li>-->
+      <li><a rel="nofollow" href="/windows/?name=login_form" class="popup fancybox.ajax">Постер</a></li>
+      <li><a rel="nofollow" href="/windows/?name=login_form" class="popup fancybox.ajax">Блог</a></li>
+        
+    </ul>
+  </div>
+</div>
+<script>
+	$(document).click( function(event){
+		if( $(event.target).closest(".edit_content_menu").length ) 
+		return;
+		$(".edit_content_menu").slideUp("fast");
+		event.stopPropagation();
+	});
+	$('.show_edit_content_menu').click( function() {
+		$(this).siblings(".edit_content_menu").slideToggle("fast");
+		return false;
+	});
+</script></div>
+
+<div class="padding-text">
+
+<div style="max-height: 200px; margin: 10px 0 30px 0">
+    <!-- Yandex.RTB R-A-245127-40 -->
+    <div id="yandex_rtb_R-A-245127-40"></div>
+    <script>
+    window.yaContextCb.push(()=>{
+      Ya.Context.AdvManager.render({
+        renderTo: 'yandex_rtb_R-A-245127-40',
+        blockId: 'R-A-245127-40'
+      })
+    })
+    </script>
+    </div>
+
+	
+<h2>Описание игры</h2>
+
+
+<script src="https://yastatic.net/share2/share.js"></script>
+<div style="padding: 10px" class="ya-share2" data-curtain data-shape="round" data-limit="5" data-services="vkontakte,facebook,odnoklassniki,telegram,twitter,viber,whatsapp,moimir,pocket"></div>
+
+
+
+<div style="line-height: 22px; font-size: 15px; padding: 0px 20px">
+    <div id="result"></div>
+    <div class="text_content">
+      <p>&ldquo;Принц Персии&rdquo; это двухмерный платформер, в котором игроку предстоит бегать и прыгать по подземелью&nbsp; сражаясь при этом на мечах.&nbsp; Отличительная черта игры &ndash; очень плавные движения персонажей.</p>
+
+<p>Действия игры переносят нас в Персию.&nbsp; Султан страны ведет войну, а в это время его визирь по имени Джаффар предпринимает попытку захвата трона. Злой визирь посягает также на принцессу &ndash; ей нужно выбрать, стать женой захватчика, или умереть.&nbsp; Но у принцессы уже есть жених, принц, заточенный в тюрьму коварным визирем. Задача принца &ndash; сбежать из тюрьмы и спасти свою принцессу до того, как отведенное визирем время истечет. Действия происходят в реальном времени. Если главный герой не успевает вложиться по времени, он проигрывает. Если его убивают, уровень придется начинать сначала. Сражаясь и падая, принц теряет энергию, которую можно восстановить, если выпить заботливо спрятанные создателями различные зелья. Чтобы добыть зелье, герою нужно отклониться от маршрута и подвергнуть себя опасности. На особо важных участках лабиринтов герой встретится с&nbsp; охранниками. В конце игры принцу предстоит схватка с Джаффаром.&nbsp; Спасет ли он принцессу, будет зависеть от решающей схватки с предателем&ndash;визирем.</p>  
+    </div>
+    <div class="text_moderated" style="display:none" >
+      <p style="color:#FF0000">Ожидает модерации!</p>
+      <p>
+        <a rel="nofollow" style="text-decoration: none; border-bottom: 1px dashed; cursor: pointer; color: #e509a9; font-weight: bold;" href="/user/edit_content/90/5/">Редактировать описание</a>
+      </p>
+    </div>
+  </div>
+  <div> 
+ <!--     <a rel="nofollow" href="/windows/?name=login_form" class="popup fancybox.ajax">Добавить чит-код</a>
+    
+  <br>
+      <a rel="nofollow" href="/windows/?name=login_form" class="popup fancybox.ajax">Добавить блог</a>
+  -->  
+  </div>
+  
+  
+  
+  
+<!-- статьи -->
+<!-- / статьи -->
+
+
+<div style="float: left; display: inline-block;overflow-y: auto; max-height: 220px; padding-right: 15px">
+<p style="font-weight: 700">Альтернативные названия:</p>
+<ul class="alter-list">
+<li>Prince of Persia® Retro</li>
+<li>Prince de Perse</li>
+<li>Pers Prensi</li>
+<li>PoP</li>
+<li>プリンスオブペルシャ</li>
+<li>הנסיך - דו קרב בארמון</li>
+<li>הנסיך הפרסי</li>
+</ul>
+</div>
+
+<div style="float: left; display: inline-block;overflow-y: auto; max-height: 220px; padding-right: 15px">
+<p style="font-weight: 700">Серия:</p>
+<ul class="alter-list">
+      <li><strong>Prince of Persia</strong></li>
+        <li><a href="/games/dos/prince-of-persia-4d/" >Prince of Persia (4D)</a></li>
+        <li><a href="/games/dos/prince-of-persia-2-the-shadow-the-flame/" >Prince of Persia 2: The Shadow & The Flame</a></li>
+    </ul>
+</div>
+
+<div style="clear:both"></div>
+
+
+<!-- читы 
+
+
+ / читы -->
+
+<!-- новости 
+/ новости -->
+
+
+</div><!-- .padding-text -->
+
+
+
+<div style="max-height: 200px; margin: 25px 20px">
+  <!-- Yandex.RTB R-A-245127-4 -->
+<div id="yandex_rtb_R-A-245127-4"></div>
+<script>window.yaContextCb.push(()=>{
+  Ya.Context.AdvManager.render({
+    renderTo: 'yandex_rtb_R-A-245127-4',
+    blockId: 'R-A-245127-4'
+  })
+})</script>
+
+
+<div class="adb" style="display: none;">
+	
+<!--<a href="//wgpartner.com/?a=521&c=2170&s1=" rel="nofollow"><img src="/other/inc/w333.jpg" alt="" width="333" height="278" /></a>-->
+	
+</div>  </div>
+
+
+				
+
+
+<div style="padding: 20px 0 10px 20px;">
+					
+<div >
+
+<a rel="nofollow" data-lightbox="screenshots" href="/public/images/game/90/screenshot/prince-of-persia_386.gif"><img alt="Prince of Persia" src="/public/images/game/90/screenshot/t-prince-of-persia_386.gif" width="165" height="120" style="float:left; margin: 0 15px 15px 0" /></a>
+<a rel="nofollow" data-lightbox="screenshots" href="/public/images/game/90/screenshot/prince-of-persia_387.gif"><img alt="Prince of Persia" src="/public/images/game/90/screenshot/t-prince-of-persia_387.gif" width="165" height="120" style="float:left; margin: 0 15px 15px 0" /></a>
+<a rel="nofollow" data-lightbox="screenshots" href="/public/images/game/90/screenshot/prince-of-persia_388.gif"><img alt="Prince of Persia" src="/public/images/game/90/screenshot/t-prince-of-persia_388.gif" width="165" height="120" style="float:left; margin: 0 15px 15px 0" /></a>
+<a rel="nofollow" data-lightbox="screenshots" href="/public/images/game/90/screenshot/prince-of-persia_389.gif"><img alt="Prince of Persia" src="/public/images/game/90/screenshot/t-prince-of-persia_389.gif" width="165" height="120" style="float:left; margin: 0 15px 15px 0" /></a>
+<a rel="nofollow" data-lightbox="screenshots" href="/public/images/game/90/screenshot/prince-of-persia_390.gif"><img alt="Prince of Persia" src="/public/images/game/90/screenshot/t-prince-of-persia_390.gif" width="165" height="120" style="float:left; margin: 0 15px 15px 0" /></a>
+<a rel="nofollow" data-lightbox="screenshots" href="/public/images/game/90/screenshot/prince-of-persia_391.gif"><img alt="Prince of Persia" src="/public/images/game/90/screenshot/t-prince-of-persia_391.gif" width="165" height="120" style="float:left; margin: 0 15px 15px 0" /></a>
+
+
+
+<!-- Загрузка скриншотов пользователями -->             
+  <a rel="nofollow" href="/windows/?name=login_form" class="popup fancybox.ajax addcontlink">Добавить скриншоты</a>
+<!-- /Загрузка скриншотов пользователями --> 
+
+</div>
+
+<div style="clear: both"></div>
+
+ 
+
+<!-- Загрузка скриншотов пользователями без авторизации -->             
+  <div style='width: 250px; float: left'>
+    <!--a href="/windows/?name=login_form" class='addcontlink popup fancybox.ajax'>Добавить скриншоты-->
+      <!--<img alt='Добавить скриншоты' src='/public/images/add-screen-w.png' width='160' height='120' style='float:left; margin: 0 15px 15px 0' />-->
+   <!-- </a-->
+  </div>
+<!-- /Загрузка скриншотов пользователями без авторизации --> 
+
+</div>
+
+<div style='clear: both'></div>
+<!-- Скриншоты на модерации -->
+<div class="user-screenshots" style="display: none">
+  <div class="hg-title">Скриншоты на модерации</div>
+  <div class="screenshots-slider">                     
+    <a rel="nofollow" href="#" style="display:none"></a>
+    </div>
+</div>                 
+
+				  
+
+<!-- .screenshots-slider -->
+	
+
+
+<!-- .video-block -->
+					
+				
+<!-- искать читы и статьи 
+
+<form id="cheat_cearch_form" action="/search/" method="post">
+<input type="hidden" name="title" value="Prince of Persia" />
+</form>
+<p>Чит-коды: <a rel="nofollow" id="cheat_search">Prince of Persia</a></p>
+<p>Статьи: <a rel="nofollow" id="article_search">Prince of Persia</a></p>
+-->
+
+
+<!-- микроразметка звезды -->
+
+<script type="application/ld+json">{
+    "@context": "https:\/\/schema.org",
+    "@type": "VideoGame",
+    "name": "Prince of Persia",
+    "url": "https://dosgames.ru/games/dos/prince-of-persia/",
+    "playMode": "SinglePlayer",
+    "applicationCategory": "Game",
+    "gamePlatform": [
+        "DOS",
+        "NES",
+        "SNES",
+        "SEGA"
+    ],
+    "publisher": [
+        "Broderbund Software"
+    ],
+    "author": [
+        "Broderbund Software"
+    ],
+    "datePublished": "1990",
+    "genre": [
+        "Arcade"
+    ],
+    "fileSize": "512 Kb",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.47",
+        "ratingCount": "193"
+    }
+}</script>
+
+
+
+<a name="download"></a>
+<div class="padding-text" style="padding-top: 20px">
+	
+
+
+</div><!-- .padding-text -->
+
+
+
+
+					<div class="dw-block" style="padding: 20px">
+						<div class="dw-title"><p style="font-size: 28px; font-weight: bold; margin:0 0 10px 0"><i style="font-size: 33px" class="fas fa-save"></i> <a rel="nofollow" href="/game/get/dos/prince-of-persia/858ea0bb0ce686425a51b899249ba55b">Скачать Prince of Persia</a></p></div>
+						<div class="dw-info">
+							<p>Размер файла: 
+                <span>
+                  512 Kb                </span>
+              </p>
+							<p>Скачали игру: <span>73978 раз</span></p>
+						</div>
+					</div><!-- .dw-block -->
+					
+
+<div class="ar-block">
+Как запустить DOS игру? <a href="/articles/dosbox-instruktsija-kak-zapustit-igru/">DOSBox для Windows</a>, <a href="/articles/dosbox-dlja-android-emuljator-msdos/">DOSBox Android</a>
+</div><!-- .ar-block -->					
+					
+
+<div style="padding: 25px 15px 15px 15px;">
+<!-- реклама -->
+</div>
+
+
+
+<div class="padding-text">
+<h2>Сейчас просматривают</h2>
+<br/>
+
+
+
+<div>
+
+    <div style="width: 230px; height: 270px; float: left; margin: 3px">
+	
+<a rel="nofollow" href="/games/dos/bubble_crack/"><img src="/public/images/game/17699/screenshot/t-dos_bubble_crack_3553.png" alt="Bubble Crack" width="230" height="150" /></a>
+      
+<span style="padding: 0px 4px; color: #fff; background-color: #000;; background: #ebebeb; border: 1px solid #e1e1e1; display: inline-block; margin-top: 6px;"><a rel="nofollow" style="color: #404040; display: inline-block; padding: 2px 4px; text-decoration: none" href="/game/dos/">DOS</a></span> 
+
+
+<p style="margin: 5px 10px 0 0; line-height: 26px; font-size: 20px"><a style="text-decoration: none; color:black" href="/games/dos/bubble_crack/">Bubble Crack</a></p>
+</div>
+    <div style="width: 230px; height: 270px; float: left; margin: 3px">
+	
+<a rel="nofollow" href="/games/dos/scorched-earth/"><img src="/public/images/game/139/screenshot/t-scorched-earth_506.png" alt="Scorched Earth: The Mother of All Games" width="230" height="150" /></a>
+      
+<span style="padding: 0px 4px; color: #fff; background-color: #000;; background: #ebebeb; border: 1px solid #e1e1e1; display: inline-block; margin-top: 6px;"><a rel="nofollow" style="color: #404040; display: inline-block; padding: 2px 4px; text-decoration: none" href="/game/dos/">DOS</a></span> 
+
+
+<p style="margin: 5px 10px 0 0; line-height: 26px; font-size: 20px"><a style="text-decoration: none; color:black" href="/games/dos/scorched-earth/">Scorched Earth: The Mother of All Games</a></p>
+</div>
+    <div style="width: 230px; height: 270px; float: left; margin: 3px">
+	
+<a rel="nofollow" href="/games/dos/lemmings-2-the-tribes/"><img src="/public/images/game/201/screenshot/t-dos_lemmings-2-the-tribes_826.gif" alt="Lemmings 2: The Tribes" width="230" height="150" /></a>
+      
+<span style="padding: 0px 4px; color: #fff; background-color: #000;; background: #ebebeb; border: 1px solid #e1e1e1; display: inline-block; margin-top: 6px;"><a rel="nofollow" style="color: #404040; display: inline-block; padding: 2px 4px; text-decoration: none" href="/game/dos/">DOS</a></span> 
+
+
+<p style="margin: 5px 10px 0 0; line-height: 26px; font-size: 20px"><a style="text-decoration: none; color:black" href="/games/dos/lemmings-2-the-tribes/">Lemmings 2: The Tribes</a></p>
+</div>
+    <div style="width: 230px; height: 270px; float: left; margin: 3px">
+	
+<a rel="nofollow" href="/games/dos/lode-runner/"><img src="/public/images/game/161/screenshot/t-lode-runner_633.png" alt="Lode Runner" width="230" height="150" /></a>
+      
+<span style="padding: 0px 4px; color: #fff; background-color: #000;; background: #ebebeb; border: 1px solid #e1e1e1; display: inline-block; margin-top: 6px;"><a rel="nofollow" style="color: #404040; display: inline-block; padding: 2px 4px; text-decoration: none" href="/game/dos/">DOS</a></span> 
+
+
+<p style="margin: 5px 10px 0 0; line-height: 26px; font-size: 20px"><a style="text-decoration: none; color:black" href="/games/dos/lode-runner/">Lode Runner</a></p>
+</div>
+    <div style="width: 230px; height: 270px; float: left; margin: 3px">
+	
+<a rel="nofollow" href="/games/dos/f_15_strike_eagle_ii/"><img src="/public/images/game/18643/screenshot/t-dos_f_15_strike_eagle_ii_3150.png" alt="F-15 Strike Eagle II" width="230" height="150" /></a>
+      
+<span style="padding: 0px 4px; color: #fff; background-color: #000;; background: #ebebeb; border: 1px solid #e1e1e1; display: inline-block; margin-top: 6px;"><a rel="nofollow" style="color: #404040; display: inline-block; padding: 2px 4px; text-decoration: none" href="/game/dos/">DOS</a></span> 
+
+
+<p style="margin: 5px 10px 0 0; line-height: 26px; font-size: 20px"><a style="text-decoration: none; color:black" href="/games/dos/f_15_strike_eagle_ii/">F-15 Strike Eagle II</a></p>
+</div>
+    <div style="width: 230px; height: 270px; float: left; margin: 3px">
+	
+<a rel="nofollow" href="/games/dos/diggers/"><img src="/public/images/game/18330/screenshot/t-dos_diggers_2953.png" alt="Diggers" width="230" height="150" /></a>
+      
+<span style="padding: 0px 4px; color: #fff; background-color: #000;; background: #ebebeb; border: 1px solid #e1e1e1; display: inline-block; margin-top: 6px;"><a rel="nofollow" style="color: #404040; display: inline-block; padding: 2px 4px; text-decoration: none" href="/game/dos/">DOS</a></span> 
+
+
+<p style="margin: 5px 10px 0 0; line-height: 26px; font-size: 20px"><a style="text-decoration: none; color:black" href="/games/dos/diggers/">Diggers</a></p>
+</div>
+    
+
+<div style="clear: both"></div>
+</div>
+
+<!-- Yandex.RTB R-A-245127-41 -->
+<div id="yandex_rtb_R-A-245127-41"></div>
+<script>window.yaContextCb.push(()=>{
+  Ya.Context.AdvManager.render({
+    renderTo: 'yandex_rtb_R-A-245127-41',
+    blockId: 'R-A-245127-41'
+  })
+})</script>
+
+</div>
+
+
+<br/>
+
+<div id="block_comment" data-module="game" data-id="90">
+</div>
+		
+<div class="vk-comments">
+	<div id="vk_comments"></div>
+	<script type="text/javascript">
+	VK.Widgets.Comments("vk_comments", {limit: 10, width: "749", attach: false});
+	</script>
+</div>
+				
+				</div><!-- .content-inner -->
+
+			</div><!-- #content-->
+		</div><!-- #container-->
+
+		<aside id="sideLeft">
+			<div id="sideLeft-inner">
+				
+	
+				
+<ul class="categories-menu">
+<li><a rel="nofollow" href="/game/genre/adventure/">Приключения <span>1649</span></a></li>
+<li><a rel="nofollow" href="/game/genre/arcade/">Аркады <span>8100</span></a></li>
+<li><a rel="nofollow" href="/game/genre/fighting/">Драки <span>511</span></a></li>
+<li><a rel="nofollow" href="/game/genre/logic/">Логические <span>202</span></a></li>
+<li><a rel="nofollow" href="/game/genre/racing/">Гонки <span>672</span></a></li>
+<li><a rel="nofollow" href="/game/genre/role-playing/">Ролевые (RPG) <span>1194</span></a></li>
+<li><a rel="nofollow" href="/game/genre/simulation/">Симуляторы <span>1848</span></a></li>
+<li><a rel="nofollow" href="/game/genre/sports/">Спортивные <span>1664</span></a></li>
+<li><a rel="nofollow" href="/game/genre/strategy/">Стратегии <span>2628</span></a></li>
+				
+</ul>
+			
+			
+
+
+<div style="padding: 20px 10px 10px 10px; font-weight: bold">Новое на форуме</div>
+				<ul class="sidemenu" style="border-left: 4px solid #1a419c; margin-bottom: 30px">
+									<li style="padding: 5px 5px">
+						<a rel="nofollow" href="https://forum.dosgames.ru/topic/25339-%d0%bf%d0%be%d0%b8%d1%81%d0%ba-%d0%b8%d0%b3%d1%80%d1%8b-%d0%b6%d0%b8%d0%b2%d1%8b%d0%b5-%d0%ba%d0%b0%d1%80%d1%82%d0%b8%d0%bd%d0%ba%d0%b8/">Поиск игры живые картинки</a>
+						<!--span>20.05.2025</span-->
+					</li>
+										<li style="padding: 5px 5px">
+						<a rel="nofollow" href="https://forum.dosgames.ru/topic/25338-%d1%81%d0%b8%d0%bc%d1%83%d0%bb%d1%8f%d1%82%d0%be%d1%80-%d1%83%d1%85%d0%be%d0%b4%d0%b0-%d0%b7%d0%b0-5-%d0%ba%d0%be%d1%82%d1%8f%d1%82%d0%b0%d0%bc%d0%b8/">Симулятор ухода за 5 котятами</a>
+						<!--span>19.05.2025</span-->
+					</li>
+										<li style="padding: 5px 5px">
+						<a rel="nofollow" href="https://forum.dosgames.ru/topic/25337-%d0%b8%d0%b3%d1%80%d0%b0-%d0%bf%d1%80%d0%be-%d1%83%d0%b1%d0%be%d1%80%d1%89%d0%b8%d1%86%d1%83%d0%bd%d1%8f%d0%bd%d1%8e-%d0%b8%d0%b3%d1%80%d1%8b-%d0%b4%d0%bb%d1%8f-%d0%b4%d0%b5%d0%b2%d0%be%d1%87%d0%b5%d0%ba-2000-2010%d1%85-%d0%b3%d0%be%d0%b4%d0%be%d0%b2/">Игра про уборщицу/няню (игры для девочек 2000-2010х годов)</a>
+						<!--span>18.05.2025</span-->
+					</li>
+										<li style="padding: 5px 5px">
+						<a rel="nofollow" href="https://forum.dosgames.ru/topic/25336-%d1%81%d1%82%d0%b0%d1%80%d0%b0%d1%8f-%d0%b8%d0%b3%d1%80%d0%b0-tower-defense/">Старая игра Tower Defense</a>
+						<!--span>18.05.2025</span-->
+					</li>
+										<li style="padding: 5px 5px">
+						<a rel="nofollow" href="https://forum.dosgames.ru/topic/25335-%d0%bf%d0%be%d0%bc%d0%be%d0%b3%d0%b8%d1%82%d0%b5-%d0%bd%d0%b0%d0%b9%d1%82%d0%b8-%d0%b8%d0%b3%d1%80%d1%83/">Помогите найти игру</a>
+						<!--span>16.05.2025</span-->
+					</li>
+									</ul>
+
+
+<!-- Yandex.RTB R-A-245127-1 -->
+<div id="yandex_rtb_R-A-245127-1"></div>
+<script type="text/javascript">
+    (function(w, d, n, s, t) {
+        w[n] = w[n] || [];
+        w[n].push(function() {
+            Ya.Context.AdvManager.render({
+                blockId: "R-A-245127-1",
+                renderTo: "yandex_rtb_R-A-245127-1",
+                async: true
+            });
+        });
+        t = d.getElementsByTagName("script")[0];
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.src = "//an.yandex.ru/system/context.js";
+        s.async = true;
+        t.parentNode.insertBefore(s, t);
+    })(this, this.document, "yandexContextAsyncCallbacks");
+</script>
+
+
+
+
+
+
+<!-- Эмуляторы -->
+            <!-- /Эмуляторы -->
+      
+      <br/>
+			
+
+
+<div style="padding:10px; font-weight: bold">Лучшие DOS игры</div>
+
+				<ul style="margin: 0 10px">
+				
+				
+
+<li style="font-size: 12px; padding: 5px 15px; background: #f8f8f8; margin-bottom: 1px; line-height: 18px; border-left: 3px solid rgb(244, 67, 34)"><a rel="nofollow" href="/games/dos/space-quest-5-the-next-mutation/">Space Quest 5: The Next Mutation</a></li>
+
+
+<li style="font-size: 12px; padding: 5px 15px; background: #f8f8f8; margin-bottom: 1px; line-height: 18px; border-left: 3px solid rgb(241, 82, 33)"><a rel="nofollow" href="/games/dos/monkey-island-2-lechucks-revenge/">Monkey Island 2: LeChuck's Revenge</a></li>
+
+
+<li style="font-size: 12px; padding: 5px 15px; background: #f8f8f8; margin-bottom: 1px; line-height: 18px; border-left: 3px solid rgb(238, 97, 32)"><a rel="nofollow" href="/games/dos/flashback-the-quest-for-identity/">Flashback: The Quest for Identity</a></li>
+
+
+<li style="font-size: 12px; padding: 5px 15px; background: #f8f8f8; margin-bottom: 1px; line-height: 18px; border-left: 3px solid rgb(235, 112, 31)"><a rel="nofollow" href="/games/dos/rockford-the-arcade-game/">Rockford: The Arcade Game</a></li>
+
+
+<li style="font-size: 12px; padding: 5px 15px; background: #f8f8f8; margin-bottom: 1px; line-height: 18px; border-left: 3px solid rgb(232, 127, 30)"><a rel="nofollow" href="/games/dos/oh-no-more-lemmings/">Oh No! More Lemmings</a></li>
+
+
+<li style="font-size: 12px; padding: 5px 15px; background: #f8f8f8; margin-bottom: 1px; line-height: 18px; border-left: 3px solid rgb(229, 142, 29)"><a rel="nofollow" href="/games/dos/lemmings-chronicles-the/">Lemmings Chronicles, The</a></li>
+
+
+<li style="font-size: 12px; padding: 5px 15px; background: #f8f8f8; margin-bottom: 1px; line-height: 18px; border-left: 3px solid rgb(225, 156, 29)"><a rel="nofollow" href="/games/dos/holiday-lemmings-pack/">Holiday Lemmings Pack</a></li>
+
+
+<li style="font-size: 12px; padding: 5px 15px; background: #f8f8f8; margin-bottom: 1px; line-height: 18px; border-left: 3px solid rgb(222, 171, 28)"><a rel="nofollow" href="/games/dos/knightmare/">Knightmare</a></li>
+
+
+<li style="font-size: 12px; padding: 5px 15px; background: #f8f8f8; margin-bottom: 1px; line-height: 18px; border-left: 3px solid rgb(219, 186, 27)"><a rel="nofollow" href="/games/dos/legend-of-kyrandia-hand-of-fate/">Legend of Kyrandia: Hand of Fate - русская версия</a></li>
+
+
+<li style="font-size: 12px; padding: 5px 15px; background: #f8f8f8; margin-bottom: 1px; line-height: 18px; border-left: 3px solid rgb(216, 201, 26)"><a rel="nofollow" href="/games/dos/3d-world-boxing/">3D World Boxing</a></li>
+
+
+<li style="font-size: 12px; padding: 5px 15px; background: #f8f8f8; margin-bottom: 1px; line-height: 18px; border-left: 3px solid rgb(213, 216, 25)"><a rel="nofollow" href="/games/dos/loom/">Loom</a></li>
+
+
+<li style="font-size: 12px; padding: 5px 15px; background: #f8f8f8; margin-bottom: 1px; line-height: 18px; border-left: 3px solid rgb(210, 231, 24)"><a rel="nofollow" href="/games/dos/street-fighter-2/">Street Fighter 2</a></li>
+
+				
+</ul>
+<!--<div class="link-more"><a style="cursor: pointer;" id="goviewbestgames">Лучшие игры</a></div>-->
+
+
+				
+			</div><!-- #sideLeft-inner -->
+							
+			
+		</aside><!-- #sideLeft -->
+		
+		
+		
+	</section><!-- #middle-->
+	
+	
+	<div class="clear"></div>
+
+<div style="text-align: center; margin: 15px">
+<!-- Yandex.RTB R-A-245127-2 -->
+<div id="yandex_rtb_R-A-245127-2" style="display: inline-block"></div>
+<script type="text/javascript">
+    (function(w, d, n, s, t) {
+        w[n] = w[n] || [];
+        w[n].push(function() {
+            Ya.Context.AdvManager.render({
+                blockId: "R-A-245127-2",
+                renderTo: "yandex_rtb_R-A-245127-2",
+                async: true
+            });
+        });
+        t = d.getElementsByTagName("script")[0];
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.src = "//an.yandex.ru/system/context.js";
+        s.async = true;
+        t.parentNode.insertBefore(s, t);
+    })(this, this.document, "yandexContextAsyncCallbacks");
+</script>
+</div>		
+
+</div><!-- #wrapper -->
+
+
+
+
+<!-- Оповещение о куках -->
+<div class="cookie-notice" id="cookieNotice" style="display:none;">
+  <span style="display: inline-block; padding: 15px;">Мы используем файлы cookie для улучшения сайта. Продолжая использовать его, вы соглашаетесь на их применение.</span>
+  <button onclick="acceptCookies(); ym(10949122,'reachGoal','cookie'); return true;">ОК</button>
+</div>
+
+<script>
+// Функция для закрытия оповещения и записи согласия на использование файлов cookie
+function acceptCookies() {
+  var notice = document.getElementById("cookieNotice");
+  notice.style.display = "none";
+  // Устанавливаем куку с именем "cookiesAccepted" и значением "true" на 365 дней
+  document.cookie = "cookiesAccepted=true; expires=" + new Date(new Date().getTime() + 365 * 24 * 60 * 60 * 1000).toUTCString() + "; path=/";
+}
+
+// Проверяем, была ли уже нажата кнопка "Понятно"
+window.onload = function() {
+  var cookiesAccepted = getCookie("cookiesAccepted");
+  if (cookiesAccepted) {
+    // Если кука установлена, скрываем блок с оповещением
+    var notice = document.getElementById("cookieNotice");
+    notice.style.display = "none";
+  } else {
+    // Если кука не установлена, показываем блок с оповещением
+    var notice = document.getElementById("cookieNotice");
+    notice.style.display = "block";
+  }
+}
+
+// Функция для получения значения куки по имени
+function getCookie(name) {
+    var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+</script>
+
+
+<div id="abovefooter" style="background: #1c1c1c url(/public/images/bg-site-block.png);">
+
+
+<div class="linkblock">	
+
+<ul>
+<li style="padding-bottom: 10px; font-size: 15px; color: #fff">Скачать игры</li>
+<li><a rel="nofollow" href="/game/dos/top/" title="DOS игры">Скачать DOS игры</a></li>
+<li><a rel="nofollow" href="/game/nes/top/" title="Dendy / Nes игры">Скачать Nes игры</a></li>
+<li><a rel="nofollow" href="/game/sega/top/" title="Sega Megadrive игры">Скачать Sega игры</a></li>
+<li><a rel="nofollow" href="/game/snes/top/" title="Super Nintendo игры">Скачать Snes игры</a></li>
+</ul>
+
+</div>
+
+<div class="linkblock">		
+
+<ul>
+<li style="padding-bottom: 10px; font-size: 15px; color: #fff">Эмуляторы</li>
+<li><a rel="nofollow" href="/articles/dosbox-instruktsija-kak-zapustit-igru/" title="Эмуляторы DOS">Эмуляторы DOS</a></li>
+<li><a rel="nofollow" href="/articles/dendy-nes-kak-zapustit-igry/" title="Эмуляторы Dendy/Nes">Эмуляторы Nes</a></li>
+<li><a rel="nofollow" href="/articles/sega-genesis-mega-drive-kak-zapustit-igry/" title="Эмуляторы Sega Megadrive">Эмуляторы Sega</a></li>
+<li><a rel="nofollow" href="/articles/snes-super-nintendo-kak-zapustit-igry/" title="Эмуляторы Super Nintendo">Эмуляторы Snes</a></li>
+</ul>
+
+</div>
+
+<div class="linkblock">		
+
+<ul>
+<li style="padding-bottom: 10px; font-size: 15px; color: #fff">Онлайн игры</li>
+<li><a rel="nofollow" href="/article/category/onlayn-igryi-brauzernaya_igra/" title="Браузерные онлайн игры">Браузерные игры</a></li>
+<li><a rel="nofollow" href="/article/category/onlayn-igryi-klientskaya_igra/" title="Клиентские онлайн игры">Клиентские игры</a></li>
+</ul>
+
+</div>
+
+<div class="linkblock">		
+
+<ul>
+<li style="padding-bottom: 10px; font-size: 15px; color: #fff">Коды для игр</li>
+<li><a rel="nofollow" href="/cheat/last/" title="Чит коды">Чит коды</a></li>
+</ul>
+
+</div>
+
+<div class="linkblock">		
+
+<ul>
+<li style="padding-bottom: 10px; font-size: 15px; color: #fff">Статьи</li>
+<li><a rel="nofollow" href="/article/category/obzoryi/" title="Ретро обзоры">Ретро обзоры</a></li>
+</ul>
+
+</div>
+
+<div class="linkblock">		
+
+<ul>
+<li style="padding-bottom: 10px; font-size: 15px; color: #fff">Форум</li>
+<li><a rel="nofollow" target="_blank" href="https://forum.dosgames.ru/forum/3-nayti-igru-po-opisaniyu/" title="Найти игру по описанию">Найти игру</a></li>
+<li><a rel="nofollow" target="_blank" href="https://forum.dosgames.ru/forum/4-kak-proyti-igru-ili-uroven-v-igre/" title="Как пройти игру или уровень">Как пройти уровень</a></li>
+<li><a rel="nofollow" target="_blank" href="https://forum.dosgames.ru/forum/7-kak-ustanovit-i-zapustit-igru/" title="Как запустить игру">Как запустить игру</a></li>
+<li><a rel="nofollow" target="_blank" href="https://forum.dosgames.ru/forum/2-staryie-igryi/" title="Ностальгия по старым играм">Ностальгия</a></li>
+</ul>
+
+</div>
+	
+<div style="clear:both"></div>	
+
+
+</div>
+
+
+
+<footer id="footer">
+	
+	<div class="copyright">
+		<!--noindex--><p>&copy; 2002-2025, <strong>DOSGAMES</strong></p>
+		<p style="padding-top: 7px">При использовании материалов Dos Games, активная ссылка на сайт обязатаельна!</p><!--/noindex-->
+	</div>
+
+	<ul class="f-menu">
+		<!--li><i style="color:#fff; font-size: 15px" class="far fa-comment-dots"></i> <a rel="nofollow" href="/windows/?name=contact_form" class="popup fancybox.ajax" data-message="" data-theme-index=1>Контактная форма</a></li-->
+		<li><i style="color:#fff; font-size: 15px" class="fab fa-vk"></i> <a href="https://vk.com/dosgames_ru" target="_blank" rel="nofollow">Мы Вконтакте</a></li>
+		<!--li><a href="/windows/?name=info" class="popup fancybox.ajax">Реклама на сайте</a></li-->
+		
+	</ul>
+
+	<div class="counter">
+
+<!-- тут были счетчики -->
+
+	</div>
+
+	<div class="develop">
+		<!--a href="https://ecliptica.ru" rel="nofollow" alt="Дизайн сайта"><img src="/public/images/develop.png" alt="" /></a-->
+		<a rel="nofollow" href="/windows/?name=donate" class="popup fancybox.ajax pulse" style="font-size: 12px; color: red; display: inline-block; margin-right: 20px; text-decoration: none;" onclick="yaCounter10949122.reachGoal('donat'); return true;"><i class="fas fa-heart"></i></a>
+	</div>
+	
+<div style="clear: both;"></div>
+</footer><!-- #footer -->
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(10949122, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/10949122" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+
+<!-- head -->
+<script src="/public/js/advert.js"></script>
+
+<script type="text/javascript">
+jQuery(function($) {
+  if (!('adBlock' in window)) {
+    $('.adb').show();
+  }
+});
+</script>
+<!-- сюда вставлять head -->
+
+
+
+<script type="text/javascript">
+  $('.popup').fancybox({
+    scrolling: 'no',
+    autoHeight: true,
+    margin: 0,
+    type: 'ajax',
+    fitToView	: false,
+		helpers: {
+			title: null,
+			overlay: {
+			  locked: true
+			}
+		},
+    wrapCSS: 'mbt20'
+	});
+</script>
+
+
+
+
+
+
+
+
+<!-- Окно ошибки загрузки шотов или постера -->
+<script type="text/javascript">
+ function load_error_window(data) { $.fancybox.close(); }            
+</script>
+<div id="load_error_window" class="information_window" data-buttons="ok" data-result-function="load_error_window">
+ <div class="caption">Ошибка загрузки</div>
+ <div class="content">При загрузке произошла ошибка!</div>
+</div>
+<!--<a rel="nofollow" href="#" onclick="show_window('trebovaniya'); return false;">Требования к скриншотам</a>              
+ #Окно ошибки загрузки скриншотов или постера -->
+
+</body>
+</html>

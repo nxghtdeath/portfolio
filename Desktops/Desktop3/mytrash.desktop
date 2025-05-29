@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Link
+Name=Trash
+Name[ru]=Корзина
+#Exec=fly-fm $HOME/fly/trash
+Icon=user-trash
+#URL=$HOME/fly/trash
+URL=fly-fm:Trash
+OnlyShowIn=FLY;
+X-FLY-IconContext=Places

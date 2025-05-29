@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Office
+Name[ru]=Офис
+Type=Directory
+Icon=applications-office
+#SortOrder=fly-*;sep.desktop;
+X-FLY-IconContext=Categories
+Categories=Office;Spreadsheet;WordProcessor;Presentation;Calendar;TextEditor;

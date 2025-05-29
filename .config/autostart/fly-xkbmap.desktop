@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Keyboard layout
+Name[ru]=Раскладка клавиатуры
+Type=Application
+Comment=Setup keyboard layout
+Comment[ru]=Настройка раскладки клавиатуры
+Exec=fly-xkbmap --autostart
+Icon=preferences-desktop-keyboard
+Categories=Settings
+OnlyShowIn=FLY
+X-SuSE-YaST-Group=Desktop
+X-SuSE-YaST-RootOnly=false

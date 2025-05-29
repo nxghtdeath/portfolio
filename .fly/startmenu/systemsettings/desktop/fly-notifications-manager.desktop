@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Fly Notifications
+Name[ru]=Уведомления
+Type=Application
+Exec=astra-systemsettings fly_kcm_notifications
+Icon=preferences-system-notifications
+Categories=Settings
+OnlyShowIn=Fly
+X-SuSE-YaST-Group=Desktop
+X-Fly-OriginFile=/usr/share/applications/fly-notifications-manager.desktop

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Toolbar
+Name[ru]=Панель быстрого запуска
+Type=Directory
+Icon=flymenuedit
+SortOrder=start.desktop;myminall.desktop;rotate.desktop;pager.desktop;switcher.desktop;minimize.desktop;close.desktop;allmouseops.desktop;fly-fm.desktop;
+X-FLY-IconContext=Applications

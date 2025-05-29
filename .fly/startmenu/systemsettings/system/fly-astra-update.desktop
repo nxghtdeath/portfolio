@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Fly astra update
+Name[ru]=Установка обновлений
+Type=Application
+Exec=su-to-root -X -c fly-astra-update
+Icon=fly-astra-update
+Categories=Settings;System
+Encoding=UTF-8
+X-Fly-OriginFile=/usr/share/applications/fly-astra-update.desktop

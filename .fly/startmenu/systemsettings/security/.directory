@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Directory
+Name=Security and Users
+Name[ru]=Безопасность
+Categories=Security;
+X-SuSE-YaST-Group=Security
+Icon=preferences-desktop-cryptography
+X-FLY-IconContext=Applications

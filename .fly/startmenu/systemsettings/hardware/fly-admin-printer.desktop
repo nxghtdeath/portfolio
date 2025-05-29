@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Printers
+Name[ru]=Принтеры
+Type=Application
+Comment=Configure Printing System
+Comment[ru]=Настройка системы печати
+Exec=fly-admin-printer
+Icon=preferences-desktop-printer
+Terminal=false
+Categories=System;Qt;HardwareSettings;Printing;FLY-CONTROL-PANEL
+X-SuSE-YaST-Group=Hardware
+X-SuSE-YaST-RootOnly=false
+X-Fly-OriginFile=/usr/share/applications/fly-admin-printer.desktop

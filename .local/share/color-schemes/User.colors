@@ -1,0 +1,16 @@
+[General]
+ColorScheme=fly-user
+Name=fly-user
+Name[ru]=Fly (пользовательская)
+
+[Colors:Button]
+BackgroundNormal=#dfdfdf
+
+[Colors:Selection]
+BackgroundNormal=#5682a3
+
+[Colors:View]
+BackgroundNormal=#ffffff
+
+[Colors:Window]
+BackgroundNormal=#dfdfdf

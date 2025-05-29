@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Minimize/restore all
+Name[ru]=Свернуть/развернуть все
+Exec=fly-wmfunc FLYWM_TOGGLE_MINIMIZE_ALL_INSCR
+Icon=user-desktop
+X-FLY-IconContext=Places
+OnlyShowIn=fly-tablet;fly-tablet-kiosk;

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Exec=fly-vkbd --minimizetotray --strut-bottom
+Name=Virtual Keyboard
+Name[ru]=Виртуальная клавиатура
+Comment=Virtual Keyboard
+Comment[ru]=Виртуальная (экранная) клавиатура
+Categories=Qt;Utility;Accessibility;
+Icon=input-keyboard
+X-FLY-IconContext=Devices
+OnlyShowIn=fly-tablet;

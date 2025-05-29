@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Directory
+Name=Network
+Name[ru]=Сеть
+Categories=X-GNOME-NetworkSettings;Network;
+X-SuSE-YaST-Group=Network
+Icon=preferences-system-network
+X-FLY-IconContext=Categories

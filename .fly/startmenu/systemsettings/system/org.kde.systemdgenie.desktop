@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=SystemdGenie
+Name[ru]=Инициализация системы
+GenericName=Systemd Management Tool
+GenericName[ru]=Утилита управления systemd
+Type=Application
+Comment=Управление демоном systemd
+Exec=systemdgenie
+Icon=preferences-system-init
+Categories=Qt;KDE;Settings;System
+X-DBUS-ServiceName=org.kde.systemdgenie
+X-DBUS-StartupType=Multi
+X-Fly-OriginFile=/usr/share/applications/org.kde.systemdgenie.desktop

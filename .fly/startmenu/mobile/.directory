@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Mobile
+Name[ru]=Мобильные
+Type=Directory
+Icon=pda
+X-FLY-IconContext=Devices
+Categories=Mobile;
+#SortOrder=fly-calc.desktop;fly-notes.desktop;fly-record.desktop;fly-phone-webbrowser.desktop;fly-mail.desktop;fly-qml-dialer.desktop;fly-sms.desktop;fly-contacts.desktop;fly-gallery.desktop;

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=PolicyKit-1 Authorizations
+Name[ru]=Санкции PolicyKit-1
+Type=Application
+Comment=PolicyKit-1 Auth Manager
+Comment[ru]=Программа управления санкциями PolicyKit-1
+Exec=/usr/bin/fly-admin-policykit-1
+Icon=preferences-desktop-user-password
+Categories=Settings;Security
+X-Fly-AdminOnly=true
+X-SuSE-YaST-Group=Security
+X-Fly-OriginFile=/usr/share/applications/fly-admin-policykit-1.desktop

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Directory
+Name=Hardware
+Name[ru]=Оборудование
+Categories=HardwareSettings;
+X-SuSE-YaST-Group=Hardware
+Icon=preferences-desktop-peripherals
+X-FLY-IconContext=Categories

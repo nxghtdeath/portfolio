@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Desktop 4
+Name[ru]=Рабочий стол 4
+Type=Directory
+Icon=user-desktop
+X-FLY-IconContext=Places
+Categories=fly-dialer.desktop;fly-term.desktop;fly-admin-center.desktop;AudioVideo;Multimedia;Audio;Video;
+
+

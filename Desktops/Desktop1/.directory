@@ -1,0 +1,37 @@
+[Desktop Entry]
+Name=Desktop 1
+Name[ru]=Рабочий стол 1
+Type=Directory
+Icon=user-desktop
+X-FLY-IconContext=Places
+Categories=firefox.desktop;firefox-esr.desktop;nautilus.desktop;
+
+
+[IconPosition::firefox.desktop]
+X=5
+Y=5
+Monitor=Virtual1
+
+
+[IconPosition::mytrash.desktop]
+X=5
+Y=105
+Monitor=Virtual1
+
+
+[IconPosition::mycomp.desktop]
+X=5
+Y=205
+Monitor=Virtual1
+
+
+[IconPosition::fly-help.desktop]
+X=5
+Y=305
+Monitor=Virtual1
+
+
+[IconPosition::ФамилияИО-ИСт-221]
+X=5
+Y=405
+Monitor=Virtual1

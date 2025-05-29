@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Fly Desktop Entry Editor
+Name[ru]=Редактор ярлыков Fly
+Type=Application
+Comment=Create or Edit desktop entry files
+Comment[ru]=Создает или редактирует ярлыки (desktop entry)
+Exec=fly-dtedit --filePath %f
+Icon=flymenuedit
+Hidden=true
+MimeType=application/x-desktop
+Categories=System
+OnlyShowIn=FLY
+X-Fly-OriginFile=/usr/share/applications/fly-dtedit.desktop

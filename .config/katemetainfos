@@ -1,0 +1,95 @@
+[file:///etc/apache2/apache2.conf]
+Bookmarks=
+Checksum=9d2e77ee3900d412dcb44d8625926f037f679650
+Encoding=UTF-8
+Highlighting=Apache Configuration
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Apache Configuration
+Mode Set By User=false
+Time=2025,5,7,8,50,48.737
+URL=file:///etc/apache2/apache2.conf
+
+[file:///etc/apache2/sites-available/000-default.conf]
+Bookmarks=
+Checksum=e69ed8b0ee2701fc223706dc2e9d16875d93ef6e
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2025,5,7,8,39,50.245
+URL=file:///etc/apache2/sites-available/000-default.conf
+
+[file:///etc/apache2/sites-available/fame.conf]
+Bookmarks=
+Checksum=0fc3bbaa29d009c15a9ac9b9457aefadb02af65c
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2025,5,29,6,46,25.367
+URL=file:///etc/apache2/sites-available/fame.conf
+
+[file:///etc/apache2/sites-available/fame.conf.bak]
+Bookmarks=
+Checksum=d3dc394ce49a16fc866091860a1bbcf571bd90ba
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2025,5,7,7,53,55.778
+URL=file:///etc/apache2/sites-available/fame.conf.bak
+
+[file:///etc/apache2/sites-available/fame.html]
+Bookmarks=
+Checksum=0fc3bbaa29d009c15a9ac9b9457aefadb02af65c
+Encoding=UTF-8
+Highlighting=HTML
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=HTML
+Mode Set By User=false
+Time=2025,5,7,8,39,50.245
+URL=file:///etc/apache2/sites-available/fame.html
+
+[file:///etc/apache2/sites-available/фамилия.имя.conf]
+Bookmarks=
+Checksum=d3dc394ce49a16fc866091860a1bbcf571bd90ba
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2025,5,7,8,39,54.932
+URL=file:///etc/apache2/sites-available/фамилия.имя.conf
+
+[file:///home/administrator/Загрузки/prince/prince/!README.txt]
+Bookmarks=
+Checksum=664b12ea493f6e6399e807ad57a574280fe193b0
+Encoding=x-mac-cyrillic
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2025,5,21,7,33,22.02
+URL=file:///home/administrator/Загрузки/prince/prince/!README.txt
+
+[file:///run/user/1000/fly-fm-vfs/archives/389aef5b9b5e38050a33f39cedc25ca5/!README.txt]
+Bookmarks=
+Checksum=664b12ea493f6e6399e807ad57a574280fe193b0
+Encoding=x-mac-cyrillic
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2025,5,21,7,28,9.244
+URL=file:///run/user/1000/fly-fm-vfs/archives/389aef5b9b5e38050a33f39cedc25ca5/!README.txt

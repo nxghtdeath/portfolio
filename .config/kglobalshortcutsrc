@@ -1,0 +1,63 @@
+[ActivityManager]
+_k_friendly_name=Диспетчер комнат
+switch-to-activity-e2f2a28b-1e49-4451-b9e0-837bc4bbb8f0=none,none,Переключиться на комнату «Начальная комната»
+
+[astra-systemsettings.desktop]
+_k_friendly_name=Параметры системы
+_launch=none,Tools,Параметры системы
+kcm-kscreen=none,none,Настройка экранов
+kcm-lookandfeel=none,none,Оформление рабочей среды
+kcm-users=none,none,Пользователи
+powerdevilprofilesconfig=none,none,Энергосбережение
+screenlocker=none,none,Блокировка экрана
+
+[kcm_touchpad]
+Disable Touchpad=Touchpad Off,Touchpad Off,Выключить сенсорную панель
+Enable Touchpad=Touchpad On,Touchpad On,Включить сенсорную панель
+Toggle Touchpad=Touchpad Toggle,Touchpad Toggle,Включить или выключить сенсорную панель
+_k_friendly_name=Сенсорная панель
+
+[kscreend]
+_k_friendly_name=kscreend
+display=Display\tMeta+P,Display\tMeta+P,Сменить экран
+
+[org.kde.kcalc.desktop]
+_k_friendly_name=KCalc
+_launch=Launch (1),Launch (1),KCalc
+
+[org.kde.konsole.desktop]
+NewTab=none,none,Открыть новую вкладку
+NewWindow=none,none,Открыть новое окно
+_k_friendly_name=Konsole
+_launch=Ctrl+Alt+T,Ctrl+Alt+T,Konsole
+
+[org.kde.spectacle.desktop]
+ActiveWindowScreenShot=Meta+Print,Meta+Print,Сделать снимок активного окна
+CurrentMonitorScreenShot=none,none,Сделать снимок текущего экрана
+FullScreenScreenShot=Shift+Print,Shift+Print,Сделать снимок всех экранов
+RectangularRegionScreenShot=Meta+Shift+Print,Meta+Shift+Print,Сделать снимок прямоугольной области экрана
+WindowUnderCursorScreenShot=Meta+Ctrl+Print,Meta+Ctrl+Print,Создать снимок окна под курсором мыши
+_k_friendly_name=Spectacle
+_launch=Print,Print,Запустить Spectacle
+
+[org_kde_powerdevil]
+Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Уменьшить яркость подсветки клавиатуры
+Decrease Screen Brightness=Monitor Brightness Down,Monitor Brightness Down,Уменьшить яркость экрана
+Hibernate=Hibernate,Hibernate,Перейти в гибернацию
+Increase Keyboard Brightness=Keyboard Brightness Up,Keyboard Brightness Up,Увеличить яркость подсветки клавиатуры
+Increase Screen Brightness=Monitor Brightness Up,Monitor Brightness Up,Увеличить яркость экрана
+PowerDown=Power Down,Power Down,Отключить питание
+PowerOff=Power Off,Power Off,Выключить
+Sleep=Sleep,Sleep,Перейти в сон
+Toggle Keyboard Backlight=Keyboard Light On/Off,Keyboard Light On/Off,Сменить состояние подсветки клавиатуры
+Turn Off Screen=none,none,Выключить монитор
+_k_friendly_name=Управление питанием
+
+[systemsettings.desktop]
+_k_friendly_name=Параметры системы
+_launch=Tools,Tools,Параметры системы
+kcm-kscreen=none,none,Настройка экранов
+kcm-lookandfeel=none,none,Оформление рабочей среды
+kcm-users=none,none,Пользователи
+powerdevilprofilesconfig=none,none,Энергосбережение
+screenlocker=none,none,Блокировка экрана

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Viewing date & time
+Name[ru]=Дата и время
+Type=Application
+Comment=Viewing date & time
+Comment[ru]=Просмотр даты и времени
+Exec=fly-date-applet
+Icon=preferences-system-time
+Categories=Settings
+OnlyShowIn=fly;fly-tablet
+X-SuSE-YaST-Group=System
+X-Fly-OriginFile=/usr/share/applications/fly-date-applet.desktop

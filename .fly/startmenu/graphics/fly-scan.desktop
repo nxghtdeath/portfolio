@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Scan Dialog
+Name[ru]=Сканирование
+GenericName=Scanner Dialog
+GenericName[ru]=Диалог со сканером
+Type=Application
+Comment=Scan and save images
+Comment[ru]=Сканировать и сохранить изображения
+Exec=fly-scan
+Icon=fly-scan
+Categories=Graphics;Scanning
+X-Fly-OriginFile=/usr/share/applications/fly-scan.desktop

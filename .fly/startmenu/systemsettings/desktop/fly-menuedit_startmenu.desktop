@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Fly Start Menu Editor
+Name[ru]=Меню "Пуск"
+Type=Application
+Comment=Configure your start menu Fly
+Comment[ru]=Редактируйте меню "Пуск" рабочего стола Fly
+Exec=fly-menuedit ~/.fly/startmenu
+Icon=flymenuedit
+Categories=Settings
+OnlyShowIn=Fly
+NotShowIn=fly-mobile
+X-FLY-IconContext=Applications
+X-SuSE-YaST-Group=Desktop
+X-Fly-OriginFile=/usr/share/applications/fly-menuedit_startmenu.desktop

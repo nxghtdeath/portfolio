@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Fly admin ISO
+Name[ru]=Запись ISO образа на USB носитель
+Type=Application
+Exec=su-to-root -X -c fly-admin-iso
+Icon=inode-blockdevice
+Categories=Utility
+OnlyShowIn=Fly
+Encoding=UTF-8
+X-Fly-OriginFile=/usr/share/applications/fly-admin-iso.desktop

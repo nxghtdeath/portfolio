@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Fly-orientation
+Name[ru]=Ориентация экрана
+Type=Application
+Exec=fly-orientation
+Icon=video-display
+Categories=Settings
+OnlyShowIn=FLY
+X-SuSE-YaST-Group=Desktop
+X-SuSE-YaST-RootOnly=false
+X-Fly-OriginFile=/usr/share/applications/fly-orientation.desktop

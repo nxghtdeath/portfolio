@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Корзина
+Type=Link
+Icon=user-trash-symbolic
+URL=/home/administrator/.local/share/Trash/files

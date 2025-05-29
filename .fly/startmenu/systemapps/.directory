@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=System
+Name[ru]=Системные
+Type=Directory
+Icon=applications-system
+#SortOrder=fly-*;sep.desktop;
+SortOrder=fly-term.desktop;fly-fm.desktop;fly-admin-smc.desktop;synaptic.desktop;sep.desktop;*;
+X-FLY-IconContext=Categories
+Categories=System;PackageManager;

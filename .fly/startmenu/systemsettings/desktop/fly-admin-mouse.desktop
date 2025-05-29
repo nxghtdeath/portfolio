@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Mouse
+Name[ru]=Мышь
+GenericName=Mouse
+Type=Application
+Comment=Mouse settings
+Comment[ru]=Настройки мыши
+Exec=fly-admin-mouse
+Icon=input-mouse
+Categories=Settings;DesktopSettings
+OnlyShowIn=fly;fly-tablet;fly-mobile
+X-Fly-OriginFile=/usr/share/applications/fly-admin-mouse.desktop

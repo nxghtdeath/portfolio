@@ -1,0 +1,59 @@
+;update
+;**********************************************************************
+; Attribute configuration by each application
+;    <application> <attribute,...>
+;
+;    Application is title name, class name (by default), or instance name.
+;     (see WM_NAME or WM_CLASS displayed by xprop)
+;    Simple patterns for example "fly-admin-*" allowed
+;
+;    Attribute is:
+;	STICKY: not affect paging
+;	NO_FOCUS: not active
+;	NO_TITLE: no title
+;	NO_BORDER: no border
+;	NO_BORDER_EDGE: no border edge
+;	NO_CTRLBTN: no control menu button
+;	NO_BUTTON1: no minimize button
+;	NO_BUTTON2: no maximize/restore button
+;	NO_BUTTON3: no close button
+;	NO_TBUTTON: no taskbar button
+;	NO_PAGER: no pager miniature
+;	SMALL_IMG: specifies small image (16x16) (e.g. for control menu)
+;	LARGE_IMG: specifies large image (32x32) (e.g. for task switcher)
+;	CLOSE_SOON: close a window soon (for irritating error windows)
+;	ONTOP: always keep a window on top
+;	ONBOTTOM: always keep a window at bottom
+;	INIT_MAXIMIZE: maximized on initializing
+;	INIT_MAXIMIZE_FULL: maximized on initializing on all screens
+;	INIT_MINIMIZE: minimized on initializing
+;	INIT_FULLSCREEN: fullscreen on initializing
+;	INIT_FULLSCREEN_FULL: fullscreen on initializing on all screens
+;	FOCUS_ON_CLICK: put focus on click
+;	GEOMETRY: use geometry from here
+;	TRAY_INDICATOR: put in tray
+;	OPACITY: opacity in percents (i.e. OPACITY="0" means fully opaque)
+;	SHADOW:  shadow (SHADOW="0" means no shadow)
+;   ON_PAGE: initial page (ON_PAGE="1" - first)
+;   NO_TRAY: dont show app in tray
+;   FORCE_DECOR: force all decorations
+;**********************************************************************
+[ApplicationAttributes]
+;"console"        STICKY, NO_TITLE, SMALL_IMG="term_16x16.xpm", LARGE_IMG="term_32x32.xpm"
+;"*"              NO_TITLE, NO_BORDER, NO_BORDER_EDGE, INIT_MAXIMIZE
+"fly-snotes"       TRAY_INDICATOR
+"fly-print-monitor" TRAY_INDICATOR
+"Snotes"          NO_TITLE, NO_BORDER, NO_BORDER_EDGE
+"fly-lineedit"    FOCUS_ON_CLICK, ONBOTTOM, STICKY, NO_TBUTTON, NO_PAGER, NO_TITLE, NO_BORDER, NO_BORDER_EDGE, SHADOW="0"
+"fly-vkbd"           NO_FOCUS, NO_TITLE, NO_BORDER, NO_BORDER_EDGE, STICKY, NO_TBUTTON, NO_PAGER, ONTOP, OPACITY="100"
+"qtvirtualkeyboard"  NO_FOCUS, NO_TITLE, NO_BORDER, NO_BORDER_EDGE, STICKY, NO_TBUTTON, NO_PAGER, ONTOP, OPACITY="100"
+"fly-start-panel" STICKY, NO_TBUTTON, NO_PAGER, OPACITY="95", SHADOW="10"
+"fly-start-menu" STICKY, NO_TBUTTON, NO_PAGER, OPACITY="95", SHADOW="10"
+"fly-search-panel" STICKY, NO_TBUTTON, NO_PAGER, OPACITY="95", SHADOW="10"
+"fly-notifications" STICKY, NO_TBUTTON, NO_PAGER, OPACITY="95", SHADOW="10"
+"fly-shutdown-dialog" STICKY, ONTOP, OPACITY="95", SHADOW="10"
+;"sun-awt-X11-XFramePeer" FOCUS_ON_CLICK
+;"sun-awt-X11-XDialogPeer" FOCUS_ON_CLICK
+"jetbrains-pycharm-ce" FOCUS_ON_CLICK
+"debconf" INIT_MAXIMIZE, NO_BUTTON3
+"polkit-kde-authentication-agent-1" STICKY, ONTOP

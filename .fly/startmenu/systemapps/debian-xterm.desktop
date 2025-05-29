@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=XTerm
+Type=Application
+Comment=standard terminal emulator for the X window system
+Exec=xterm
+Icon=mini.xterm
+Terminal=false
+StartupWMClass=XTerm
+Categories=System;TerminalEmulator
+NotShowIn=fly
+Keywords=shell;prompt;command;commandline;cmd
+X-Desktop-File-Install-Version=0.26
+X-Fly-OriginFile=/usr/share/applications/debian-xterm.desktop

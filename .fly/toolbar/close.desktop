@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Close active window
+Name[ru]=Закрыть активное окно
+Exec=FLYWM_CLOSE
+Icon=window-close
+X-FLY-IconContext=Actions
+OnlyShowIn=fly-tablet;

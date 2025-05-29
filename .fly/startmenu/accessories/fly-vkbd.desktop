@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Virtual Keyboard
+Name[ru]=Виртуальная клавиатура
+Type=Application
+Comment=Virtual Keyboard
+Comment[ru]=Виртуальная (экранная) клавиатура
+Exec=fly-vkbd --minimizetotray --strut-bottom
+Icon=input-keyboard
+Terminal=false
+Categories=Qt;Utility;Accessibility
+OnlyShowIn=FLY
+X-FLY-IconContext=Devices
+X-GNOME-Autostart-Phase=Applications
+X-Fly-OriginFile=/usr/share/applications/fly-vkbd.desktop

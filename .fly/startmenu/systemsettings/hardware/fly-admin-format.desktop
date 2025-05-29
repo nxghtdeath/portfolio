@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Fly admin format
+Name[ru]=Форматирование внешнего носителя
+Type=Application
+Exec=fly-admin-format
+Icon=fly-admin-format
+Categories=Settings;HardwareSettings
+Encoding=UTF-8
+X-Fly-OriginFile=/usr/share/applications/fly-admin-format.desktop

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Recents
+Name[ru]=Последние
+Type=Directory
+Icon=favorites
+X-FLY-IconContext=Places

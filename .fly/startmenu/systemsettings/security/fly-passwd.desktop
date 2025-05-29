@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Change password
+Name[ru]=Изменить пароль
+Type=Application
+Comment=Utility to change user password
+Comment[ru]=Утилита для смены пароля пользователя
+Exec=fly-passwd
+Icon=preferences-desktop-user-password
+Categories=Settings;Security
+X-SuSE-YaST-Group=Security
+X-SuSE-YaST-RootOnly=false
+X-Fly-OriginFile=/usr/share/applications/fly-passwd.desktop

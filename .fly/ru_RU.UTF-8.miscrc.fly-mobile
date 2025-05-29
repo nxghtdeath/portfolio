@@ -1,0 +1,129 @@
+;update
+;**********************************************************************
+;  Разные меню (mics. internal menus)
+;**********************************************************************
+
+;**********************************************************************
+; Меню управления окном
+;**********************************************************************
+[CtrlMenu]
+"Восстановить"      "" "" FLYWM_RESTORE
+"Переместить"       "" "" FLYWM_MOVE
+"Изменить размер"   "" "" FLYWM_RESIZE
+;"Свернуть" "window-minimize" "Actions" FLYWM_MINIMIZE
+"Развернуть"   "" "" FLYWM_MAXIMIZE
+"Раздвинуть"        "" "" FLYWM_EXPAND
+"На задний план"    "" "" FLYWM_LOWER
+;"Свернуть в трей"  "" "" FLYWM_SWALLOW
+"" "" "" FLYWM_SEPARATOR
+"Запустить ещё" ""  ""  FLYWM_RUN_ONE_MORE
+"Приостановить" ""  ""  FLYWM_STOP_CONT
+;"Создать ярлык" ""  ""  FLYWM_CREATE_DESKTOP_ICON
+"" "" ""  FLYWM_SEPARATOR
+;"Влево на панели задач"  "" "" FLYWM_TBTN_LEFT
+;"Вправо на панели задач" "" "" FLYWM_TBTN_RIGHT
+;"" "" "" FLYWM_SEPARATOR
+"Закрыть окно"     "application-exit"  "Actions" FLYWM_CLOSE
+"Завершить задачу" "process-stop"      "Actions" FLYWM_KILL
+"" "" "" FLYWM_SEPARATOR
+"Свойства" "" ""
++
+  "Декорации"                "" "" FLYWM_TOGGLE_DECOR
+  "Всегда на переднем плане" "" "" FLYWM_TOGGLE_ONTOP
+  "Всегда на заднем плане"   "" "" FLYWM_TOGGLE_ONBOTTOM
+; "На всех столах"           "" "" FLYWM_TOGGLE_STICKY
+  "" "" "" FLYWM_SEPARATOR
+  "Сохранить"        "" "" FLYWM_WINPROP_ADD
+  "По умолчанию"     "" "" FLYWM_WINPROP_DEL
+  "Редактировать..." "" "" FLYWM_WINPROP_EDIT
+-
+
+
+;**********************************************************************
+; Desktop Menu configuration
+; Меню появляющееся на рабочем столе при нажатии правой кнопки мыши
+; Подменю уровней и категорий секретности добавляются динамически
+;**********************************************************************
+[DesktopMenu]
+
+;**********************************************************************
+; Диалог завершения работы
+; Exit dialog configuration
+;    <part> <str or image name> (<action>)
+;
+;    Action is specified in the case of RadioButton. (fly-wm internal
+;    function or exec file name)
+;**********************************************************************
+[ExitDialog]
+Title		"Завершение работы"		""
+;StaticText	"What should I do?"		""
+RadioButton	"Закончить сессию"		""	FLYWM_LOGOUT
+;RadioButton     "Заблокировать экран"		""	FLYWM_LOCK
+;RadioButton	"Перезапустить сессию"		""	FLYWM_RESTART
+RadioButton	"Перезагрузить компьютер"	""	FLYWM_REBOOT
+RadioButton	"Выключить компьютер" 		""	FLYWM_SHUTDOWN
+IconImage	"/usr/share/fly-wm/images/exit_session.png"
+IconImage	"/usr/share/fly-wm/images/exit_reboot.png"
+IconImage	"/usr/share/fly-wm/images/exit_shutdown.png"
+OKButton	"Да"				""
+CancelButton	"Отмена"			""
+;HelpButton	"Help"				""
+
+;**********************************************************************
+; Меню появляется при нажатии правой кнопки на часах
+;**********************************************************************
+[ClockMenu]
+"Изменить шрифт..."         "" "" "fly-admin-theme Fonts"
+"Настроить дату и время..." "" "" "fly-admin-date --toggle"
+
+;**********************************************************************
+; Меню появляется при нажатии правой кнопки на индикаторе клавиатуры
+;**********************************************************************
+[XkbMenu]
+"Английский"		"" ""		FLYWM_BASE_KB
+"Русский"		"" ""		FLYWM_ALT_KB
+""			"" ""		FLYWM_SEPARATOR
+"Свойства..."		"" ""		"fly-xkbmap"
+
+;**********************************************************************
+; Меню появляется при щелчке правой кнопкой на индикаторе уровня секретности
+; Подменю уровней и категорий секретности добавляются динамически
+;**********************************************************************
+[MACLevelMenu]
+"Свойства..." "" "" "fly-start-admin.sh mac"
+
+;**********************************************************************
+; Меню появляется при нажатии правой кнопки на кнопке показа-скрытия трея
+;**********************************************************************
+[TrayMenu]
+"" "" "" FLYWM_SEPARATOR
+"Показать-скрыть все" "" "" FLYWM_TRAY_TOGGLE_ALL_INDICATORS_PRIORITY
+"Свойства..." "" "" "fly-admin-theme Theme"
+
+;**********************************************************************
+; Меню появляется при щелчке правой кнопкой на переключателе рабочих столов
+;**********************************************************************
+[PagerMenu]
+"Включен"		"" ""		FLYWM_TOGGLE_PAGER
+"Поверх всех"		"" ""		FLYWM_TOGGLE_ONTOP_PAGER
+""			"" ""		FLYWM_SEPARATOR
+"Увеличить"		"" ""		FLYWM_INC_SIZE_PAGER
+"Уменьшить"	 	"" "" 		FLYWM_DEC_SIZE_PAGER
+"Развернуть"	"" ""		FLYWM_MAXIMIZE_PAGER
+"Восстановить"		"" ""		FLYWM_RESTORE_PAGER
+""			"" ""		FLYWM_SEPARATOR
+"Добавить ряд"		"" ""		FLYWM_ADD_ROW_PAGER
+"Удалить ряд"		"" ""		FLYWM_SUB_ROW_PAGER
+"Добавить колонку"	"" "" 		FLYWM_ADD_COL_PAGER
+"Удалить колонку"	"" ""		FLYWM_SUB_COL_PAGER
+
+;**********************************************************************
+; Меню появляется при операции drop на рабочем столе
+;**********************************************************************
+[DndMenu]
+"Копировать"		"" ""		FLYWM_DND_COPY
+"Переместить"		"" ""		FLYWM_DND_MOVE
+;ALD: no symlink allowed from home to other paths
+"Создать ярлык"		"" ""		FLYWM_DND_LINK
+""			"" ""		FLYWM_SEPARATOR
+"Отмена"		"" ""		FLYWM_DND_CANCEL

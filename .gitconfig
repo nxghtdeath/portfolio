@@ -1,0 +1,9 @@
+[user]
+	name = nxghtdeath
+	email = bawl3@mail.ru
+[safe]
+	directory = /var/www/html1
+	directory = /var/www/html
+	directory = /var/www/html1
+	directory = /var/www/html1
+	directory = /var/www/html1

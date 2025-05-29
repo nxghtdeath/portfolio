@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Directory
+Name=System
+Name[ru]=Система
+Categories=SystemSetup;System;
+X-SuSE-YaST-Group=System
+Icon=applications-system
+X-FLY-IconContext=Categories

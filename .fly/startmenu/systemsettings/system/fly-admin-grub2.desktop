@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=GRUB2 editor
+Name[ru]=Загрузчик GRUB2
+GenericName=GRUB2 editor
+Type=Application
+Comment=A system tool to view and edit the GRUB2 boot loader
+Comment[ru]=Инструмент настройки системного загрузчика GRUB2
+Exec=su-to-root -X -c fly-admin-grub2
+Icon=preferences-system-bootloader
+Categories=Settings
+X-SuSE-YaST-Group=System
+X-Fly-OriginFile=/usr/share/applications/fly-admin-grub2.desktop

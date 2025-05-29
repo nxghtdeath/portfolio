@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Network
+Name[ru]=Сеть
+Type=Directory
+Icon=applications-internet
+#SortOrder=fly-*;sep.desktop;
+X-FLY-IconContext=Categories
+Categories=Network;Internet;Email;

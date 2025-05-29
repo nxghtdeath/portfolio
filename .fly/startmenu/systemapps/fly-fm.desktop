@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=File Manager fly-fm
+Name[ru]=Менеджер файлов
+Type=Application
+Comment=File Manager fly-fm
+Comment[ru]=Менеджер файлов fly-fm
+Exec=fly-fm %U
+Icon=system-file-manager
+MimeType=inode/directory;x-scheme-handler/fly-fm;x-scheme-handler/smb;x-scheme-handler/ftp
+Categories=Qt;System;FileManager;FileTools
+X-Fly-SuggestToRunAsRoot=true
+X-Fly-OriginFile=/usr/share/applications/fly-fm.desktop

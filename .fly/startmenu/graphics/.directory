@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Graphics
+Name[ru]=Графика
+Type=Directory
+Icon=applications-graphics
+#SortOrder=fly-*;sep.desktop;
+X-FLY-IconContext=Categories
+Categories=Graphics;VectorGraphics;RasterGraphics;Screensaver;

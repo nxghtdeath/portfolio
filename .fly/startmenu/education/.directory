@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Education
+Name[ru]=Научные
+Type=Directory
+Icon=applications-education
+#SortOrder=fly-*;sep.desktop;
+X-FLY-IconContext=Categories
+Categories=Education;Science;Math;Astronomy;Physics;Chemistry;

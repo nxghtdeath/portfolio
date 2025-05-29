@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Development
+Name[ru]=Разработка
+Type=Directory
+Icon=applications-development
+#SortOrder=fly-*;sep.desktop;
+X-FLY-IconContext=Categories
+Categories=Development;GUIDesigner;IDE;

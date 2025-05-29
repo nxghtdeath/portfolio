@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Directory
+Name=Settings
+Name[ru]=Параметры
+Categories=Settings;FLY-CONTROL-PANEL;AdvancedSettings;Accessibility;
+#SortOrder=fly-admin-center.desktop;astra-systemsettings.desktop;fly-*;sep.desktop;
+SortOrder=fly-admin-center.desktop;astra-systemsettings.desktop;sep.desktop;desktop;security;network;hardware;software;system;others;sep1.desktop;
+Icon=preferences-system
+X-FLY-IconContext=Categories
+NoDisplay=false

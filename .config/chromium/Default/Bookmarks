@@ -1,0 +1,101 @@
+{
+   "checksum": "f775fd674a45d3f2b80e7236ec4aa8b5",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "0",
+               "date_last_used": "0",
+               "guid": "b89172e2-a82a-41d6-91a5-e521c9ab2bed",
+               "id": "6",
+               "name": "ГК Астра",
+               "type": "url",
+               "url": "https://gk-astra.ru/"
+            }, {
+               "date_added": "0",
+               "date_last_used": "0",
+               "guid": "8f3b363c-e408-4e10-bc38-e86f4e1ff86b",
+               "id": "7",
+               "name": "Документация",
+               "type": "url",
+               "url": "https://astralinux.ru/info/documents/"
+            }, {
+               "date_added": "0",
+               "date_last_used": "0",
+               "guid": "9f908864-64b7-4a2f-85d0-84cd422afefa",
+               "id": "8",
+               "name": "База знаний",
+               "type": "url",
+               "url": "https://wiki.astralinux.ru/kb"
+            }, {
+               "date_added": "0",
+               "date_last_used": "0",
+               "guid": "9bcee07b-88ea-48ce-b8d9-13af61ea0aa2",
+               "id": "9",
+               "name": "Справочный центр",
+               "type": "url",
+               "url": "https://wiki.astralinux.ru/"
+            }, {
+               "date_added": "0",
+               "date_last_used": "0",
+               "guid": "83b282c1-7447-4ec2-845a-1b0dd57088e5",
+               "id": "10",
+               "name": "Канал в Telegram",
+               "type": "url",
+               "url": "https://t.me/astralinux"
+            }, {
+               "date_added": "0",
+               "date_last_used": "0",
+               "guid": "7f683610-1e67-453b-903e-1bb8fb930542",
+               "id": "11",
+               "name": "Группа Вконтакте",
+               "type": "url",
+               "url": "https://vk.com/astralinux"
+            }, {
+               "date_added": "0",
+               "date_last_used": "0",
+               "guid": "fc1b994d-aae1-4cce-8d54-7e888ec452ca",
+               "id": "12",
+               "name": "Канал на RuTube",
+               "type": "url",
+               "url": "https://rutube.ru/channel/23720491/"
+            } ],
+            "date_added": "13391680075662219",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "d6f6a580-2d00-4f7c-8ce5-d9fc99559bf2",
+            "id": "5",
+            "name": "Astra Linux",
+            "type": "folder"
+         } ],
+         "date_added": "13391680074894515",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Панель закладок",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13391680074894517",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Другие закладки",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13391680074894518",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Моб. закладки",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

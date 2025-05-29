@@ -1,0 +1,19 @@
+[Desktop Entry]
+Name=XCA
+Name[ru]=Цифровые сертификаты XCA
+Type=Application
+Comment=A graphical user interface for handling and issuing X.509 compliant Certificates
+Exec=xca %F
+Icon=xca
+Terminal=false
+MimeType=application/x-xca-database;application/x-xca-template;application/x-x509-ca-cert;application/pkcs10;application/x-pkcs7-certificates;application/x-pkcs12
+Categories=Application;Utility;Qt
+Comment[de]=Eine graphische Oberfläche zur Erstellung von X.509 konformen Zertifikaten
+Comment[fi]=Graafinen X.509-varmenteiden hallintatyökalu
+Comment[fr]=Création et gestion de certificats conformes à la norme X.509
+Comment[hr]=Grafičko korisničko sučelje za upravljanje životnim ciklusom X.509 sukladnih potvrda
+Comment[nl]=Een grafische gebruikers interface voor behandeling en uitgifte van X.509 conforme certificaten
+Comment[pt_BR]=Interface gráfica para gerenciar e emitir Certificados X.509
+Comment[sk]=GUI na spracovanie a vydávanie Certifikátov X.509
+Encoding=UTF-8
+X-Fly-OriginFile=/usr/share/applications/xca.desktop

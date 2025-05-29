@@ -1,0 +1,347 @@
+;update
+;**********************************************************************
+; mics. internal menus
+;**********************************************************************
+
+[CtrlMenu]
+"\&Restore  "		""			""	FLYWM_RESTORE
+"\&Move"		""			""	FLYWM_MOVE
+"Re\&size"		""			""	FLYWM_RESIZE
+"Mi\&nimize"		"go-down"		"Actions"	FLYWM_MINIMIZE
+"Ma\&ximize"		""			""	FLYWM_MAXIMIZE
+"\&Expand"		""			""	FLYWM_EXPAND
+"\&Lower"		""			""	FLYWM_LOWER
+;"Minimize to \&tray"   ""                      ""	FLYWM_SWALLOW
+""			""			""	FLYWM_SEPARATOR
+"\&Run one more"	""			""	FLYWM_RUN_ONE_MORE
+"Stop"			""			""	FLYWM_STOP_CONT
+"Create shortcut"	""			""	FLYWM_CREATE_DESKTOP_ICON
+""			""			""	FLYWM_SEPARATOR
+;"To left"		""			""	FLYWM_TBTN_LEFT
+;"To right"		""			""	FLYWM_TBTN_RIGHT
+;""			""			""	FLYWM_SEPARATOR
+"\&Close"     "" "" FLYWM_CLOSE
+"Close group" "" "" FLYWM_CLOSE_COMBINED
+"Kill" "application-exit" "Actions" FLYWM_KILL
+""			""			""	FLYWM_SEPARATOR
+"Properties"		""			""
++
+"Decor"			""			""	FLYWM_TOGGLE_DECOR
+"On Top"		""			""	FLYWM_TOGGLE_ONTOP
+"At Bottom"		""			""	FLYWM_TOGGLE_ONBOTTOM
+"Sticky"		""			""	FLYWM_TOGGLE_STICKY
+""			""			""	FLYWM_SEPARATOR
+"Save" 			""			""	FLYWM_WINPROP_ADD
+"Reset"			""			""	FLYWM_WINPROP_DEL
+"Edit..."		""			""	FLYWM_WINPROP_EDIT
+-
+
+;**********************************************************************
+; Desktop Menu configuration
+;**********************************************************************
+[DesktopMenu]
+;"Re\&fresh screen" ""  ""  "xrefresh"
+;"" ""  ""  FLYWM_SEPARATOR
+"Refresh \&Icons"   "view-refresh"  "Actions"  FLYWM_FORCE_UPDATE_SHORTCUT
+"L\&ineup Icons"    ""  ""  FLYWM_LINEUP_ICON_INSCR
+"\&Order Icons"     ""  ""  FLYWM_ORDER_ICON_INSCR
+"Hidden Icons"      ""  ""  FLYWM_TOGGLE_SHOW_ICON
+""  ""  ""  FLYWM_SEPARATOR
+"\&Overlap"		""			""	FLYWM_OVERLAP_INSCR
+"Tile \&Vertically"	"view-split-top-bottom" "Actions"	FLYWM_TILE_VERT_INSCR
+"Tile \&Horizontally"	"view-split-left-right" "Actions"	FLYWM_TILE_HORZ_INSCR
+"Tile \&Matrix"		"" 			""	FLYWM_TILE_MATRIX_INSCR
+""			""			""	FLYWM_SEPARATOR
+"\&Close All"		"application-exit"    	"Actions"	FLYWM_CLOSE_ALL_INSCR
+"\&Minimize All"	"window-minimize-all"	"Actions" FLYWM_MINIMIZE_ALL_INSCR
+"\&Restore All"		"window-restore-all"	"Actions" FLYWM_RESTORE_ALL_INSCR
+""			""			""	FLYWM_SEPARATOR
+"Undo"			"edit-undo"	"Actions"	FLYWM_ICON_UNDO
+"P\&aste"		"edit-paste"	"Actions"	FLYWM_ICON_PASTE
+"\&Create"		""		"Marker!"
++
+  "\&Folder"		"folder"	"Places"	FLYWM_ICON_FOLDER_CREATE
+  "\&Text file"		""		""		FLYWM_ICON_TXT_CREATE
+;  "S\&hortcut"		""			""	FLYWM_ICON_ITEM_CREATE
+  ""			""			""	FLYWM_SEPARATOR
+;  "Session script"	""			""	FLYWM_ICON_SESSION_CREATE
+-
+""			""			""	FLYWM_SEPARATOR
+"Taskbar"		""			""	FLYWM_TOGGLE_TASKBAR
+"Pager"			""			""	FLYWM_TOGGLE_PAGER
+""			""			""	FLYWM_SEPARATOR
+"\&Exit..."		"system-log-out"	"Actions"	FLYWM_EXIT
+""			""			""	FLYWM_SEPARATOR
+"Monitor settings..."  "preferences-system-display-parameter" "Categories" "fly-admin-screen"
+"Personalization..."   "preferences-system-personalization"   "Categories" "fly-admin-theme -dialog"
+
+;**********************************************************************
+; Icon Menu configuration
+;**********************************************************************
+[IconMenu]
+"\&Open"		""				""	FLYWM_EXEC_ICON
+"Open with..."		""				""	FLYWM_ICON_OPEN_WITH
+""			""				""	FLYWM_SEPARATOR
+"\&Send to"		""				""	
++
+  "Email..."		"mail"	"Actions"	FLYWM_ICON_SEND_TO_EMAIL
+  ""			""				""	FLYWM_SEPARATOR
+  "Home"		"user-home"		"Places"	FLYWM_ICON_SEND_TO_HOME
+  "Documents"		"folder-documents"		"Places"	FLYWM_ICON_SEND_TO_MYDOC
+  ""			""	""		FLYWM_SEPARATOR
+  "Start Menu"	""	""	FLYWM_ICON_SEND_TO_STARTMENU
+  "Toolbar"		""	""	FLYWM_ICON_SEND_TO_TOOLBAR
+  "Autostart"	""	""	FLYWM_ICON_SEND_TO_AUTOSTART
+  "Review..."	""	""	FLYWM_ICON_SEND_TO_FOLDER
+;  ""			""				""	FLYWM_SEPARATOR
+;  "Text Editor"		""				""	"kate %F"
+;  "Binary Editor"	""				""	"fly-hexedit %F"
+;  "Archiver..."		""				""	"ark -d -c %F"
+;  "Trash"		""				""	FLYWM_ICON_SEND_TO_TRASH
+-
+"Actions" "" "!Marker"
++
+  "Archive..."  ""  ""  "ark -d -c %F"
+-
+""  ""  ""  FLYWM_SEPARATOR
+"C\&ut"     "edit-cut"      "Actions"   FLYWM_ICON_CUT
+"\&Copy"    "edit-copy"     "Actions"   FLYWM_ICON_COPY
+"\&Paste"   "edit-paste"    "Actions"   FLYWM_ICON_PASTE
+"" "" "" FLYWM_SEPARATOR
+"\&Delete"  "" ""  FLYWM_ICON_SEND_TO_TRASH
+"\&Rename"  "" ""  FLYWM_ICON_RENAME
+"" "" "" FLYWM_SEPARATOR
+"\&Properties..." "" "" FLYWM_ICON_PROPERTIES
+
+;**********************************************************************
+; Taskbar Menu configuration
+;**********************************************************************
+[TaskbarMenu]
+"\&Overlap"		""			""	FLYWM_OVERLAP_INSCR
+"Tile \&Vertically"	"view-split-top-bottom" "Actions"	FLYWM_TILE_VERT_INSCR
+"Tile \&Horizontally"	"view-split-left-right" "Actions"	FLYWM_TILE_HORZ_INSCR
+"Tile \&Matrix"		"" 			""	FLYWM_TILE_MATRIX_INSCR
+""			""			""	FLYWM_SEPARATOR
+"\&Close All"		"application-exit"    	"Actions" FLYWM_CLOSE_ALL_INSCR
+"\&Minimize All"	"window-minimize-all"	"Actions" FLYWM_MINIMIZE_ALL_INSCR
+"\&Restore All"		"window-restore-all"	"Actions" FLYWM_RESTORE_ALL_INSCR
+""			""			""	FLYWM_SEPARATOR
+"Combine buttons" "" "" FLYWM_TOGGLE_BUTTON_COMBINE_TASKBAR
+"No button names" "" "" FLYWM_TOGGLE_BUTTON_NAME_TASKBAR
+"" "" "" FLYWM_SEPARATOR
+"Pager"             "" "" FLYWM_TOGGLE_PAGER
+;"System monitor..." "" "" "ksysguard"
+;"File manager..."   "" "" "fly-fm ~"
+"Tray" "" "!Marker"
++
+  "" "" "" FLYWM_SEPARATOR
+  "Show-hide all" "" "" FLYWM_TRAY_TOGGLE_ALL_INDICATORS_PRIORITY
+  "Properties..." "" "" "fly-admin-theme Theme"
+-
+"" "" "" FLYWM_SEPARATOR
+"\&Properties"		""			""	
++
+  "P\&osition"		""			""	
+  +
+	"\&Bottom"	""	""	FLYWM_BOTTOM
+	"\&Top"		""	""	FLYWM_TOP
+	"\&Left"	""	""	FLYWM_LEFT
+	"\&Right"	""	""	FLYWM_RIGHT
+  -
+  "Size" "" ""
+  +
+    "Large"   "" ""  "fly-wmfunc FLYWM_UPDATE_VAL TaskbarHeight 64"
+    "Mediaum" "" ""  "fly-wmfunc FLYWM_UPDATE_VAL TaskbarHeight 48"
+    "Small"   "" ""  "fly-wmfunc FLYWM_UPDATE_VAL TaskbarHeight 38"
+  -
+  "\&Rows"		""			""	
+  +
+    "\&Add"        ""          ""  FLYWM_TASKBAR_ROWS_INC
+    "\&Delete"     ""          ""  FLYWM_TASKBAR_ROWS_DEC
+  -
+  "\&AutoHide"		""	""	FLYWM_TOGGLE_AUTOHIDE
+  "\&Show"		""	""	FLYWM_TOGGLE_TASKBAR
+  "\&Fixed"		""	""	FLYWM_TOGGLE_FIX_TASKBAR
+  "\&On Top of all"	""	""	FLYWM_TOGGLE_ONTOP_TASKBAR
+-
+
+;******************************************************************
+; Config menu for Start button
+;******************************************************************
+
+[StartButtonMenu]
+"\&File Manager..."	""	""	"fly-fm ~/.fly/startmenu"
+"\&Run..."		""	""	"fly-run"
+""			""	""	FLYWM_SEPARATOR
+"\&Update"		""	""	FLYWM_UPDATE_STARTMENU
+"\&Edit..."		""	""	"fly-menu-edit.sh"
+"Classic"		""	""	FLYWM_TOGGLE_START_MENU
+""			""	""	FLYWM_SEPARATOR
+"Exit"                 "system-log-out"     "Action"  FLYWM_LOGOUT
+"Lock"                 "system-lock-screen" "Actions" FLYWM_LOCK
+"New session"          "system-switch-user" "Actions" FLYWM_CHANGE_USER_IN_CONSOLE
+"Sleep"                "system-suspend"     "Actions" FLYWM_SUSPEND
+"Reboot and update"    "system-reboot"      "Actions" FLYWM_REBOOT
+"Shutdown and update " "system-shutdown"    "Actions" FLYWM_SHUTDOWN
+
+[StartContextMenu]
+;"Create folder" "folder" "Places"   FLYWM_ICON_FOLDER_CREATE
+"Add item"       ""       ""         FLYWM_ICON_ITEM_CREATE
+"Delete"         ""       ""         FLYWM_ICON_SEND_TO_TRASH
+"\&Send to"      ""       ""
++
+  "Desktop"		""	""	FLYWM_ICON_SEND_TO_DESKTOP
+  "Start Menu"	""  ""	FLYWM_ICON_SEND_TO_STARTMENU
+  "Toolbar"		""	""	FLYWM_ICON_SEND_TO_TOOLBAR
+  "Autostart"	""	""	FLYWM_ICON_SEND_TO_AUTOSTART
+  "Review..."	""	""	FLYWM_ICON_SEND_TO_FOLDER
+-
+"Properties..."	""		""		FLYWM_ICON_PROPERTIES
+""		""		""		FLYWM_SEPARATOR
+"Cut"		"edit-cut"	"Actions"	FLYWM_ICON_CUT
+"Copy"		"edit-copy"	"Actions"	FLYWM_ICON_COPY
+"Paste"		"edit-paste"	"Actions"	FLYWM_ICON_PASTE
+""		""		""		FLYWM_SEPARATOR
+"\&Update"	""		""		FLYWM_UPDATE_STARTMENU
+"\&Edit..."	""		""		"fly-menuedit"
+
+;******************************************************************
+; Config menu for toolbar
+;******************************************************************
+
+[ToolbarMenu]
+;"Create"    ""  ""  FLYWM_ICON_ITEM_CREATE
+"Delete"    ""  ""  FLYWM_ICON_SEND_TO_TRASH
+"\&Send to" ""  ""
++
+  "Desktop"     ""  ""  FLYWM_ICON_SEND_TO_DESKTOP
+  "Start Menu"  ""  ""  FLYWM_ICON_SEND_TO_STARTMENU
+  "Autostart"   ""  ""  FLYWM_ICON_SEND_TO_AUTOSTART
+  "Review..."   ""  ""  FLYWM_ICON_SEND_TO_FOLDER
+-
+"Properties..." ""  ""  FLYWM_ICON_PROPERTIES
+""              ""  ""  FLYWM_SEPARATOR
+"Cut"   "edit-cut"      "Actions"   FLYWM_ICON_CUT
+"Copy"  "edit-copy"     "Actions"   FLYWM_ICON_COPY
+"Paste" "edit-paste"    "Actions"   FLYWM_ICON_PASTE
+""      ""          ""              FLYWM_SEPARATOR
+"\&File Manager..." ""  ""  "fly-fm ~/.fly/toolbar"
+"Find..."           ""  ""  "fly-find -d"
+"Run..."            ""  ""  "fly-run"
+""                  ""  ""  FLYWM_SEPARATOR
+"\&Update"          ""  ""  FLYWM_UPDATE_TOOLBAR
+"\&Edit..."         ""  ""  "fly-menuedit ~/.fly/toolbar"
+"Classic"           ""  ""  FLYWM_TOGGLE_START_MENU
+
+;**********************************************************************
+; Indicator configuration
+;    <identifier> <exec file name>
+;
+;    Identifier is the title name, resource name or resource
+;    class of a window for an indicator.
+;**********************************************************************
+[Indicators]
+;columns are:
+;"name id"  "exec or func" "cooment(tooltip)" "icon" "context of icon"
+;"maclevel" "CLICK_EXEC_PROG pkill fly-dialog;fly-dialog --icon dialog-information --caption \"Mandatory level\" --msgbox \"`pdp-id`\""  "" "" ""
+"maclevel"  "CLICK_EXEC_PROG fly-mac-dialog -n"  "" "" ""
+"xkb"       "FLYWM_TOGGLE_KB" "Keyboard switcher"   "" ""
+"tray"      "FLYWM_TRAY_TOGGLE_POPUP" "Show-hide tray" "arrow-up" "Actions"
+;"xbiff"    "xbiff" "" "" ""
+;"XEyes"    "xeyes" "" "" ""
+;"xload"    "xload -nolabel -update 1 -bg lightblue" "" "" ""
+;"pager"     "FLYWM_ENABLE_PAGER" "Show Pager" "fly-pager-win" "Applications"
+;"switcher" "FLYWM_SWITCHER_TOGGLE" "Switch active window" "preferences-system-windows" "Categories"
+
+;*********************************************************************
+; Accessories configuration
+;	<image> <ctx>  <location>   <style>
+;	image    - an image file whose format is supported
+;	ctx	 - an icon context, if image is icon name (no extension)
+;	location - Top, Bottom, Left, Right, TopLeft, TopRight, 
+;	BottomLeft, BottomRight, Center, or position (like +0+0)
+;	style    - Background, OnTop, or Application.
+;*********************************************************************
+[Accessories]
+;"/usr/share/fly-wm/images/astra_full_logo.xpm" "" Background TopRight
+
+;**********************************************************************
+; Exit dialog configuration
+;    <part> <str or image name> (<action>)
+;
+;    Action is specified in the case of RadioButton. (fly-wm internal
+;    function or exec file name)
+;**********************************************************************
+[ExitDialog]
+Title		"Exit" 		""
+;StaticText	"What should I do?"	""
+RadioButton	"Exit"			""		FLYWM_LOGOUT
+;RadioButton    "Lock screen"		""		FLYWM_LOCK
+;RadioButton	"Restart" 		""		FLYWM_RESTART
+RadioButton	"Reboot"		""		FLYWM_REBOOT
+RadioButton	"Shutdown"		""		FLYWM_SHUTDOWN
+IconImage	"/usr/share/fly-wm/images/exit_session.png"
+IconImage	"/usr/share/fly-wm/images/exit_reboot.png"
+IconImage	"/usr/share/fly-wm/images/exit_shutdown.png"
+OKButton	"\&Yes"			""
+CancelButton	"\&No"			""
+;HelpButton	"\&Help"		""
+
+
+;**********************************************************************
+; Clock menu
+;**********************************************************************
+[ClockMenu]
+"\&Fonts..."      "" "" "fly-admin-wm Fonts"
+"\&Properties..." "" "" "fly-admin-date --toggle"
+
+;**********************************************************************
+; Keyboard layout indicator menu
+;**********************************************************************
+[XkbMenu]
+"Base"			"" ""	FLYWM_BASE_KB
+"Alternative"		"" ""	FLYWM_ALT_KB
+""			"" ""	FLYWM_SEPARATOR
+"\&Properties..."	"" ""	"fly-xkbmap"
+
+;**********************************************************************
+; Security levels idicator-selector menu
+;**********************************************************************
+[MACLevelMenu]
+"\&Properties..." "" "" "fly-start-admin.sh mac"
+
+;**********************************************************************
+; Tray popup button context menu
+;**********************************************************************
+[TrayMenu]
+"" "" "" FLYWM_SEPARATOR
+"\&Show-hide all" "" "" FLYWM_TRAY_TOGGLE_ALL_INDICATORS_PRIORITY
+"\&Properties..." "" "" "fly-admin-theme Theme"
+
+;**********************************************************************
+; Desktop pager menu
+;**********************************************************************
+[PagerMenu]
+"Pager On"		"" ""	FLYWM_TOGGLE_PAGER
+"On Top of all"	        "" ""	FLYWM_TOGGLE_ONTOP_PAGER
+""			"" ""	FLYWM_SEPARATOR
+"Increase size"		"" ""	FLYWM_INC_SIZE_PAGER
+"Decrease size"	 	"" ""	FLYWM_DEC_SIZE_PAGER
+"Maximize"		"" ""	FLYWM_MAXIMIZE_PAGER
+"Restore"		"" ""	FLYWM_RESTORE_PAGER
+""			"" ""	FLYWM_SEPARATOR
+"Add row"		"" ""	FLYWM_ADD_ROW_PAGER
+"Remove row"		"" ""	FLYWM_SUB_ROW_PAGER
+"Add column"		"" ""	FLYWM_ADD_COL_PAGER
+"Remove column"		"" ""	FLYWM_SUB_COL_PAGER
+
+;**********************************************************************
+; Desktop drop operation menu
+;**********************************************************************
+[DndMenu]
+"Copy"			"" ""	FLYWM_DND_COPY
+"Move"			"" ""	FLYWM_DND_MOVE
+;ALD: no symlink allowed from home to other paths
+"Create shortcut"	"" ""	FLYWM_DND_LINK
+""			"" ""	FLYWM_SEPARATOR
+"Cancel"		"" ""	FLYWM_DND_CANCEL

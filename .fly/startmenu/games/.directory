@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Games
+Name[ru]=Игры
+Type=Directory
+Icon=applications-games
+#SortOrder=fly-*;sep.desktop;
+X-FLY-IconContext=Categories
+Categories=Game;*Game;

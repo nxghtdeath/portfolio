@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Winetricks
+Type=Application
+Comment=Work around problems and install applications under Wine
+Comment[ru]=Решение проблем и установка программ с помощью Wine
+Exec=winetricks --gui
+Icon=winetricks
+Terminal=false
+Categories=Utility
+Comment[pl]=Rozwiązuj problemy i instaluj aplikacje z użyciem Wine
+X-Fly-OriginFile=/usr/share/applications/winetricks.desktop

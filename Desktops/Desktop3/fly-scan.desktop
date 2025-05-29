@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+
+Name=Scan Dialog
+Name[ru]=Сканирование
+
+GenericName=Scanner Dialog
+GenericName[ru]=Диалог со сканером
+
+Comment=Scan and save images
+Comment[ru]=Сканировать и сохранить изображения
+
+Exec=fly-scan
+Icon=fly-scan
+
+Categories=Graphics;Scanning;

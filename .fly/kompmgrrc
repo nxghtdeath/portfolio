@@ -1,0 +1,26 @@
+[kompmgr]
+FadeTrans=false
+FadeWindows=false
+
+ShadowColor=0x000000
+ShadowRadius=8
+ShadowOpacity=0.75
+ShadowOffsetX=-15
+ShadowOffsetY=-15
+ShadowBlackList=XOSD
+
+FadeOutStep=0.028
+FadeInStep=0.03
+FadeDelta=10
+
+DisableARGB=false
+
+;to switch transparency off
+IgnoreTransparency=true
+
+;select shadow mode, values are:
+;  CompSimple		 looks like a regular X server
+;  CompServerShadows	 use window alpha for shadow; sharp, but precise
+;  CompClientShadows	 use window extents for shadow, blurred
+Compmode=CompSimple
+

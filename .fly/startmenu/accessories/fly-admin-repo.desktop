@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Fly admin repo
+Name[ru]=Редактор репозиториев
+Type=Application
+Exec=fly-admin-repo %F
+Icon=server-database
+Categories=Utility;Settings
+OnlyShowIn=Fly
+Encoding=UTF-8
+X-Fly-OriginFile=/usr/share/applications/fly-admin-repo.desktop

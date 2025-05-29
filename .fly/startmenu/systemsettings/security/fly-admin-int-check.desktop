@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=System integrity check
+Name[ru]=Проверка целостности сиcтемы
+GenericName=System integrity check
+GenericName[ru]=Проверка целостности системы
+Type=Application
+Comment=System integrity check for Fly desktop
+Comment[ru]=Проверка целостности системы для рабочего стола Fly
+Exec=su-to-root -X -c /usr/bin/fly-admin-int-check
+Icon=integrity-check
+Terminal=false
+Categories=System;Security
+X-SuSE-YaST-Group=Security
+X-Fly-OriginFile=/usr/share/applications/fly-admin-int-check.desktop

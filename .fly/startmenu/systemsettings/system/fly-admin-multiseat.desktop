@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Fly admin multiseat
+Name[ru]=Мультитерминальный режим
+Type=Application
+Comment=Application for device assignment between users of single station
+Comment[ru]=Приложение для распределения устройств между пользователями одной рабочей станции
+Exec=su-to-root -X -c fly-admin-multiseat
+Icon=fly-admin-multiseat
+Categories=System
+OnlyShowIn=Fly
+Encoding=UTF-8
+X-SuSE-YaST-Group=System;
+X-Fly-OriginFile=/usr/share/applications/fly-admin-multiseat.desktop

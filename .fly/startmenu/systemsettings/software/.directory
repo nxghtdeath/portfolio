@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Directory
+Name=Software
+Name[ru]=Программы
+X-SuSE-YaST-Group=Software
+Icon=applications-utilities
+X-FLY-IconContext=Categories
+#Categories=?
+NoDisplay=true

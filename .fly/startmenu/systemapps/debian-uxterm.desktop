@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=UXTerm
+Type=Application
+Comment=xterm wrapper for Unicode environments
+Exec=uxterm
+Icon=mini.xterm
+Terminal=false
+StartupWMClass=UXTerm
+Categories=System;TerminalEmulator
+NotShowIn=fly
+Keywords=shell;prompt;command;commandline;cmd
+X-Desktop-File-Install-Version=0.26
+X-Fly-OriginFile=/usr/share/applications/debian-uxterm.desktop

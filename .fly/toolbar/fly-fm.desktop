@@ -1,0 +1,11 @@
+[Desktop Entry]
+Exec=fly-fm fly-fm:Home
+Icon=system-file-manager
+Type=Application
+Name=File Manager
+Name[ru]=Менеджер файлов
+Comment=File Manager
+Comment[ru]=Менеджер файлов
+Categories=None;
+OnlyShowIn=FLY;
+X-FLY-IconContext=Applications

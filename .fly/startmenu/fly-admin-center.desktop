@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+
+Name=Control Center
+#Name[ru]=Панель управления
+Name[ru]=Параметры системы
+
+Icon=preferences-system
+Exec=/bin/bash -c astra-systemsettings || fly-admin-center
+
+Categories=Settings;System;

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=System alternatives
+Name[ru]=Системные альтернативы
+Type=Application
+Comment=Manage alternatives in debian-based systems
+Comment[ru]=Управление системой альтернатив дистрибутивов, основанных на Debian
+Exec=su-to-root -X -c fly-admin-alternatives
+Icon=fly-admin-alternatives
+Categories=SystemSetup;System;Settings
+OnlyShowIn=FLY
+X-SuSE-YaST-Group=System
+X-SuSE-YaST-RootOnly=false
+X-Fly-OriginFile=/usr/share/applications/fly-admin-alternatives.desktop

@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Recoll
+Name[ru]=Контекстный поиск Recoll
+GenericName=Local Text Search
+GenericName[ru]=Локальный текстовый поиск
+Type=Application
+Comment=Find documents by specifying search terms
+Comment[ru]=Поиск документов по заданным условиям
+Exec=recoll
+Icon=recoll
+Terminal=false
+Categories=Qt;Utility;Filesystem;Database
+Keywords=Search;Full Text
+Comment[de]=Finde Dokumente durch Angeben von Suchbegriffen
+GenericName[de]=Lokale Textsuche
+X-Fly-OriginFile=/usr/share/applications/recoll-searchgui.desktop

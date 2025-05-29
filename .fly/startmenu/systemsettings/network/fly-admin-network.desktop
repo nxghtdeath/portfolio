@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Network settings
+Name[ru]=Параметры сети
+Type=Application
+Exec=su-to-root -X -c fly-admin-network
+Icon=network
+Categories=GNOME;GTK;Settings;X-GNOME-NetworkSettings
+X-SuSE-YaST-Group=Network
+X-Fly-OriginFile=/usr/share/applications/fly-admin-network.desktop

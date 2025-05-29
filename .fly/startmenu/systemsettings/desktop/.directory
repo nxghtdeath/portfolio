@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Directory
+Name=Desktop
+Name[ru]=Рабочий стол
+Categories=DesktopSettings;
+X-SuSE-YaST-Group=Desktop
+Icon=preferences-desktop
+X-FLY-IconContext=Categories

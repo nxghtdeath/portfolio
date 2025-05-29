@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Device Manager
+Name[ru]=Менеджер устройств
+Type=Application
+Comment=Device manager
+Comment[ru]=Менеджер устройств
+Exec=fly-admin-device-manager
+Icon=hwinfo
+Categories=FLY-ADMIN;System;SystemSetup
+X-SuSE-YaST-Group=Hardware
+X-SuSE-YaST-RootOnly=false
+X-Fly-OriginFile=/usr/share/applications/fly-admin-device-manager.desktop

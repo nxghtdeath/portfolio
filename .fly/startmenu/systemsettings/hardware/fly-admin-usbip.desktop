@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Fly admin usbip
+Name[ru]=Сервис удаленных USB-накопителей
+Type=Application
+Exec=fly-admin-usbip
+Icon=gmc-devices
+Categories=System;HardwareSettings
+Encoding=UTF-8
+X-Fly-OriginFile=/usr/share/applications/fly-admin-usbip.desktop

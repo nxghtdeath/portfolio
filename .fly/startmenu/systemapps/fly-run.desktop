@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Fly Run
+Name[ru]=Запуск приложения
+Type=Application
+Comment=Fly application starter
+Comment[ru]=Запуск приложения
+Exec=fly-run
+Icon=system-run
+Categories=System
+X-Fly-OriginFile=/usr/share/applications/fly-run.desktop

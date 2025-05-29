@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Fly hotkeys editor
+Name[ru]=Горячие клавиши Fly
+Type=Application
+Comment=Configure Fly desktop hotkeys
+Comment[ru]=Редактируйте горячие клавиши рабочего стола Fly
+Exec=fly-admin-hotkeys %f
+Icon=preferences-desktop-keyboard-khotkeys
+Categories=Settings
+OnlyShowIn=Fly
+NotShowIn=fly-mobile
+X-FLY-IconContext=Applications
+X-SuSE-YaST-Group=Desktop
+X-Fly-OriginFile=/usr/share/applications/fly-admin-hotkeys.desktop

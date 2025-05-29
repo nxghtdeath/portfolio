@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Fly brightess control
+Name[ru]=Настройка яркости Fly
+Type=Application
+Exec=fly-brightness
+Icon=lightbulb
+Categories=Settings;HardwareSettings
+OnlyShowIn=Fly
+NotShowIn=fly-mobile
+Encoding=UTF-8
+X-FLY-IconContext=Actions
+X-Fly-OriginFile=/usr/share/applications/fly-brightness.desktop

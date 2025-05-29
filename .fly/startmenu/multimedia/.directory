@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Multimedia
+Name[ru]=Мультимедиа
+Type=Directory
+Icon=applications-multimedia
+#SortOrder=fly-*;sep.desktop;
+X-FLY-IconContext=Categories
+Categories=AudioVideo;Multimedia;Audio;Video;

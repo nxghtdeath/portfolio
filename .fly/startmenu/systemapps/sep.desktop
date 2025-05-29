@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Exec=FLYWM_SEPARATOR
+Icon=
+Name=---
+Name[ru]=---
+Comment=Separator
+Comment[ru]=Разделитель
+Categories=None;
+OnlyShowIn=FLY;
+Hidden=true

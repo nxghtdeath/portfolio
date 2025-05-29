@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Session Restore
+Name[ru]=Сессию восстановить
+Type=Application
+NoDisplay=false
+Comment=Restore current Fly session
+Comment[ru]=Восстановить текущую сессию Fly
+Exec=fly-wmfunc FLYWM_RESTORE_SESSION
+Icon=document-export
+Categories=System
+OnlyShowIn=Fly
+X-FLY-IconContext=Actions

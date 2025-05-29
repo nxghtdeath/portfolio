@@ -1,0 +1,122 @@
+;update
+;**********************************************************************
+; mics. internal menus
+;**********************************************************************
+
+[CtrlMenu]
+"\&Restore"		""			""	FLYWM_RESTORE
+"\&Move"		""			""	FLYWM_MOVE
+"Re\&size"		""			""	FLYWM_RESIZE
+"Mi\&nimize"		"go-down"		"Actions"	FLYWM_MINIMIZE
+"Ma\&ximize"		""			""	FLYWM_MAXIMIZE
+"\&Expand"		""			""	FLYWM_EXPAND
+"\&Lower"		""			""	FLYWM_LOWER
+;"Minimize to \&tray"    ""                      ""	FLYWM_SWALLOW
+""			""			""	FLYWM_SEPARATOR
+"\&Run one more"	""			""	FLYWM_RUN_ONE_MORE
+"Stop"			""			""	FLYWM_STOP_CONT
+;"Create shortcut"	""			""	FLYWM_CREATE_DESKTOP_ICON
+""			""			""	FLYWM_SEPARATOR
+;"To left"		""			""	FLYWM_TBTN_LEFT
+;"To right"		""			""	FLYWM_TBTN_RIGHT
+""			""			""	FLYWM_SEPARATOR
+"\&Close" ""                  ""        FLYWM_CLOSE
+"Kill"    "application-exit"  "Actions" FLYWM_KILL
+""			""			""	FLYWM_SEPARATOR
+"Properties"		""			""
++
+"Decor"			""			""	FLYWM_TOGGLE_DECOR
+"On Top"		""			""	FLYWM_TOGGLE_ONTOP
+"At Bottom"		""			""	FLYWM_TOGGLE_ONBOTTOM
+"Sticky"		""			""	FLYWM_TOGGLE_STICKY
+""			""			""	FLYWM_SEPARATOR
+"Save" 			""			""	FLYWM_WINPROP_ADD
+"Reset"			""			""	FLYWM_WINPROP_DEL
+"Edit..."		""			""	FLYWM_WINPROP_EDIT
+-
+
+;**********************************************************************
+; Desktop Menu configuration
+;**********************************************************************
+[DesktopMenu]
+
+;**********************************************************************
+; Exit dialog configuration
+;    <part> <str or image name> (<action>)
+;
+;    Action is specified in the case of RadioButton. (fly-wm internal
+;    function or exec file name)
+;**********************************************************************
+[ExitDialog]
+Title		"Exit" 		""
+;StaticText	"What should I do?"	""
+RadioButton	"Exit"			""		FLYWM_LOGOUT
+;RadioButton    "Lock screen"		""		FLYWM_LOCK
+;RadioButton	"Restart" 		""		FLYWM_RESTART
+RadioButton	"Reboot"		""		FLYWM_REBOOT
+RadioButton	"Shutdown"		""		FLYWM_SHUTDOWN
+IconImage	"/usr/share/fly-wm/images/exit_session.png"
+IconImage	"/usr/share/fly-wm/images/exit_reboot.png"
+IconImage	"/usr/share/fly-wm/images/exit_shutdown.png"
+OKButton	"\&Yes"			""
+CancelButton	"\&No"			""
+;HelpButton	"\&Help"		""
+
+
+;**********************************************************************
+; Clock menu
+;**********************************************************************
+[ClockMenu]
+"\&Fonts..."      "" "" "fly-admin-wm Fonts"
+"\&Properties..." "" "" "fly-admin-date --toggle"
+
+;**********************************************************************
+; Keyboard layout indicator menu
+;**********************************************************************
+[XkbMenu]
+"Base"			"" ""	FLYWM_BASE_KB
+"Alternative"		"" ""	FLYWM_ALT_KB
+""			"" ""	FLYWM_SEPARATOR
+"\&Properties..."	"" ""	"fly-xkbmap"
+
+;**********************************************************************
+; Security levels idicator-selector menu
+;**********************************************************************
+[MACLevelMenu]
+"\&Properties..." "" "" "fly-start-admin.sh mac"
+
+;**********************************************************************
+; Tray popup button context menu
+;**********************************************************************
+[TrayMenu]
+"" "" "" FLYWM_SEPARATOR
+"\&Show-hide all" "" "" FLYWM_TRAY_TOGGLE_ALL_INDICATORS_PRIORITY
+"\&Properties..." "" "" "fly-admin-theme Theme"
+
+;**********************************************************************
+; Desktop pager menu
+;**********************************************************************
+[PagerMenu]
+"Pager On"		"" ""	FLYWM_TOGGLE_PAGER
+"On Top of all"	        "" ""	FLYWM_TOGGLE_ONTOP_PAGER
+""			"" ""	FLYWM_SEPARATOR
+"Increase size"		"" ""	FLYWM_INC_SIZE_PAGER
+"Decrease size"	 	"" ""	FLYWM_DEC_SIZE_PAGER
+"Maximize"		"" ""	FLYWM_MAXIMIZE_PAGER
+"Restore"		"" ""	FLYWM_RESTORE_PAGER
+""			"" ""	FLYWM_SEPARATOR
+"Add row"		"" ""	FLYWM_ADD_ROW_PAGER
+"Remove row"		"" ""	FLYWM_SUB_ROW_PAGER
+"Add column"		"" ""	FLYWM_ADD_COL_PAGER
+"Remove column"		"" ""	FLYWM_SUB_COL_PAGER
+
+;**********************************************************************
+; Desktop drop operation menu
+;**********************************************************************
+[DndMenu]
+"Copy"			"" ""	FLYWM_DND_COPY
+"Move"			"" ""	FLYWM_DND_MOVE
+;ALD: no symlink allowed from home to other paths
+"Create shortcut"	"" ""	FLYWM_DND_LINK
+""			"" ""	FLYWM_SEPARATOR
+"Cancel"		"" ""	FLYWM_DND_CANCEL

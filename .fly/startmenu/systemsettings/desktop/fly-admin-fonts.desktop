@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Fly font manager
+Name[ru]=Шрифты
+Type=Application
+Comment=Program allows to manage fonts
+Comment[ru]=Программа для управления шрифтами
+Exec=fly-admin-fonts
+Icon=preferences-desktop-font
+Categories=Settings
+OnlyShowIn=Fly
+X-SuSE-YaST-Group=Desktop
+X-SuSE-YaST-RootOnly=false
+X-Fly-OriginFile=/usr/share/applications/fly-admin-fonts.desktop

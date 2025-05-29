@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Power management
+Name[ru]=Электропитание
+Type=Application
+Comment=Application for power management
+Comment[ru]=Программа для управления электропитанием, энергосбережением
+Exec=fly-admin-power
+Icon=power
+Categories=Settings;HardwareSettings
+OnlyShowIn=Fly
+X-Fly-OriginFile=/usr/share/applications/fly-admin-power.desktop

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Accessories
+Name[ru]=Утилиты
+Type=Directory
+Icon=applications-accessories
+#SortOrder=fly-*;sep.desktop;
+X-FLY-IconContext=Categories
+Categories=Utility;TerminalEmulator;TextEditor;Clock;Monitor;

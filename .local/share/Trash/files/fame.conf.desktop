@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=fame.conf
+Type=Link
+URL=/etc/apache2/sites-available/fame.conf

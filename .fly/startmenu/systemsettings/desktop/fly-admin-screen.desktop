@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Screen settings
+Name[ru]=Настройка монитора
+Type=Application
+Exec=fly-admin-screen
+Icon=preferences-desktop-display
+Categories=Settings
+OnlyShowIn=Fly
+X-SuSE-YaST-Group=Desktop
+X-Fly-OriginFile=/usr/share/applications/fly-admin-screen.desktop

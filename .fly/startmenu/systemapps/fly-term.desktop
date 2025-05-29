@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Terminal
+Name[ru]=Терминал
+GenericName=Terminal Emulator
+GenericName[ru]=Эмулятор терминала
+Type=Application
+Comment=Command line
+Comment[ru]=Командная строка
+Exec=fly-term
+Icon=utilities-terminal
+Categories=System;TerminalEmulator;Qt
+X-Fly-OriginFile=/usr/share/applications/fly-term.desktop

@@ -1,0 +1,15 @@
+[Variables]
+;Dont edit this main file, edit files included below
+
+ImagePath=/usr/share/fly-wm/images:/usr/share/fly-wm/images:/usr/share/icons
+SoundPath=/usr/share/fly-wm/sounds:/usr/share/fly-wm/sounds
+XmmPath=/usr/share/fly-wm/keymaps:/usr/share/fly-wm/keymaps
+
+include  /usr/share/fly-wm/paletterc
+include  /usr/share/fly-wm/sessrc.fly-kiosk
+include  /usr/share/fly-wm/keyshortcutrc.fly-kiosk
+include  /usr/share/fly-wm/apprc.fly-kiosk
+include  /usr/share/fly-wm/theme/default.themerc.fly-kiosk
+include  /usr/share/fly-wm/ru_RU.UTF-8.miscrc.fly-kiosk
+
+include /etc/fly-kiosk/.config/lockerrc/lockerrc

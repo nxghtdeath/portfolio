@@ -1,0 +1,19 @@
+[MainWindow]
+1280x800 screen: XPosition=6
+1280x800 screen: YPosition=33
+1920x977 screen: Height=700
+1920x977 screen: Width=915
+1920x977 screen: XPosition=6
+1920x977 screen: YPosition=33
+800x600 screen: Height=515
+800x600 screen: Width=720
+800x600 screen: XPosition=6
+800x600 screen: YPosition=33
+958x968 screen: Height=700
+958x968 screen: Width=862
+958x968 screen: XPosition=6
+958x968 screen: YPosition=33
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAA14AAAK8AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Virtual1=Virtual1

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Fly Toolbar Editor
+Name[ru]=Панель быстрого запуcка
+Type=Application
+Comment=Configure your toolbar Fly
+Comment[ru]=Редактируйте тулбар рабочего стола Fly
+Exec=fly-menuedit ~/.fly/toolbar
+Icon=flymenuedit
+Categories=Settings
+OnlyShowIn=Fly
+NotShowIn=fly-mobile
+X-FLY-IconContext=Applications
+X-SuSE-YaST-Group=Desktop
+X-Fly-OriginFile=/usr/share/applications/fly-menuedit_toolbar.desktop

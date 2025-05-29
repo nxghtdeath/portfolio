@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Windows properties
+Name[ru]=Параметры окон
+Type=Application
+Comment=Configure windows properties
+Comment[ru]=Настройка параметров окон
+Exec=fly-admin-winprops
+Icon=preferences-system-windows
+Categories=Settings;DesktopSettings
+OnlyShowIn=FLY
+NotShowIn=fly-mobile
+X-SuSE-YaST-Group=Desktop
+X-Fly-OriginFile=/usr/share/applications/fly-admin-winprops.desktop

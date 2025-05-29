@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Window switcher
+Name[ru]=Переключатель окон
+Exec=FLYWM_SWITCHER_TOGGLE
+Icon=window-switch
+X-FLY-IconContext=Categories
+OnlyShowIn=FLY;

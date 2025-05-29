@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Scheduler
+Name[ru]=Расписание
+Type=Application
+Comment=Automatization
+Comment[ru]=Автоматизация
+Exec=fly-shutdown-scheduler
+Icon=ktimetracker
+Terminal=false
+Categories=Qt;Utility
+Keywords=timer;scheduler;interval;range
+Keywords[ru]=timer;scheduler;interval;range;таймер;расписание;интервал
+X-KDE-FormFactor=desktop;tablet;handset;
+X-Fly-OriginFile=/usr/share/applications/fly-shutdown-scheduler.desktop

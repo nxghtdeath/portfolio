@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Find files
+Name[ru]=Поиск файлов
+Type=Application
+Comment=Find file application (fly-find)
+Comment[ru]=Программа поиска файлов (fly-find)
+Exec=fly-find -d
+Icon=system-search
+Categories=System;FileTools
+OnlyShowIn=Fly
+X-Fly-OriginFile=/usr/share/applications/fly-find-dialog.desktop

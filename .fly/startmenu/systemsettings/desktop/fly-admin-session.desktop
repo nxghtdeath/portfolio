@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Fly Sessions
+Name[ru]=Сессии Fly
+Type=Application
+Comment=Fly sessions settings
+Comment[ru]=Настройки для сессий рабочего стола Fly
+Exec=fly-admin-session
+Icon=system-switch-user
+Categories=Settings
+OnlyShowIn=Fly
+NotShowIn=fly-mobile
+X-FLY-IconContext=Actions
+X-SuSE-YaST-Group=Desktop
+X-Fly-OriginFile=/usr/share/applications/fly-admin-session.desktop

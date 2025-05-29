@@ -1,0 +1,1735 @@
+'use strict';
+
+;(function(){
+
+	/************************ ATTENTION ***************************
+	 * Please do not use Bitrix CoreJS in this class.            *
+	 * This class can be called on page without Bitrix Framework *
+	**************************************************************/
+
+	if (!window.BX)
+	{
+		window.BX = {};
+	}
+	else if (window.BX.RestClient)
+	{
+		return;
+	}
+
+	var BX = window.BX;
+
+	BX.RestClient = function (options)
+	{
+		options = options || {};
+
+		this.endpoint = options.endpoint || '/rest';
+		this.queryParams = options.queryParams || '';
+		this.cors = options.cors === true;
+	};
+
+	BX.RestClient.prototype.callMethod = function(method, params, callback, sendCallback, logTag)
+	{
+		return ajax({
+			method: method,
+			data: params,
+			callback: callback,
+			sendCallback: sendCallback,
+			logTag: logTag,
+			endpoint: this.endpoint,
+			queryParams: this.queryParams,
+			cors: this.cors
+		});
+	};
+
+	/*
+	calls = [[method,params],[method,params]];
+	calls = [{method:method,params:params},[method,params]];
+	calls = {call_id:[method,params],...};
+	*/
+	BX.RestClient.prototype.callBatch = function(calls, callback, bHaltOnError, sendCallback, logTag)
+	{
+		var cmd = Utils.isArray(calls) ? [] : {};
+		var cnt = 0;
+		var cb = function(cmd) {
+			ajax.batch(cmd, callback, bHaltOnError, sendCallback, this.endpoint, this.queryParams, this.cors, logTag);
+		}.bind(this);
+
+		for(var i in calls)
+		{
+			var method = null, params = null;
+
+			if(!!calls[i] && calls.hasOwnProperty(i))
+			{
+				if(Utils.isArray(calls[i]))
+				{
+					method = calls[i][0];
+					params = calls[i][1];
+				}
+				else if(!!calls[i].method)
+				{
+					method = calls[i].method;
+					params = calls[i].params;
+				}
+
+				if(!!method)
+				{
+					cnt++;
+					cmd[i] = [method, params];
+				}
+			}
+		}
+
+		if(cnt > 0)
+		{
+			var e = function(i)
+			{
+				return function(str)
+				{
+					cmd[i] = cmd[i][0] + '?' + str;
+					if(--cnt <= 0)
+						cb(cmd);
+				}
+			};
+
+			for(var c in cmd)
+			{
+				if(cmd.hasOwnProperty(c))
+				{
+					ajax.prepareData(cmd[c][1], '', e(c));
+				}
+			}
+		}
+	};
+
+	BX.RestClient.prototype.setEndpoint = function(url)
+	{
+		this.endpoint = url;
+	};
+
+	BX.RestClient.prototype.enableCorsRequest = function(value)
+	{
+		this.cors = value === true;
+	};
+
+	BX.RestClient.prototype.setQueryParams = function(params)
+	{
+		this.queryParams = params;
+	};
+
+	/* self init for bitrix env */
+	if (typeof BX.namespace !== 'undefined')
+	{
+		var BXRest = new BX.RestClient();
+
+		if (typeof BX.rest == 'undefined')
+		{
+			BX.rest = {};
+		}
+
+		BX.rest.callMethod = function (method, params, callback, sendCallback, logTag)
+		{
+			return BXRest.callMethod(method, params, callback, sendCallback, logTag);
+		};
+
+		/*
+		calls = [[method,params],[method,params]];
+		calls = [{method:method,params:params},[method,params]];
+		calls = {call_id:[method,params],...};
+		*/
+		BX.rest.callBatch = function (calls, callback, bHaltOnError, sendCallback, logTag)
+		{
+			return BXRest.callBatch(calls, callback, bHaltOnError, sendCallback, logTag);
+		};
+	}
+
+	var Utils = {
+		isArray: function(item) {
+			return item && Object.prototype.toString.call(item) == "[object Array]";
+		},
+		isFunction: function(item) {
+			return item === null ? false : (typeof (item) == "function" || item instanceof Function);
+		},
+		isString: function(item) {
+			return item === '' ? true : (item ? (typeof (item) == "string" || item instanceof String) : false);
+		},
+		isDomNode: function(item) {
+			return item && typeof (item) == "object" && "nodeType" in item;
+		},
+		isDate: function(item) {
+			return item && Object.prototype.toString.call(item) == "[object Date]";
+		},
+		buildQueryString: function(params)
+		{
+			var result = '';
+			for (var key in params)
+			{
+				if (!params.hasOwnProperty(key))
+				{
+					continue;
+				}
+				var value = params[key];
+				if(this.isArray(value))
+				{
+					value.forEach(function(valueElement, index)
+					{
+						result += encodeURIComponent(key + "[" + index + "]") + "=" + encodeURIComponent(valueElement) + "&";
+					});
+				}
+				else
+				{
+					result += encodeURIComponent(key) + "=" + encodeURIComponent(value) + "&";
+				}
+			}
+
+			if(result.length > 0)
+			{
+				result = result.substr(0, result.length - 1);
+			}
+			return result;
+		},
+		clone: function(obj, bCopyObj)
+		{
+			var _obj, i, l;
+			if (bCopyObj !== false)
+				bCopyObj = true;
+
+			if (obj === null)
+				return null;
+
+			if (this.isDomNode(obj))
+			{
+				_obj = obj.cloneNode(bCopyObj);
+			}
+			else if (typeof obj == 'object')
+			{
+				if (this.isArray(obj))
+				{
+					_obj = [];
+					for (i=0,l=obj.length;i<l;i++)
+					{
+						if (typeof obj[i] == "object" && bCopyObj)
+							_obj[i] = this.clone(obj[i], bCopyObj);
+						else
+							_obj[i] = obj[i];
+					}
+				}
+				else
+				{
+					_obj =  {};
+					if (obj.constructor)
+					{
+						if (this.isDate(obj))
+							_obj = new Date(obj);
+						else
+							_obj = new obj.constructor();
+					}
+
+					for (i in obj)
+					{
+						if (typeof obj[i] == "object" && bCopyObj)
+							_obj[i] = this.clone(obj[i], bCopyObj);
+						else
+							_obj[i] = obj[i];
+					}
+				}
+
+			}
+			else
+			{
+				_obj = obj;
+			}
+
+			return _obj;
+		}
+	};
+
+	var ajax = function(config)
+	{
+		var hasCallback = !!config.callback && Utils.isFunction(config.callback);
+		var promise = typeof BX.Promise === 'undefined' || hasCallback? null: new BX.Promise();
+		var sendCallback = config.sendCallback || function() {};
+		var withoutRestoringCsrf = config.withoutRestoringCsrf || false;
+		var loginAttempt = config.loginAttempt || 0;
+
+		var xhr = ajax.xhr();
+
+		var url = config.endpoint + '/' + ajax.escape(config.method) + '.json'+(config.logTag? '?logTag='+config.logTag: '');
+
+		xhr.open('POST', url);
+		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+		if (config.cors)
+		{
+			xhr.withCredentials = true;
+		}
+
+		var bRequestCompleted = false;
+
+		// IE fix
+		xhr.onprogress = function(){};
+		xhr.ontimeout = function(){};
+		xhr.timeout = 0;
+
+		xhr.onload = function()
+		{
+			if(bRequestCompleted)
+				return;
+
+			xhr.onload = function() {};
+
+			var bSuccess = ajax.isSuccess(xhr);
+
+			var status = xhr.status;
+			if(bSuccess)
+			{
+				var data = xhr.responseText;
+
+				if(data.length > 0)
+				{
+					try
+					{
+						data = JSON.parse(data);
+					}
+					catch(e)
+					{
+						bSuccess = false;
+					}
+				}
+
+				if (status == 401)
+				{
+					if (data.extended_error === 'user_not_authorized' && loginAttempt === 0)
+					{
+						if (data.sessid)
+						{
+							console.warn('BX.rest: csrf-token has expired, replace to a new token');
+							BX.message({'bitrix_sessid': data.sessid});
+						}
+
+						if('BXDesktopSystem' in window)
+						{
+							console.warn('BX.rest: you are not authorized, trying to log in');
+							config.loginAttempt = 1;
+							BXDesktopSystem.Login({
+								// todo: support auth failure callback in future (when it is ready)
+								success: function()
+								{
+									console.warn('BX.rest: successfully logged in, repeating request');
+									if (!hasCallback)
+									{
+										config.callback = function(result)
+										{
+											if (result.error())
+											{
+												promise.reject(result);
+											}
+											else
+											{
+												promise.fulfill(result);
+											}
+										}
+									}
+									ajax(config);
+								}
+							});
+							return true;
+						}
+					}
+					else if (data.sessid && !withoutRestoringCsrf)
+					{
+						BX.message({'bitrix_sessid': data.sessid});
+						console.warn('BX.rest: your csrf-token has expired, send query with a new token');
+
+						config.withoutRestoringCsrf = true;
+
+						if (!hasCallback)
+						{
+							config.callback = function(result)
+							{
+								if (result.error())
+								{
+									promise.reject(result);
+								}
+								else
+								{
+									promise.fulfill(result);
+								}
+							}
+						}
+						ajax(config);
+
+						return true;
+					}
+				}
+				else if (status == 0)
+				{
+					data = {result: {}, error: "ERROR_NETWORK", error_description: "A network error occurred while the request was being executed."};
+				}
+				else
+				{
+					if (status == 200)
+					{
+						if (data.length <= 0)
+						{
+							data = {result: {}, error: "BLANK_ANSWER", error_description: "Empty answer with correct http code, network error possible."};
+						}
+					}
+					else if (data.length <= 0)
+					{
+						data = {result: {}, error: "BLANK_ANSWER_WITH_ERROR_CODE", error_description: 'Empty answer with error http code: '+status};
+					}
+				}
+			}
+
+			xhr = null;
+			if(bSuccess)
+			{
+				var res = new ajaxResult(data, config, status);
+				if(hasCallback)
+				{
+					config.callback.apply(window, [res]);
+				}
+				else
+				{
+					if (res.error())
+					{
+						promise.reject(res);
+					}
+					else
+					{
+						promise.fulfill(res);
+					}
+				}
+			}
+			else
+			{
+				var res = new ajaxResult({
+					error: "ERROR_UNEXPECTED_ANSWER",
+					error_description: "Server returned an unexpected response.",
+					ex: {}
+				}, config, 0);
+				if(hasCallback)
+				{
+					config.callback.apply(window, [res]);
+				}
+				else
+				{
+					promise.reject(res);
+				}
+			}
+		};
+
+		xhr.onerror = function(e)
+		{
+			var res = new ajaxResult({
+				error: "ERROR_NETWORK",
+				error_description: "A network error occurred while the request was being executed.",
+				ex: e
+			}, config, 0);
+			if(hasCallback)
+			{
+				config.callback.apply(window, [res]);
+			}
+			else
+			{
+				promise.reject(res);
+			}
+		};
+
+		var query_data = '';
+		if (config.queryParams)
+		{
+			query_data = Utils.buildQueryString(config.queryParams);
+		}
+		else if (typeof BX.bitrix_sessid !== 'undefined')
+		{
+			query_data = 'sessid=' + BX.bitrix_sessid();
+		}
+
+		if(typeof config.start !== 'undefined')
+		{
+			query_data += '&start=' + parseInt(config.start);
+		}
+
+		if(!!config.data)
+		{
+			ajax.prepareData(config.data, '', function(res)
+			{
+				query_data += '&' + res;
+				xhr.send(query_data);
+				sendCallback(xhr);
+			});
+		}
+		else
+		{
+			xhr.send(query_data);
+			sendCallback(xhr);
+		}
+
+		return hasCallback || !promise? xhr: promise;
+	};
+
+	ajax.batch = function(calls, callback, bHaltOnError, sendCallback, endpoint, queryParams, cors, logTag)
+	{
+		return ajax({
+			method: 'batch',
+			data: {halt: !!bHaltOnError ? 1 : 0, cmd: calls},
+			callback: function(res, config, status)
+			{
+				if(!callback)
+				{
+					return false;
+				}
+
+				var error = res.error();
+				var data = res.data();
+				var result = Utils.isArray(calls) ? [] : {};
+
+				for(var i in calls)
+				{
+					if(!!calls[i] && calls.hasOwnProperty(i))
+					{
+						if(Utils.isString(calls[i]))
+						{
+							var q = calls[i].split('?');
+						}
+						else
+						{
+							q = [
+								Utils.isArray(calls[i]) ? calls[i][0] : calls[i].method,
+								Utils.isArray(calls[i]) ? calls[i][1] : calls[i].data
+							];
+						}
+
+						if (
+							data
+							&& typeof data.result !== 'undefined'
+							&& (
+								typeof data.result[i] !== 'undefined'
+								|| typeof data.result_error[i] !== 'undefined'
+							)
+						)
+						{
+							result[i] = new ajaxResult({
+								result: typeof data.result[i] !== 'undefined' ? data.result[i] : {},
+								error: data.result_error[i] || undefined,
+								total: data.result_total[i],
+								time: data.result_time[i],
+								next: data.result_next[i]
+							}, {
+								method: q[0],
+								data: q[1],
+								callback: callback,
+								endpoint: endpoint,
+								queryParams: queryParams,
+								cors: cors
+							}, res.status);
+						}
+						else if (error)
+						{
+							result[i] = new ajaxResult({
+								result: {},
+								error: error.ex,
+								total: 0
+							}, {
+								method: q[0],
+								data: q[1],
+								callback: callback,
+								endpoint: endpoint,
+								queryParams: queryParams,
+								cors: cors
+							}, res.status);
+						}
+					}
+				}
+
+				callback.apply(window, [result]);
+			},
+			sendCallback: sendCallback,
+			endpoint: endpoint,
+			queryParams: queryParams,
+			cors: cors,
+			logTag: logTag
+		});
+	};
+
+	ajax.xhr = function()
+	{
+		return new XMLHttpRequest();
+	};
+
+	ajax.escape = function(str)
+	{
+		return encodeURIComponent(str);
+	};
+
+	ajax.prepareData = function(arData, prefix, callback)
+	{
+		var data = '', objects = [];
+		if(Utils.isString(arData) || arData === null)
+		{
+			callback.call(document, arData || '');
+		}
+		else
+		{
+			for(var i in arData)
+			{
+				if(!arData.hasOwnProperty(i))
+				{
+					continue;
+				}
+
+				var name = ajax.escape(i);
+
+				if(prefix)
+					name = prefix + '[' + name + ']';
+
+				if(typeof arData[i] === 'object')
+				{
+					if(Utils.isArray(arData[i]) && arData[i].length <= 0)
+					{
+						continue;
+					}
+
+					objects.push([name, arData[i]]);
+				}
+				else
+				{
+					if(data.length > 0)
+					{
+						data += '&';
+					}
+
+					if(typeof arData[i] === 'boolean')
+					{
+						data += name + '=' + (arData[i]? 1: 0);
+					}
+					else
+					{
+						data += name + '=' + ajax.escape(arData[i])
+					}
+				}
+			}
+
+			var cnt = objects.length;
+			if(cnt > 0)
+			{
+				var cb = function(str)
+				{
+					data += (!!str ? '&' : '') + str;
+					if(--cnt <= 0)
+					{
+						callback.call(document, data)
+					}
+				};
+
+				var cnt1 = cnt;
+				for(var i = 0; i < cnt1; i++)
+				{
+					if(Utils.isDomNode(objects[i][1]))
+					{
+						if(objects[i][1].tagName.toUpperCase() === 'INPUT' && objects[i][1].type === 'file')
+						{
+							if(fileReader.canUse())
+							{
+								fileReader(objects[i][1], (function(name)
+								{
+									return function(result)
+									{
+										if(Utils.isArray(result) && result.length > 0)
+										{
+											cb(name + '[0]=' + ajax.escape(result[0]) + '&' + name + '[1]=' + ajax.escape(result[1]));
+										}
+										else
+										{
+											cb(name + '=');
+										}
+									}
+								})(objects[i][0]));
+							}
+						}
+						else if(typeof objects[i][1].value !== 'undefined')
+						{
+							cb(objects[i][0] + '=' + ajax.escape(objects[i][1].value));
+						}
+						else
+						{
+							cb('');
+						}
+					}
+					else if(Utils.isDate(objects[i][1]))
+					{
+						cb(objects[i][0] + '=' + ajax.escape(objects[i][1].toJSON()));
+					}
+					else if(Utils.isArray(objects[i][1]) && objects[i][1].length <= 0)
+					{
+						cb(objects[i][0] + '=');
+					}
+					else
+					{
+						ajax.prepareData(objects[i][1], objects[i][0], cb);
+					}
+				}
+			}
+			else
+			{
+				callback.call(document, data)
+			}
+		}
+	};
+
+	ajax.isSuccess = function(xhr)
+	{
+		return typeof xhr.status === 'undefined' || (xhr.status >= 200 && xhr.status < 300) || xhr.status === 304 || xhr.status >= 400 && xhr.status < 500 || xhr.status === 1223 || xhr.status === 0;
+	};
+
+	var ajaxResult = function(answer, query, status)
+	{
+		this.answer = answer;
+		this.query = Utils.clone(query);
+		this.status = status;
+
+		if(typeof this.answer.next !== 'undefined')
+		{
+			this.answer.next = parseInt(this.answer.next);
+		}
+
+		if(typeof this.answer.error !== 'undefined')
+		{
+			this.answer.ex = new ajaxError(this.status, typeof this.answer.error === 'string' ? this.answer : this.answer.error)
+		}
+	};
+
+	ajaxResult.prototype.data = function()
+	{
+		return this.answer.result;
+	};
+
+	ajaxResult.prototype.time = function()
+	{
+		return this.answer.time;
+	};
+
+	ajaxResult.prototype.error = function()
+	{
+		return this.answer.ex;
+	};
+
+	ajaxResult.prototype.error_description = function()
+	{
+		return this.answer.error_description;
+	};
+
+	ajaxResult.prototype.more = function()
+	{
+		return !isNaN(this.answer.next);
+	};
+
+	ajaxResult.prototype.total = function()
+	{
+		return parseInt(this.answer.total);
+	};
+
+	ajaxResult.prototype.next = function(cb)
+	{
+		if(this.more())
+		{
+			this.query.start = this.answer.next;
+
+			if(!!cb && Utils.isFunction(cb))
+			{
+				this.query.callback = cb;
+			}
+
+			return ajax(this.query);
+		}
+
+		return false;
+	};
+
+	var ajaxError = function(status, ex)
+	{
+		this.status = status;
+		this.ex = ex;
+	};
+
+	ajaxError.prototype.getError = function()
+	{
+		return this.ex;
+	};
+
+	ajaxError.prototype.getStatus = function()
+	{
+		return this.status;
+	};
+
+	ajaxError.prototype.toString = function()
+	{
+		return this.ex.error + (
+			!!this.ex.error_description
+				? ': ' + this.ex.error_description
+				: ''
+		) + ' (' + this.status + ')';
+	};
+
+	var arrayBufferToData = function(arrayBuffer)
+	{
+		var uint8 = new Uint8Array(arrayBuffer);
+		var data = '';
+
+		// TypedArray.prototype.forEach is not supported in some browsers as IE.
+		if (typeof uint8.forEach === 'function')
+		{
+			uint8.forEach(function (value)
+			{
+				data += String.fromCharCode(value);
+			});
+		}
+		else
+		{
+			var length = uint8.length;
+			for (var i = 0; i < length; i += 1)
+			{
+				data += String.fromCharCode(uint8[i]);
+			}
+		}
+		return btoa(data);
+	};
+
+	var fileReader = function(fileInput, cb)
+	{
+		if(fileReader.canUse())
+		{
+			var files = fileInput.files,
+				len = 0,
+				result = fileInput.multiple ? [] : null;
+
+			for(var i = 0, f; f = files[i]; i++)
+			{
+				var reader = new window.FileReader();
+
+				reader.BXFILENAME = files[i].name;
+
+				reader.onload = function(e)
+				{
+					e = e || window.event;
+
+					var res = [this.BXFILENAME, arrayBufferToData(e.target.result)];
+
+					if(result === null)
+						result = res;
+					else
+						result.push(res);
+
+					if(--len <= 0)
+					{
+						cb(result);
+					}
+				};
+
+				reader.readAsArrayBuffer(f);
+			}
+			len = i;
+			if(len <= 0)
+			{
+				cb(result);
+			}
+		}
+	};
+
+	fileReader.canUse = function()
+	{
+		return !!window.FileReader;
+	};
+
+})();        pd  xpdèõ   20240704121409-8lSd  ãΩ5·J   https://astralinux.ru/bitrix/js/rest/client/rest.client.js?170345227917414      D  'use strict';
+
+;(function(){
+
+	/************************ ATTENTION ***************************
+	 * Please do not use Bitrix CoreJS in this class.            *
+	 * This class can be called on page without Bitrix Framework *
+	**************************************************************/
+
+	if (!window.BX)
+	{
+		window.BX = {};
+	}
+	else if (window.BX.RestClient)
+	{
+		return;
+	}
+
+	var BX = window.BX;
+
+	BX.RestClient = function (options)
+	{
+		options = options || {};
+
+		this.endpoint = options.endpoint || '/rest';
+		this.queryParams = options.queryParams || '';
+		this.cors = options.cors === true;
+	};
+
+	BX.RestClient.prototype.callMethod = function(method, params, callback, sendCallback, logTag)
+	{
+		return ajax({
+			method: method,
+			data: params,
+			callback: callback,
+			sendCallback: sendCallback,
+			logTag: logTag,
+			endpoint: this.endpoint,
+			queryParams: this.queryParams,
+			cors: this.cors
+		});
+	};
+
+	/*
+	calls = [[method,params],[method,params]];
+	calls = [{method:method,params:params},[method,params]];
+	calls = {call_id:[method,params],...};
+	*/
+	BX.RestClient.prototype.callBatch = function(calls, callback, bHaltOnError, sendCallback, logTag)
+	{
+		var cmd = Utils.isArray(calls) ? [] : {};
+		var cnt = 0;
+		var cb = function(cmd) {
+			ajax.batch(cmd, callback, bHaltOnError, sendCallback, this.endpoint, this.queryParams, this.cors, logTag);
+		}.bind(this);
+
+		for(var i in calls)
+		{
+			var method = null, params = null;
+
+			if(!!calls[i] && calls.hasOwnProperty(i))
+			{
+				if(Utils.isArray(calls[i]))
+				{
+					method = calls[i][0];
+					params = calls[i][1];
+				}
+				else if(!!calls[i].method)
+				{
+					method = calls[i].method;
+					params = calls[i].params;
+				}
+
+				if(!!method)
+				{
+					cnt++;
+					cmd[i] = [method, params];
+				}
+			}
+		}
+
+		if(cnt > 0)
+		{
+			var e = function(i)
+			{
+				return function(str)
+				{
+					cmd[i] = cmd[i][0] + '?' + str;
+					if(--cnt <= 0)
+						cb(cmd);
+				}
+			};
+
+			for(var c in cmd)
+			{
+				if(cmd.hasOwnProperty(c))
+				{
+					ajax.prepareData(cmd[c][1], '', e(c));
+				}
+			}
+		}
+	};
+
+	BX.RestClient.prototype.setEndpoint = function(url)
+	{
+		this.endpoint = url;
+	};
+
+	BX.RestClient.prototype.enableCorsRequest = function(value)
+	{
+		this.cors = value === true;
+	};
+
+	BX.RestClient.prototype.setQueryParams = function(params)
+	{
+		this.queryParams = params;
+	};
+
+	/* self init for bitrix env */
+	if (typeof BX.namespace !== 'undefined')
+	{
+		var BXRest = new BX.RestClient();
+
+		if (typeof BX.rest == 'undefined')
+		{
+			BX.rest = {};
+		}
+
+		BX.rest.callMethod = function (method, params, callback, sendCallback, logTag)
+		{
+			return BXRest.callMethod(method, params, callback, sendCallback, logTag);
+		};
+
+		/*
+		calls = [[method,params],[method,params]];
+		calls = [{method:method,params:params},[method,params]];
+		calls = {call_id:[method,params],...};
+		*/
+		BX.rest.callBatch = function (calls, callback, bHaltOnError, sendCallback, logTag)
+		{
+			return BXRest.callBatch(calls, callback, bHaltOnError, sendCallback, logTag);
+		};
+	}
+
+	var Utils = {
+		isArray: function(item) {
+			return item && Object.prototype.toString.call(item) == "[object Array]";
+		},
+		isFunction: function(item) {
+			return item === null ? false : (typeof (item) == "function" || item instanceof Function);
+		},
+		isString: function(item) {
+			return item === '' ? true : (item ? (typeof (item) == "string" || item instanceof String) : false);
+		},
+		isDomNode: function(item) {
+			return item && typeof (item) == "object" && "nodeType" in item;
+		},
+		isDate: function(item) {
+			return item && Object.prototype.toString.call(item) == "[object Date]";
+		},
+		buildQueryString: function(params)
+		{
+			var result = '';
+			for (var key in params)
+			{
+				if (!params.hasOwnProperty(key))
+				{
+					continue;
+				}
+				var value = params[key];
+				if(this.isArray(value))
+				{
+					value.forEach(function(valueElement, index)
+					{
+						result += encodeURIComponent(key + "[" + index + "]") + "=" + encodeURIComponent(valueElement) + "&";
+					});
+				}
+				else
+				{
+					result += encodeURIComponent(key) + "=" + encodeURIComponent(value) + "&";
+				}
+			}
+
+			if(result.length > 0)
+			{
+				result = result.substr(0, result.length - 1);
+			}
+			return result;
+		},
+		clone: function(obj, bCopyObj)
+		{
+			var _obj, i, l;
+			if (bCopyObj !== false)
+				bCopyObj = true;
+
+			if (obj === null)
+				return null;
+
+			if (this.isDomNode(obj))
+			{
+				_obj = obj.cloneNode(bCopyObj);
+			}
+			else if (typeof obj == 'object')
+			{
+				if (this.isArray(obj))
+				{
+					_obj = [];
+					for (i=0,l=obj.length;i<l;i++)
+					{
+						if (typeof obj[i] == "object" && bCopyObj)
+							_obj[i] = this.clone(obj[i], bCopyObj);
+						else
+							_obj[i] = obj[i];
+					}
+				}
+				else
+				{
+					_obj =  {};
+					if (obj.constructor)
+					{
+						if (this.isDate(obj))
+							_obj = new Date(obj);
+						else
+							_obj = new obj.constructor();
+					}
+
+					for (i in obj)
+					{
+						if (typeof obj[i] == "object" && bCopyObj)
+							_obj[i] = this.clone(obj[i], bCopyObj);
+						else
+							_obj[i] = obj[i];
+					}
+				}
+
+			}
+			else
+			{
+				_obj = obj;
+			}
+
+			return _obj;
+		}
+	};
+
+	var ajax = function(config)
+	{
+		var hasCallback = !!config.callback && Utils.isFunction(config.callback);
+		var promise = typeof BX.Promise === 'undefined' || hasCallback? null: new BX.Promise();
+		var sendCallback = config.sendCallback || function() {};
+		var withoutRestoringCsrf = config.withoutRestoringCsrf || false;
+		var loginAttempt = config.loginAttempt || 0;
+
+		var xhr = ajax.xhr();
+
+		var url = config.endpoint + '/' + ajax.escape(config.method) + '.json'+(config.logTag? '?logTag='+config.logTag: '');
+
+		xhr.open('POST', url);
+		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+		if (config.cors)
+		{
+			xhr.withCredentials = true;
+		}
+
+		var bRequestCompleted = false;
+
+		// IE fix
+		xhr.onprogress = function(){};
+		xhr.ontimeout = function(){};
+		xhr.timeout = 0;
+
+		xhr.onload = function()
+		{
+			if(bRequestCompleted)
+				return;
+
+			xhr.onload = function() {};
+
+			var bSuccess = ajax.isSuccess(xhr);
+
+			var status = xhr.status;
+			if(bSuccess)
+			{
+				var data = xhr.responseText;
+
+				if(data.length > 0)
+				{
+					try
+					{
+						data = JSON.parse(data);
+					}
+					catch(e)
+					{
+						bSuccess = false;
+					}
+				}
+
+				if (status == 401)
+				{
+					if (data.extended_error === 'user_not_authorized' && loginAttempt === 0)
+					{
+						if (data.sessid)
+						{
+							console.warn('BX.rest: csrf-token has expired, replace to a new token');
+							BX.message({'bitrix_sessid': data.sessid});
+						}
+
+						if('BXDesktopSystem' in window)
+						{
+							console.warn('BX.rest: you are not authorized, trying to log in');
+							config.loginAttempt = 1;
+							BXDesktopSystem.Login({
+								// todo: support auth failure callback in future (when it is ready)
+								success: function()
+								{
+									console.warn('BX.rest: successfully logged in, repeating request');
+									if (!hasCallback)
+									{
+										config.callback = function(result)
+										{
+											if (result.error())
+											{
+												promise.reject(result);
+											}
+											else
+											{
+												promise.fulfill(result);
+											}
+										}
+									}
+									ajax(config);
+								}
+							});
+							return true;
+						}
+					}
+					else if (data.sessid && !withoutRestoringCsrf)
+					{
+						BX.message({'bitrix_sessid': data.sessid});
+						console.warn('BX.rest: your csrf-token has expired, send query with a new token');
+
+						config.withoutRestoringCsrf = true;
+
+						if (!hasCallback)
+						{
+							config.callback = function(result)
+							{
+								if (result.error())
+								{
+									promise.reject(result);
+								}
+								else
+								{
+									promise.fulfill(result);
+								}
+							}
+						}
+						ajax(config);
+
+						return true;
+					}
+				}
+				else if (status == 0)
+				{
+					data = {result: {}, error: "ERROR_NETWORK", error_description: "A network error occurred while the request was being executed."};
+				}
+				else
+				{
+					if (status == 200)
+					{
+						if (data.length <= 0)
+						{
+							data = {result: {}, error: "BLANK_ANSWER", error_description: "Empty answer with correct http code, network error possible."};
+						}
+					}
+					else if (data.length <= 0)
+					{
+						data = {result: {}, error: "BLANK_ANSWER_WITH_ERROR_CODE", error_description: 'Empty answer with error http code: '+status};
+					}
+				}
+			}
+
+			xhr = null;
+			if(bSuccess)
+			{
+				var res = new ajaxResult(data, config, status);
+				if(hasCallback)
+				{
+					config.callback.apply(window, [res]);
+				}
+				else
+				{
+					if (res.error())
+					{
+						promise.reject(res);
+					}
+					else
+					{
+						promise.fulfill(res);
+					}
+				}
+			}
+			else
+			{
+				var res = new ajaxResult({
+					error: "ERROR_UNEXPECTED_ANSWER",
+					error_description: "Server returned an unexpected response.",
+					ex: {}
+				}, config, 0);
+				if(hasCallback)
+				{
+					config.callback.apply(window, [res]);
+				}
+				else
+				{
+					promise.reject(res);
+				}
+			}
+		};
+
+		xhr.onerror = function(e)
+		{
+			var res = new ajaxResult({
+				error: "ERROR_NETWORK",
+				error_description: "A network error occurred while the request was being executed.",
+				ex: e
+			}, config, 0);
+			if(hasCallback)
+			{
+				config.callback.apply(window, [res]);
+			}
+			else
+			{
+				promise.reject(res);
+			}
+		};
+
+		var query_data = '';
+		if (config.queryParams)
+		{
+			query_data = Utils.buildQueryString(config.queryParams);
+		}
+		else if (typeof BX.bitrix_sessid !== 'undefined')
+		{
+			query_data = 'sessid=' + BX.bitrix_sessid();
+		}
+
+		if(typeof config.start !== 'undefined')
+		{
+			query_data += '&start=' + parseInt(config.start);
+		}
+
+		if(!!config.data)
+		{
+			ajax.prepareData(config.data, '', function(res)
+			{
+				query_data += '&' + res;
+				xhr.send(query_data);
+				sendCallback(xhr);
+			});
+		}
+		else
+		{
+			xhr.send(query_data);
+			sendCallback(xhr);
+		}
+
+		return hasCallback || !promise? xhr: promise;
+	};
+
+	ajax.batch = function(calls, callback, bHaltOnError, sendCallback, endpoint, queryParams, cors, logTag)
+	{
+		return ajax({
+			method: 'batch',
+			data: {halt: !!bHaltOnError ? 1 : 0, cmd: calls},
+			callback: function(res, config, status)
+			{
+				if(!callback)
+				{
+					return false;
+				}
+
+				var error = res.error();
+				var data = res.data();
+				var result = Utils.isArray(calls) ? [] : {};
+
+				for(var i in calls)
+				{
+					if(!!calls[i] && calls.hasOwnProperty(i))
+					{
+						if(Utils.isString(calls[i]))
+						{
+							var q = calls[i].split('?');
+						}
+						else
+						{
+							q = [
+								Utils.isArray(calls[i]) ? calls[i][0] : calls[i].method,
+								Utils.isArray(calls[i]) ? calls[i][1] : calls[i].data
+							];
+						}
+
+						if (
+							data
+							&& typeof data.result !== 'undefined'
+							&& (
+								typeof data.result[i] !== 'undefined'
+								|| typeof data.result_error[i] !== 'undefined'
+							)
+						)
+						{
+							result[i] = new ajaxResult({
+								result: typeof data.result[i] !== 'undefined' ? data.result[i] : {},
+								error: data.result_error[i] || undefined,
+								total: data.result_total[i],
+								time: data.result_time[i],
+								next: data.result_next[i]
+							}, {
+								method: q[0],
+								data: q[1],
+								callback: callback,
+								endpoint: endpoint,
+								queryParams: queryParams,
+								cors: cors
+							}, res.status);
+						}
+						else if (error)
+						{
+							result[i] = new ajaxResult({
+								result: {},
+								error: error.ex,
+								total: 0
+							}, {
+								method: q[0],
+								data: q[1],
+								callback: callback,
+								endpoint: endpoint,
+								queryParams: queryParams,
+								cors: cors
+							}, res.status);
+						}
+					}
+				}
+
+				callback.apply(window, [result]);
+			},
+			sendCallback: sendCallback,
+			endpoint: endpoint,
+			queryParams: queryParams,
+			cors: cors,
+			logTag: logTag
+		});
+	};
+
+	ajax.xhr = function()
+	{
+		return new XMLHttpRequest();
+	};
+
+	ajax.escape = function(str)
+	{
+		return encodeURIComponent(str);
+	};
+
+	ajax.prepareData = function(arData, prefix, callback)
+	{
+		var data = '', objects = [];
+		if(Utils.isString(arData) || arData === null)
+		{
+			callback.call(document, arData || '');
+		}
+		else
+		{
+			for(var i in arData)
+			{
+				if(!arData.hasOwnProperty(i))
+				{
+					continue;
+				}
+
+				var name = ajax.escape(i);
+
+				if(prefix)
+					name = prefix + '[' + name + ']';
+
+				if(typeof arData[i] === 'object')
+				{
+					if(Utils.isArray(arData[i]) && arData[i].length <= 0)
+					{
+						continue;
+					}
+
+					objects.push([name, arData[i]]);
+				}
+				else
+				{
+					if(data.length > 0)
+					{
+						data += '&';
+					}
+
+					if(typeof arData[i] === 'boolean')
+					{
+						data += name + '=' + (arData[i]? 1: 0);
+					}
+					else
+					{
+						data += name + '=' + ajax.escape(arData[i])
+					}
+				}
+			}
+
+			var cnt = objects.length;
+			if(cnt > 0)
+			{
+				var cb = function(str)
+				{
+					data += (!!str ? '&' : '') + str;
+					if(--cnt <= 0)
+					{
+						callback.call(document, data)
+					}
+				};
+
+				var cnt1 = cnt;
+				for(var i = 0; i < cnt1; i++)
+				{
+					if(Utils.isDomNode(objects[i][1]))
+					{
+						if(objects[i][1].tagName.toUpperCase() === 'INPUT' && objects[i][1].type === 'file')
+						{
+							if(fileReader.canUse())
+							{
+								fileReader(objects[i][1], (function(name)
+								{
+									return function(result)
+									{
+										if(Utils.isArray(result) && result.length > 0)
+										{
+											cb(name + '[0]=' + ajax.escape(result[0]) + '&' + name + '[1]=' + ajax.escape(result[1]));
+										}
+										else
+										{
+											cb(name + '=');
+										}
+									}
+								})(objects[i][0]));
+							}
+						}
+						else if(typeof objects[i][1].value !== 'undefined')
+						{
+							cb(objects[i][0] + '=' + ajax.escape(objects[i][1].value));
+						}
+						else
+						{
+							cb('');
+						}
+					}
+					else if(Utils.isDate(objects[i][1]))
+					{
+						cb(objects[i][0] + '=' + ajax.escape(objects[i][1].toJSON()));
+					}
+					else if(Utils.isArray(objects[i][1]) && objects[i][1].length <= 0)
+					{
+						cb(objects[i][0] + '=');
+					}
+					else
+					{
+						ajax.prepareData(objects[i][1], objects[i][0], cb);
+					}
+				}
+			}
+			else
+			{
+				callback.call(document, data)
+			}
+		}
+	};
+
+	ajax.isSuccess = function(xhr)
+	{
+		return typeof xhr.status === 'undefined' || (xhr.status >= 200 && xhr.status < 300) || xhr.status === 304 || xhr.status >= 400 && xhr.status < 500 || xhr.status === 1223 || xhr.status === 0;
+	};
+
+	var ajaxResult = function(answer, query, status)
+	{
+		this.answer = answer;
+		this.query = Utils.clone(query);
+		this.status = status;
+
+		if(typeof this.answer.next !== 'undefined')
+		{
+			this.answer.next = parseInt(this.answer.next);
+		}
+
+		if(typeof this.answer.error !== 'undefined')
+		{
+			this.answer.ex = new ajaxError(this.status, typeof this.answer.error === 'string' ? this.answer : this.answer.error)
+		}
+	};
+
+	ajaxResult.prototype.data = function()
+	{
+		return this.answer.result;
+	};
+
+	ajaxResult.prototype.time = function()
+	{
+		return this.answer.time;
+	};
+
+	ajaxResult.prototype.error = function()
+	{
+		return this.answer.ex;
+	};
+
+	ajaxResult.prototype.error_description = function()
+	{
+		return this.answer.error_description;
+	};
+
+	ajaxResult.prototype.more = function()
+	{
+		return !isNaN(this.answer.next);
+	};
+
+	ajaxResult.prototype.total = function()
+	{
+		return parseInt(this.answer.total);
+	};
+
+	ajaxResult.prototype.next = function(cb)
+	{
+		if(this.more())
+		{
+			this.query.start = this.answer.next;
+
+			if(!!cb && Utils.isFunction(cb))
+			{
+				this.query.callback = cb;
+			}
+
+			return ajax(this.query);
+		}
+
+		return false;
+	};
+
+	var ajaxError = function(status, ex)
+	{
+		this.status = status;
+		this.ex = ex;
+	};
+
+	ajaxError.prototype.getError = function()
+	{
+		return this.ex;
+	};
+
+	ajaxError.prototype.getStatus = function()
+	{
+		return this.status;
+	};
+
+	ajaxError.prototype.toString = function()
+	{
+		return this.ex.error + (
+			!!this.ex.error_description
+				? ': ' + this.ex.error_description
+				: ''
+		) + ' (' + this.status + ')';
+	};
+
+	var arrayBufferToData = function(arrayBuffer)
+	{
+		var uint8 = new Uint8Array(arrayBuffer);
+		var data = '';
+
+		// TypedArray.prototype.forEach is not supported in some browsers as IE.
+		if (typeof uint8.forEach === 'function')
+		{
+			uint8.forEach(function (value)
+			{
+				data += String.fromCharCode(value);
+			});
+		}
+		else
+		{
+			var length = uint8.length;
+			for (var i = 0; i < length; i += 1)
+			{
+				data += String.fromCharCode(uint8[i]);
+			}
+		}
+		return btoa(data);
+	};
+
+	var fileReader = function(fileInput, cb)
+	{
+		if(fileReader.canUse())
+		{
+			var files = fileInput.files,
+				len = 0,
+				result = fileInput.multiple ? [] : null;
+
+			for(var i = 0, f; f = files[i]; i++)
+			{
+				var reader = new window.FileReader();
+
+				reader.BXFILENAME = files[i].name;
+
+				reader.onload = function(e)
+				{
+					e = e || window.event;
+
+					var res = [this.BXFILENAME, arrayBufferToData(e.target.result)];
+
+					if(result === null)
+						result = res;
+					else
+						result.push(res);
+
+					if(--len <= 0)
+					{
+						cb(result);
+					}
+				};
+
+				reader.readAsArrayBuffer(f);
+			}
+			len = i;
+			if(len <= 0)
+			{
+				cb(result);
+			}
+		}
+	};
+
+	fileReader.canUse = function()
+	{
+		return !!window.FileReader;
+	};
+
+})();”ò¿Ÿ¶   P        ¯2áâ      window     BÆ’
+      RestClient      :yã      options    mµ9      endpoint   : “      /rest      8'],      queryParams    »ÆVY      cors   z‹TÚ
+      callMethod
+     Ë€˘      callback   m&Û      sendCallback   7i}	      logTag     æd»ê      ajax   6ó(Å      data   C˜e‰	      callBatch      Z˚ı      calls      %'H      bHaltOnError   ≈§&R      cmd    uÃñ√      Utils      ¢]¡Ï      isArray    ê©ò∆      cnt    >÷ä      batch      LÕΩ‹      prepareData    Otı≠      setEndpoint    ˙G˚      enableCorsRequest      eËi>      setQueryParams     [2	      namespace      àúÊÒ      BXRest     n3B      rest!   ãè@i
+      isFunction"     9:Ñ      isString#   rô g	      isDomNode%      —UàX      isDate&     √á#}      buildQueryString'   B¸ø;      key*    ±4çÆ      clone/      ~û4      config0     Sïé      hasCallback1    W‰çt      withoutRestoringCsrf2   V,˙Ì      loginAttempt3   ﬁä1      xhr<    %È¨e      bRequestCompletedB      ·¸ÅM	      isSuccessQ      ˛tuW      errorU      'F:£      error_description\      pça%
+      ajaxResult`     n™¶∞
+      query_dataf     T˝ªW      totalh      Ä%]¸      timeu   πØv»
+      fileReaderv     Œä%      canUse{     "{	      ajaxError|      Õ«0R      more}   9'ﬂ      getError~   ¡m%Î	      getStatusÅ      :æ^ñ      arrayBufferToDataá      €õÕX      lené    pl0      BX.RestClientè      PT7l"      BX.RestClient.prototype.callMethodê     _x¢!      BX.RestClient.prototype.callBatchë      uk‘v#      BX.RestClient.prototype.setEndpointí    ~d
+ )      BX.RestClient.prototype.enableCorsRequestì      ∆«÷`&      BX.RestClient.prototype.setQueryParamsî     2Eÿ      BX.rest.callMethodï     ûXx      BX.rest.callBatchñ      s3q
+      ajax.batchó     µêt‡      ajax.xhrò   ¡Ê’      ajax.escapeô    _Ø      ajax.prepareDataö   KËx      ajax.isSuccessõ     æ]£      ajaxResult.prototype.dataú      ≈≠∂Ü      ajaxResult.prototype.timeù      Ú(õ      ajaxResult.prototype.errorû     1M˝&      ajaxResult.prototype.error_descriptionü     ïAyv      ajaxResult.prototype.more†      ∏v£∏      ajaxResult.prototype.total°     ~	˜      ajaxResult.prototype.next¢      ∆ﬂ‰“      ajaxError.prototype.getError£   7@ı)      ajaxError.prototype.getStatus§      r’¡      ajaxError.prototype.toString•   P›∆      fileReader.canUse     :∑:  Ô%,â                             
+                          ≥Oåc                           {	`  P  P  P\  P{  PÅ  Pu  P              Ñ   Ø¬0∞IÙ$KEÆ˙ö                   #      !  "  #  %  &  *          á&’™é!´!      º   üìcº   Ö                      ›Ã   ﬁª  ù   ó   ﬁ9   ó   À  ﬁΩ   ª  J   ù   ó   ﬁ   ó   M   ﬁΩ   ª  J   ù   ó   ﬁ   ó   M   ﬁΩ   ª  J   M   ﬁ• `ú@`ß `ß `î PÄ   à  MãPëà  =                 N        ∫   J   õ   ó   ∫   9   M   ﬁô%   ó   ∫   J   J   ö   ó
+    ¢ó
+   ∫   J   Õ   ﬁ¿   m   M   ﬁ¿   J   J   m   M   ﬁ¿   J   J   m	   M
+   ﬁ¿   J   J   m   M   ﬁ¿   J   J   m   M   ﬁ¿   J   J   m   M   ﬁ¿   J      ö|   ó    ¿   J   Ä‚  Å  Õ   ﬁ¿   J      ö   ó&   ¿   9   M   ﬁó(   ¿   J   m   M   ﬁ¿   J   m   M
+   ﬁó,   9   m   <   m   <   m   <   m   <   m    <!   m"   <#   m$   <%   Õ   ﬁm&   Õ   ﬁ¿   m'   M(   ﬁ¿   m)   M*   ﬁ¿   m+   M,   ﬁ¿   m-   M.   ﬁ¿   m/   M0   ﬁm1   Õ   ﬁ¿   J   m2   M3   ﬁ¿   J   m4   M5   ﬁ¿   J   m6   M7   ﬁ¿   J   m8   M9   ﬁ¿   J   m:   M;   ﬁ¿   J   m<   M=   ﬁ¿   J   m>   M?   ﬁm@   Õ   ﬁ¿   J   mA   MB   ﬁ¿   J   mC   MD   ﬁ¿   J   mE   MF   ﬁmG   Õ   ﬁmH   Õ 	  ﬁ¿ 	  mI   MJ   ﬁ•@`î `ö@`ô `1Ä JF`ê@`ê@`ö@.`ö@e`ö@j`ö@o`ö@u`õ `ò@y`õ `ï@~`ï@Ä  à`ö@Ä  é`%     JÄ  ªê@Ä  Û`KÄ ’`ê@Ä )`ê@Ä .`ê@Ä 3`ê@Ä ¶`ê@Ä ´`KÄ º`ï@Ä ¡`ï@Ä ∆`ï@Ä À`ï@Ä –`ï@Ä ’`ï@Ä ⁄`ï@Ä Î`KÄ Ò`ï@Ä ˆ`ï@Ä ˚`ï@Ä `KÄ `KÄ E`ê0Ä JPÄ    <   yzÄ<                             m    w  ﬁ•@`FÄ LPPÄÄ3ıÿ  pi    p  p                                
+               p                    »  '    p  p  p  p  p  p  p  p  p  p                        /  0  Æ    1  2  3  <  `  !  p  
+        '  pm  %  p&  p                                                                                    
+       6  p              8  p             á  »    `   {	    @    p≤    p    p    p  	  p  
+  p    \      @  p  p  @  p    p!    p"    p#    p%    p&    p*    p   p  "  p3  #  pó   $  p  (  pB  )  p*  p  +  ph  ,  pQ  -  pU  .  p|  /  pf  0  pt  1  p2  p}  3  p~  4  p  5  p7  p9  pv     `  p  `  @      â     ˇXÑÆ                 c   K             ∞      é                è    ` 	       ê    ` 	                                                                 ë    ` 	         í    ` 	         ì    ` 	         î    ` 	         ï    ` 	             ` 	         !    ` 	         "    ` 	         #    ` 	         %    ` 	       &    ` 	                            *    ` 	           ` 	                                                                                                                                                                                           4      ñ    ` 	                            ó    ` 	         ò    ` 	 <      ô    ` 	                    :                                            ö    ` 	         \    ` 	         õ    ` 	         ú    ` 	         ù    ` 	         û    ` 	         ü    ` 	         †    ` 	         °    ` 	         {    ` 	         ¢    ` 	         £    ` 	         §    ` 	 W      Å    ` 	                    \      u    ` 	                            •    ` 	 ùH©¿      D      D                Ä    D     D                 ´  Z  ¢  Z                ã  ï  É  ï     /          Ç [    S    1   .           ‚  [  ⁄  [  5             Ä   ô    ô  T               ;  î  3  î  V              I  k  A  k  h   0           £  Œ  õ  Œ  m   6           	  .	  ˚  .	  r   3            
+  á
+  ˘	  á
+  Å   !            D  “  ;  “  ã                ˙  R  Ú  R  í               j  ”  b  ”  ï               È  \  ·  \  ò               s  ¬  k  ¬  õ               ÷  -  Œ  -  û             Ç K  ì  C  ì  °               &  µ    µ  ≠              ¶    û    æ             Ä 9  G'  1  G'  ˆ                 $    $  ˙   5                                    6  :  .  :                 g  ô#  _  ô#                 ¨  ±  §  ±                 ˜  ì  Ô  ì  ;               õ  g  ì  g  @  %            ı  £  Ì  £  [  "            ¥#  ‡$  ¨#  ‡$  ¶              r&  œ&  j&  œ&  »  .          Ä `'  Õ.  X'  Õ.  ÿ              $(  O.  (  O.  ›              ‰.  /  ‹.  /  ,               %/  R/  /  R/  1            Ä q/   8  i/   8  6              …2  G3  ¡2  G3  i            Ä k4  µ5  c4  µ5  {  ,            î4  ´5  å4  ´5  }              =8  	9  58  	9  ©             &9  Ø:  9  Ø:  Æ             ◊:  ¸:  œ:  ¸:  ø  &            $;  G;  ;  G;  ƒ  &            p;  ë;  h;  ë;  …  '            ∆;  ˆ;  æ;  ˆ;  Œ  3            <  I<  <  I<  ”  &            r<  †<  j<  †<  ÿ  '            »<  è=  ¿<  è=  ›  &           ´=  Â=  £=  Â=  Ó             >  *>  >  *>  Ù  )            V>  t>  N>  t>  ˘  *            ü>  1?  ó>  1?  ˛  )           Ä U?  A  M?  A    "            7@  p@  .@  p@              Ä 4A  ∏C  ,A  ∏C               \B  SC  TB  SC  -              ÿC  ˛C  –C  ˛C  H             5°›çñÌÑÙ(ïM      h8(h8(H=,“hBúW   v    O^partitionKey=%28https%2Castralinux.ru%29,:https://astralinux.ru/bitrix/js/rest/client/rest.client.js?170345227917414 necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAAAAgAAAAAAAAAAAAAAAAAAAAEAOQFmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAZoMIIGZDCCBUygAwIBAgIMC6ZH4zK2rpmorQnpMA0GCSqGSIb3DQEBCwUAMFUxCzAJBgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMSswKQYDVQQDEyJHbG9iYWxTaWduIEdDQyBSNiBBbHBoYVNTTCBDQSAyMDIzMB4XDTI0MTAxMDE5MzYyOVoXDTI1MTExMTE5MzYyOFowHDEaMBgGA1UEAxMRd3d3LmFzdHJhbGludXgucnUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCdS3faHZMmtKX3pHurvK54yhkK0IteYZ9eqUG4X37HzF+Ktupfhl9zHdbn6a+7qLi9wKzyKOImhTvsrD2UFCA9k7o8xE1Mg9WjzulIpTQ3fN8n3GKTiVRQ7SlFvK/a5SrJYlzew78rrUnTP//2Gyl67C3yRiBBnQYb6wmwn2ujoeatT9MQmneWgYDe3v8FpgFfSze+OxePCXIlltEC8t8zoavAaHVYpns6g5IcuZZ7EbbejQtAUbWd93d89v6bbGaGBJrKtRBOM6jrh8Uo8GoexLFplOTGMkt9ePKrlUIDC0EkIGqOeZpfYnEABD0zrUEs5KrKLI9Y/aoMRdMr18XtAgMBAAGjggNrMIIDZzAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADCBmQYIKwYBBQUHAQEEgYwwgYkwSQYIKwYBBQUHMAKGPWh0dHA6Ly9zZWN1cmUuZ2xvYmFsc2lnbi5jb20vY2FjZXJ0L2dzZ2NjcjZhbHBoYXNzbGNhMjAyMy5jcnQwPAYIKwYBBQUHMAGGMGh0dHA6Ly9vY3NwLmdsb2JhbHNpZ24uY29tL2dzZ2NjcjZhbHBoYXNzbGNhMjAyMzBXBgNVHSAEUDBOMAgGBmeBDAECATBCBgorBgEEAaAyCgEDMDQwMgYIKwYBBQUHAgEWJmh0dHBzOi8vd3d3Lmdsb2JhbHNpZ24uY29tL3JlcG9zaXRvcnkvMEQGA1UdHwQ9MDswOaA3oDWGM2h0dHA6Ly9jcmwuZ2xvYmFsc2lnbi5jb20vZ3NnY2NyNmFscGhhc3NsY2EyMDIzLmNybDArBgNVHREEJDAighF3d3cuYXN0cmFsaW51eC5ydYINYXN0cmFsaW51eC5ydTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwHwYDVR0jBBgwFoAUvQW384qTPHPLefoPhRKhd5YYkXQwHQYDVR0OBBYEFKOq5mcSRwiiau5hehXnRFQVxQGaMIIBfgYKKwYBBAHWeQIEAgSCAW4EggFqAWgAdgCvGBoo1oyj4KmKTJxnqwn4u7wiuq68sTijoZ3T+bYDDQAAAZJ37s4tAAAEAwBHMEUCIQCWu/D78E4wI5/9d5qE0H3wmzoypTdM0yqwfYM3k1B0YwIgU3cRbYS3KkAz8+iYRB+ESFgrqtE/x9rTg1XB7ME0es8AdgAS8U40vVNyTIQGGcOPP3oT+Oe1YoeInG0wBYTr5YYmOgAAAZJ37s9FAAAEAwBHMEUCIQCSfaKpD0TTdUelB7EwgIN+Z3syjkO3WlpXPMd/R2N4VgIgFUA2+fflmRwVyKHuDRidRQI3ryOGa1TYW8GMVgLUwtAAdgAN4fIwK9MNwUBiEgnqVS78R3R8sdfpMO8OQh60fk6qNAAAAZJ37s3DAAAEAwBHMEUCIQD8f1wnP42jrl4BTBpQHDHog9ZzYE1luRkcM9nrPK9cjgIgHp+H2BWOylJYPv+FIO6nl5LSgKehzwu9Ed0y+oTqMoowDQYJKoZIhvcNAQELBQADggEBAESPfA9dXx7fEVHk6DK9Kid+Ytfj8VPxgwvmgj8ET1KckYD/w5Iv4bGVmpUtP/GNp7fQdPVK/ElRSX15UQX0OhKAVSSJSX8tWp/WedAzRlCDnxmlx+u5ayb3nUgOF8KbECooE55hXh4HlY1cKUxVCIJ3vCngXbhEaDvOUzYWhiSqFybFBB5FQ4QQ+aDQpratv1tR9L+2jAisB+olt2TidzDyqaNHJ0mvuDOFIyKE92tPkaoCbg7S+CTMmdyLih15Mq/41uAObA132+YytEbW8sM7acOgmif6Pf+5wPSavsTM6PalKP3S/KsaGGrbADTbQGPEu0oEve+w3dq6+QQUg4wTAQAEAAAAAAABAQAAAAAAAAZ4MjU1MTkAAAAOUlNBLVBTUy1TSEEyNTYAA2YKMiaRXE/7uyCJhaYy3wW9w5eaVCJM1YWJaWtuluqDAAAAAAAABmgwggZkMIIFTKADAgECAgwLpkfjMraumaitCekwDQYJKoZIhvcNAQELBQAwVTELMAkGA1UEBhMCQkUxGTAXBgNVBAoTEEdsb2JhbFNpZ24gbnYtc2ExKzApBgNVBAMTIkdsb2JhbFNpZ24gR0NDIFI2IEFscGhhU1NMIENBIDIwMjMwHhcNMjQxMDEwMTkzNjI5WhcNMjUxMTExMTkzNjI4WjAcMRowGAYDVQQDExF3d3cuYXN0cmFsaW51eC5ydTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ1Ld9odkya0pfeke6u8rnjKGQrQi15hn16pQbhffsfMX4q26l+GX3Md1ufpr7uouL3ArPIo4iaFO+ysPZQUID2TujzETUyD1aPO6UilNDd83yfcYpOJVFDtKUW8r9rlKsliXN7DvyutSdM///YbKXrsLfJGIEGdBhvrCbCfa6Oh5q1P0xCad5aBgN7e/wWmAV9LN747F48JciWW0QLy3zOhq8BodVimezqDkhy5lnsRtt6NC0BRtZ33d3z2/ptsZoYEmsq1EE4zqOuHxSjwah7EsWmU5MYyS3148quVQgMLQSQgao55ml9icQAEPTOtQSzkqsosj1j9qgxF0yvXxe0CAwEAAaOCA2swggNnMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMIGZBggrBgEFBQcBAQSBjDCBiTBJBggrBgEFBQcwAoY9aHR0cDovL3NlY3VyZS5nbG9iYWxzaWduLmNvbS9jYWNlcnQvZ3NnY2NyNmFscGhhc3NsY2EyMDIzLmNydDA8BggrBgEFBQcwAYYwaHR0cDovL29jc3AuZ2xvYmFsc2lnbi5jb20vZ3NnY2NyNmFscGhhc3NsY2EyMDIzMFcGA1UdIARQME4wCAYGZ4EMAQIBMEIGCisGAQQBoDIKAQMwNDAyBggrBgEFBQcCARYmaHR0cHM6Ly93d3cuZ2xvYmFsc2lnbi5jb20vcmVwb3NpdG9yeS8wRAYDVR0fBD0wOzA5oDegNYYzaHR0cDovL2NybC5nbG9iYWxzaWduLmNvbS9nc2djY3I2YWxwaGFzc2xjYTIwMjMuY3JsMCsGA1UdEQQkMCKCEXd3dy5hc3RyYWxpbnV4LnJ1gg1hc3RyYWxpbnV4LnJ1MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAfBgNVHSMEGDAWgBS9BbfzipM8c8t5+g+FEqF3lhiRdDAdBgNVHQ4EFgQUo6rmZxJHCKJq7mF6FedEVBXFAZowggF+BgorBgEEAdZ5AgQCBIIBbgSCAWoBaAB2AK8YGijWjKPgqYpMnGerCfi7vCK6rryxOKOhndP5tgMNAAABknfuzi0AAAQDAEcwRQIhAJa78PvwTjAjn/13moTQffCbOjKlN0zTKrB9gzeTUHRjAiBTdxFthLcqQDPz6JhEH4RIWCuq0T/H2tODVcHswTR6zwB2ABLxTjS9U3JMhAYZw48/ehP457Vih4icbTAFhOvlhiY6AAABknfuz0UAAAQDAEcwRQIhAJJ9oqkPRNN1R6UHsTCAg35nezKOQ7daWlc8x39HY3hWAiAVQDb59+WZHBXIoe4NGJ1FAjevI4ZrVNhbwYxWAtTC0AB2AA3h8jAr0w3BQGISCepVLvxHdHyx1+kw7w5CHrR+Tqo0AAABknfuzcMAAAQDAEcwRQIhAPx/XCc/jaOuXgFMGlAcMeiD1nNgTWW5GRwz2es8r1yOAiAen4fYFY7KUlg+/4Ug7qeXktKAp6HPC70R3TL6hOoyijANBgkqhkiG9w0BAQsFAAOCAQEARI98D11fHt8RUeToMr0qJ35i1+PxU/GDC+aCPwRPUpyRgP/Dki/hsZWalS0/8Y2nt9B09Ur8SVFJfXlRBfQ6EoBVJIlJfy1an9Z50DNGUIOfGaXH67lrJvedSA4XwpsQKigTnmFeHgeVjVwpTFUIgne8KeBduERoO85TNhaGJKoXJsUEHkVDhBD5oNCmtq2/W1H0v7aMCKwH6iW3ZOJ3MPKpo0cnSa+4M4UjIoT3a0+RqgJuDtL4JMyZ3IuKHXkyr/jW4A5sDXfb5jK0Rtbywztpw6CaJ/o9/7nA9Jq+xMzo9qUo/dL8qxoYatsANNtAY8S7SgS977Dd2rr5BBSDjGYKMiaRXE/7uyCJhaYy3wW9w5eaVCJM1YWJaWtuluqDAAAAAAAABZAwggWMMIIDdKADAgECAhB/HyyQLoPQ47b7O+5Hi16AMA0GCSqGSIb3DQEBCwUAMEwxIDAeBgNVBAsTF0dsb2JhbFNpZ24gUm9vdCBDQSAtIFI2MRMwEQYDVQQKEwpHbG9iYWxTaWduMRMwEQYDVQQDEwpHbG9iYWxTaWduMB4XDTIzMDcxOTAzNDMyNVoXDTI2MDcxOTAwMDAwMFowVTELMAkGA1UEBhMCQkUxGTAXBgNVBAoTEEdsb2JhbFNpZ24gbnYtc2ExKzApBgNVBAMTIkdsb2JhbFNpZ24gR0NDIFI2IEFscGhhU1NMIENBIDIwMjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDTQm+TkAOmk7SuAOePUzXhchvTfYBqzjT0kkUBvxxSOKkU62HvJIt1pYt7ezrehKznHd5bDNOlfgEWTNlvFPV6glId9PYzTBnlA49wIiOyv5gHxMC9XbIlLKr56ZGs38W2AJJNpZdInmOKlbxIn9UC5c8zO4A/bJim49yONDkbKuywNeC74WG1jGrIU/sFK/H2NCGHlBXnOEvJy5qfyf4nRTDT1ZFArokZDkfMNlCKeQ16X59lk1EbWAT1B6H60cGmWuRqUHWDzmomQ84ntKgS8qyYORqOCCT+xKrs0/LMVpr9UEZmJFEb4WTEIGeIYPnrXw9Di2tzAfIyiNIU5s4dAgMBAAGjggFfMIIBWzAOBgNVHQ8BAf8EBAMCAYYwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFL0Ft/OKkzxzy3n6D4USoXeWGJF0MB8GA1UdIwQYMBaAFK5sBaOTE+Ki5+LXHNbH8H/IZ1OgMHsGCCsGAQUFBwEBBG8wbTAuBggrBgEFBQcwAYYiaHR0cDovL29jc3AyLmdsb2JhbHNpZ24uY29tL3Jvb3RyNjA7BggrBgEFBQcwAoYvaHR0cDovL3NlY3VyZS5nbG9iYWxzaWduLmNvbS9jYWNlcnQvcm9vdC1yNi5jcnQwNgYDVR0fBC8wLTAroCmgJ4YlaHR0cDovL2NybC5nbG9iYWxzaWduLmNvbS9yb290LXI2LmNybDAhBgNVHSAEGjAYMAgGBmeBDAECATAMBgorBgEEAaAyCgEDMA0GCSqGSIb3DQEBCwUAA4ICAQB8ySQyjmDiafV+3h3jFHaQfNikO6SELVdg/B9Jk3cD2cQFp2N0pkwfuK5LW8Xy5JyDbr/fQNE96fZ8VGyvrrYQLJQJHg596KIY12hC9x6wz1el7DcctA/ioeD6zvviE0u8ZEPhopIrAWosytyoLDq0QB9f320VawPiPNsLqTy2NIvMSXR9NSV+Qlpam8tWSmD163y0Px3nVvKYKDknonrBxemaxIaeSwGhtpzX6deaAHuNAL151TxnjUUWjzsFXeQK2tZax2RBq85syxdQ+X8A7zL+M64BbPTDK8+cqib6jpbi8oNjr/pc/Kk115s4nqaPJogunSq6hC+GPHzsHMQ2HmznsAg7IgalLSwMQKFUM/MsR9GwfYUnz9bnCgXSe+wFOp9hIKpuVBsd4MO0KPsyV/wl+poy6pxsTisxLJ94fIJ1lDCdz+v26Oe2Hr3UAmHHJh4IzTiZ60kh7twHp3h0Wb493l6u9jjHfavS5DVDSynLVWM2pQmO6yxi5c3IyYUdK4tBDo+t4+YfmVxIxClgrM+gP9GI1UP88rQ7e+47m+HejugpvUV/OhqcOwUVOvDRos51Fb+2Ys9ZU1WUBvxp34HzRgmwvgddidAbzBgAVvwuHBIPJP2/4LULWVwgcTucTQACn0lIfENiyZr2mLiDQ+GDcGA6bZ65NHPDtHRLNWYKMiaRXE/7uyCJhaYy3wW9w5eaVCJM1YWJaWtuluqDAAAAAAAABYcwggWDMIIDa6ADAgECAg5F5rsDgzPDhWVI5v9FUTANBgkqhkiG9w0BAQwFADBMMSAwHgYDVQQLExdHbG9iYWxTaWduIFJvb3QgQ0EgLSBSNjETMBEGA1UEChMKR2xvYmFsU2lnbjETMBEGA1UEAxMKR2xvYmFsU2lnbjAeFw0xNDEyMTAwMDAwMDBaFw0zNDEyMTAwMDAwMDBaMEwxIDAeBgNVBAsTF0dsb2JhbFNpZ24gUm9vdCBDQSAtIFI2MRMwEQYDVQQKEwpHbG9iYWxTaWduMRMwEQYDVQQDEwpHbG9iYWxTaWduMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAlQfoc8pm+ewUyns89w0I8bRFCyyCtEjG61s8roO4QZIzFKRvf+kqzMawiGvFtonRxrL/FM5RFCHsSt0bWsbWh+5NOhUG7WRmC5KAykTec5RO86eJf094YwjIElBtQmYvTbl5KE1SGooagLcZgQ5+xIq8ZEwhHENo1z08isWyZtWQmrcxBsW+4m0yBqYe+bnrqqO4v76CY1DQ8BiJ3+QPefXqoh8q0nAue+e8k7ttU+JIfIwQBzj/ZrJ3YX7g6ow8qrSk9vOVShIHbf2MsonP0KBhd8hYdLDUIzr3XTrKotudCd5dRC2Q8YHNV5L6frxQBGM032uTGL5rNrI55KwkNrfw77YcE1eTtt6y+OKFt3OiuDWqRfLgnTahb1SK8XJWbi6IxVFCRBWU7qPFOJabTk5aC0fzBjZJdzC8cTflpuwhCHX85mEWP3fV2ZGXhAps1AJNdMAU7f05+4PyXhShBLAL6f7uj+FuC7IIs2FmCWqxBjplllnA8DX9ydoojRoRh3CBCqiadR2eOoYFAJ7bgNYl+dwFnidZTHY5W+r5paHYgw/R/98wEfmFzzNI9cptZBQselhP00sIScWVZBpjDnk99bOMylitnEJFeW4OhxlcVLFltr+Mm9wT6Q1vuC7cZ27JixG1hBSKABlwg3mRl5HUGie/Nx4yB9gUYzwoTK8CAwEAAaNjMGEwDgYDVR0PAQH/BAQDAgEGMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFK5sBaOTE+Ki5+LXHNbH8H/IZ1OgMB8GA1UdIwQYMBaAFK5sBaOTE+Ki5+LXHNbH8H/IZ1OgMA0GCSqGSIb3DQEBDAUAA4ICAQCDJe3o0f2VUs2ewASgkWnmXNCE3tytok/oR3jWZZipW6g8h3wCitFutxZz5l/AVJjVdL7BzeIRka0jGD3d4XJElrSVXsB7jpl4FkMTVlezorM7tXfcQHKso+ubNT6xCCGh58RDN3kyvrXnnCxMvEMpmY4w06wh4OMd+tgHM3ZUACIquU0gLnBo2uVT/INc053y/0QMRGby0uO9RgAabQK6JV2NoTFR3VRGHE3bmZbvGhwEXKYV73jgef5d2z6qTFX9mhWpb+Gm+99wMOnD7kJG7cKTBYn6fWN7P9BxgXwA6JiuDng0wyX7rwqfIGvdOxOPEoziQRpIenOgd2nHtlx/gsge/lgbKCuobK1ebcAF0nu364D+JTf+AptorEJdw+71zNzwUHXSNmmc5nsE324GabbeCglIWYfrexRgemSqaUPvkcdM7BjdbO9TLYyZ4V7ycj7PVMi9Z+ykD0xF/9O5MCMHTI8Qv4aW2ZlatJlXHKTMuxWJU7osBQ/kxJ4ZsRg01Uyduu33H68klQR4qAO77oHl2l98i0qhkHQlp7M+S8gsVr3HyO844lyS8Hn3nIS6dC1hASB+ftHyTwdZX4stQ1LrRgyU4fVmR3l31VRbH60kN8tFWk6gREjI2LCZxRWECfbWSUnAZbjmGnFuoKjxguhFPmzWAtcKZ4MFWsmkEAAAAAEAAAAIaHR0cC8xLjEBAAAAAABNdGxzZmxhZ3MweDAwMDAwMDAwOmFzdHJhbGludXgucnU6NDQzXnBhcnRpdGlvbktleT0lMjhodHRwcyUyQ2FzdHJhbGludXgucnUlMjkAAA== request-method GET response-head HTTP/1.1 200 OK
+Content-Type: application/javascript; charset=UTF-8
+ETag: W/"65889e77-4406"
+Server: nginx
+Date: Wed, 07 May 2025 07:44:23 GMT
+Last-Modified: Sun, 24 Dec 2023 21:11:19 GMT
+Expires: Fri, 06 Jun 2025 07:44:23 GMT
+Cache-Control: max-age=2592000
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: origin
+ original-response-headers Server: nginx
+Date: Wed, 29 Jan 2025 04:20:25 GMT
+Content-Type: application/javascript; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Last-Modified: Sun, 24 Dec 2023 21:11:19 GMT
+ETag: W/"65889e77-4406"
+Expires: Fri, 28 Feb 2025 04:20:25 GMT
+Cache-Control: max-age=2592000
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: origin
+X-XSS-Protection: 1; mode=block
+ ctid 2 uncompressed-len 0 net-response-time-onstart 1054 net-response-time-onstop 1054 alt-data 1;17414,javascript/moz-script-bytecode-20240704121409-8l alt-data-from-child 1   ®ç

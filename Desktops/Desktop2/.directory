@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Desktop 2
+Name[ru]=Рабочий стол 2
+Type=Directory
+Icon=user-desktop
+X-FLY-IconContext=Places
+Categories=thunderbird.desktop;psi.desktop;libreoffice-writer.desktop;libreoffice-calc.desktop;libreoffice-draw.desktop
+
